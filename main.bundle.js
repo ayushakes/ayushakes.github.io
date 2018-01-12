@@ -97,7 +97,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/app.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "\n<nav class=\"navbar navbar-expand-lg navbar-light bg-light fixed-top \" >\n    <a class=\"navbar-brand\" routerLink=\"home\">Department of design<img src=\"../assets/images/iit-brand.png\" class=\"img-fluid\" height=\"20px\" width=\"30px\"> </a>\n    <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarNav\" aria-controls=\"navbarNav\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n      <span class=\"navbar-toggler-icon\"></span>\n    </button>\n    <div class=\"collapse navbar-collapse justify-content-end\" id=\"navbarNav\">\n      <ul class=\"navbar-nav justify-content-end\">\n          <li class=\"nav-item\">\n          <a class=\"nav-link \" routerLink=\"home\">Home</a>\n        </li>\n        <li class=\"nav-item active\">\n          <a class=\"nav-link\" routerLink=\"people\">people <span class=\"sr-only\">(current)</span></a>\n        </li>\n        <li class=\"nav-item\">\n          <a class=\"nav-link\" routerLink=\"programs\">programs</a>\n        </li>\n        <li class=\"nav-item\">\n          <a class=\"nav-link\" routerLink=\"work\">work</a>\n        </li>\n        <li class=\"nav-item\">\n          <a class=\"nav-link \" routerLink=\"play\">play</a>\n        </li>\n        <li class=\"nav-item\">\n            <a class=\"nav-link \" routerLink=\"contact\">contact</a>\n          </li>\n        \n      </ul>\n    </div>\n  </nav>\n\n\n<div style=\"position:absolute; left:0px; top:150px;\">\n<router-outlet ></router-outlet></div>"
+module.exports = "\n<nav class=\"navbar navbar-expand-md navbar-light bg-light fixed-top \" >\n    <a class=\"navbar-brand\" routerLink=\"home\">Department of design<img src=\"../assets/images/iit-brand.png\" class=\"img-fluid\" height=\"20px\" width=\"30px\"> </a>\n    <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarNav\" aria-controls=\"navbarNav\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n      <span class=\"navbar-toggler-icon\"></span>\n    </button>\n    <div class=\"collapse navbar-collapse justify-content-end\" id=\"navbarNav\">\n      <ul class=\"navbar-nav justify-content-end\">\n          <li class=\"nav-item\" >\n          <a class=\"nav-link \" routerLink=\"home\" >Home</a>\n        </li>\n        <li class=\"nav-item \">\n          <a class=\"nav-link\" routerLink=\"people\">people </a>\n        </li>\n        <li class=\"nav-item\">\n          <a class=\"nav-link\" routerLink=\"programs\">programs</a>\n        </li>\n        <li class=\"nav-item\">\n          <a class=\"nav-link\" routerLink=\"work\">work</a>\n        </li>\n        <li class=\"nav-item\">\n          <a class=\"nav-link \" routerLink=\"play\">play</a>\n        </li>\n        <li class=\"nav-item\">\n            <a class=\"nav-link \" routerLink=\"contact\">contact</a>\n          </li>\n        \n      </ul>\n    </div>\n  </nav>\n\n\n<div>\n<router-outlet ></router-outlet></div>"
 
 /***/ }),
 
@@ -281,7 +281,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/faculty/faculty.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<img src=\"../assets/images/faculty.jpg\" class=\"img-fluid\" style=\"position:relative; left:300px;\">\r\n\r\n"
+module.exports = "<img src=\"../assets/images/faculty.jpg\" class=\"img-fluid\" height=\"600px\" width=\"1080px\" >\r\n\r\n"
 
 /***/ }),
 
@@ -390,7 +390,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, "", ""]);
+exports.push([module.i, ".peopleWrapper{\r\n    display:-ms-grid;\r\n    display:grid;\r\n    -ms-grid-columns: 30% 70%;\r\n        grid-template-columns: 30% 70%;\r\n    grid-auto-rows: minmax(600px,auto);\r\n    grid-auto-columns:minmax(100px,auto);\r\n    padding:0px 0px 0px 0px;\r\n}\r\n.peopleWrapper>div{\r\n    background:#eee;\r\n}\r\n\r\n.side{\r\n    font-size:13px;  position:relative; margin-left:-1em; \r\n\r\n}\r\n.imgHead{\r\n    max-width:100%;  height:30vw;\r\n}\r\n\r\n\r\n\r\n\r\n@media (min-width:600px) {\r\n    .side{  color:blue;\r\n\r\n        font-size:1.5vw;\r\n    }\r\n\r\n    .imgHead{\r\n        border:solid greenyellow; max-width:100%; height:auto;\r\n    }\r\n} \r\n\r\n", ""]);
 
 // exports
 
@@ -403,7 +403,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/people/people.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "\n<img src=\"../assets/images/iitPeopleH.PNG\" class=\"img-fluid\" >\n<ul class=\"list-inline\" style=\"color:black;\" style=\"position:relative; top:-35px;\nleft:90px; background-color:#ed1d62; width:600px;\n\">\n    <li class=\"list-inline-item\"><a style=\"color:black;\" routerLink=\"student\" ><strong>students</strong></a></li>\n    <li class=\"list-inline-item\"><a style=\"color:black;\"  routerLink=\"faculty\"><strong>faculty</strong></a></li>\n    <li  class=\"list-inline-item\"><a style=\"color:black;\"  routerLink=\"staff\"><strong>staff</strong></a></li>\n  </ul>\n  <form>\n    <select name=\"SELECT BATCH\" #selection> <span class=\"caret\"></span>\n      <option value=\"2016\">2016</option>\n      <option value=\"2017\">2017</option>\n    </select>\n\n  </form>\n  <router-outlet></router-outlet>\n  <hr>\n  \n  <router-outlet></router-outlet>\n  <div class=\"row\">\n  <div class=\"col-m-10\">\n    \n  </div>\n  </div>\n  <button type=\"button\" class=\"btn\">Basic</button>\n  <button type=\"button\" class=\"btn btn-primary\">Primary</button>\n  <button type=\"button\" class=\"btn btn-secondary\">Secondary</button>\n  <button type=\"button\" class=\"btn btn-success\">Success</button>\n  <button type=\"button\" class=\"btn btn-info\">Info</button>\n  <button type=\"button\" class=\"btn btn-warning\">Warning</button>\n  <button type=\"button\" class=\"btn btn-danger\">Danger</button>\n  <button type=\"button\" class=\"btn btn-dark\">Dark</button>\n  <button type=\"button\" class=\"btn btn-light\">Light</button>\n  <button type=\"button\" class=\"btn btn-link\">Link</button>\n  Try it Yourself »\n  \n  <footer class=\"container-fluid text-center\" style=\"background-color:black; height:150px; \">\n    <p style=\"color:white;\">Footer Text</p>\n  </footer>\n  \n  \n"
+module.exports = "\n\n\n\n  <img class=\"imgHead\" src=\"../assets/images/iitPeopleH.PNG\"  >\n\n\n<div class=\"container-fluid peopleWrapper\">\n <div> <form>\n    <select name=\"SELECT BATCH\" #selection> <span class=\"caret\"></span>\n      <option value=\"2016\">2016</option>\n      <option value=\"2017\">2017</option>\n    </select>\n</form>\n<ul  class=\"side\" > \n\n    <li ><a style=\"color:black;\" routerLink=\"student\" ><strong>students</strong></a></li>\n    <li ><a style=\"color:black;\"  routerLink=\"faculty\"><strong>faculty</strong></a></li>\n    <li ><a style=\"color:black;\"  routerLink=\"staff\"><strong>staff</strong></a></li>\n  </ul>  </div>\n  <div >\n  <router-outlet></router-outlet> </div>\n</div>\n  <footer class=\"container-fluid text-center\" style=\"background-color:black; height:150px; \">\n    <p style=\"color:white;\">Footer Text</p>\n  </footer> \n    \n  \n"
 
 /***/ }),
 
@@ -464,7 +464,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/play/play.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<img src=\"../assets/images/iitPlay.PNG\" class=\"img-fluid\" >\r\n<ul class=\"list-inline\" style=\"color:black;\" style=\"position:relative; top:-35px;\r\nleft:90px; background-color:#b9e91f; width:600px;\r\n\">\r\n    <li class=\"list-inline-item\"><a style=\"color:black;\">All Events</a></li>\r\n    <li class=\"list-inline-item\"><a style=\"color:black;\">Workshops</a></li>\r\n    <li class=\"list-inline-item\"><a style=\"color:black;\">Exhibitions</a></li>\r\n    <li class=\"list-inline-item\"><a style=\"color:black;\">Celebrations</a></li>\r\n  </ul>\r\n\r\n  <div class=\"container\">\r\n  <div class=\"jumbotron\">\r\n    <h1>Bootstrap Tutorial</h1>      \r\n    <p>Bootstrap is the most popular HTML, CSS, and JS framework for developing responsive, mobile-first projects on the web.</p>\r\n  </div>\r\n  <p>This is some text.</p>      \r\n  <p>This is another text.</p>      \r\n</div>\r\n  <footer class=\"container-fluid text-center\" style=\"background-color:black; height:150px; \">\r\n    <p style=\"color:white;\">Footer Text</p>\r\n  </footer>\r\n  \r\n  "
+module.exports = "<img  class=\"headerimg\" src=\"../assets/images/iitPlay.PNG\" class=\"img-fluid\" >\r\n\r\n\r\n\r\n<div class=\"list-inline\" style=\"color:black;\" style=\"position:relative; top:-35px;\r\nleft:30px; background-color:#b9e91f; width:550px ; height:30px;\r\n\"> \r\n</div>\r\n <!-- <li class=\"list-inline-item\"><a style=\"color:black;\">All Events</a></li>\r\n    <li class=\"list-inline-item\"><a style=\"color:black;\">Workshops</a></li>\r\n    <li class=\"list-inline-item\"><a style=\"color:black;\">Exhibitions</a></li>\r\n    <li class=\"list-inline-item\"><a style=\"color:black;\">Celebrations</a></li>\r\n  </ul> background-color:#b9e91f\r\n-->\r\n  <div class=\"container\">\r\n  <div class=\"jumbotron\">\r\n    <h1>Bootstrap Tutorial</h1>      \r\n    <p>Bootstrap is the most popular HTML, CSS, and JS framework for developing responsive, mobile-first projects on the web.</p>\r\n  </div>\r\n  <p>This is some text.</p>      \r\n  <p>This is another text.</p>      \r\n</div>\r\n  <footer class=\"container-fluid text-center\" style=\"background-color:black; height:150px; \">\r\n    <p style=\"color:white;\">Footer Text</p>\r\n  </footer>\r\n  \r\n  "
 
 /***/ }),
 
@@ -586,7 +586,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/staff/staff.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<img src=\"../assets/images/staff.jpg\" class=\"img-fluid\" style=\"position:relative; left:300px;\">"
+module.exports = "<img src=\"../assets/images/staff.jpg\" class=\"img-fluid\" height=\"600px\" width=\"1080px\" >"
 
 /***/ }),
 
@@ -647,7 +647,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/student/student.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<img src=\"../assets/images/iitPeople.PNG\" class=\"img-fluid\" style=\"position:relative; left:300px;\">"
+module.exports = "<img src=\"../assets/images/iitPeople.PNG\" class=\"img-fluid\" height=\"600px\" width=\"1080px\">"
 
 /***/ }),
 
