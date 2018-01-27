@@ -84,7 +84,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, ".brandi{\r\nfont-size:1em;\r\n\r\n}", ""]);
+exports.push([module.i, ".brandi{\r\nfont-size:1em;\r\n\r\n}\r\n@-webkit-keyframes examplem {\r\n    from {top: 0;}\r\n    to {top: 40px; }\r\n}\r\n@keyframes examplem {\r\n    from {top: 0;}\r\n    to {top: 40px; }\r\n}\r\n\r\n\r\nnav{ \r\n    margin-top:-40px;\r\n  padding-top:60px;\r\n    position: relative;\r\n    \r\n    -webkit-animation-name: examplem;\r\n    \r\n            animation-name: examplem;\r\n    -webkit-animation-duration: 2s;\r\n            animation-duration: 2s;    \r\n    -webkit-animation-fill-mode: forwards;    \r\n            animation-fill-mode: forwards;\r\n}", ""]);
 
 // exports
 
@@ -268,7 +268,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, "", ""]);
+exports.push([module.i, "@-webkit-keyframes example1 {\r\n    from {left:0px;}\r\n    to {left: 25px; }\r\n}\r\n\r\n@keyframes example1 {\r\n    from {left:0px;}\r\n    to {left: 25px; }\r\n}\r\n\r\nimg{\r\n    \r\n      position: relative;\r\n  \r\n      \r\n      -webkit-animation-name: example1;\r\n  \r\n      \r\n              animation-name: example1;\r\n      -webkit-animation-duration: 3s;\r\n              animation-duration: 3s;    \r\n      -webkit-animation-fill-mode: forwards;    \r\n              animation-fill-mode: forwards;\r\n    \r\n  }", ""]);
 
 // exports
 
@@ -329,7 +329,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, "p{\r\n    font-size:1em;\r\n    color:green;\r\n}\r\nh3{\r\n\r\n    color:red;\r\n}", ""]);
+exports.push([module.i, ".intro{\r\n    font-size:1em;\r\n    color:green;\r\n}\r\n\r\n\r\n\r\n@-webkit-keyframes example {\r\n    from {top: 0;}\r\n    to {top: 40px; }\r\n}\r\n\r\n\r\n\r\n@keyframes example {\r\n    from {top: 0;}\r\n    to {top: 40px; }\r\n}\r\n\r\n\r\nh3{color:white;\r\n  left:30vw;\r\n  font-size:2.75vw;\r\n  \r\n    position: relative;\r\n\r\n    \r\n    -webkit-animation-name: example;\r\n\r\n    \r\n            animation-name: example;\r\n    -webkit-animation-duration: 2s;\r\n            animation-duration: 2s;    \r\n    -webkit-animation-fill-mode: forwards;    \r\n            animation-fill-mode: forwards;\r\n    -webkit-animation-delay:2s;\r\n            animation-delay:2s;\r\n}", ""]);
 
 // exports
 
@@ -342,7 +342,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/home/home.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "\n<h3 style=\"margin-top:-90px;\"  >where would you design your dreams?</h3>\n<img src=\"../assets/images/iitHome2.jpg\" class=\"img-fluid \"  >\n<div class=\"row\">\n\n<div class=\"col-md-10\">\n  <p >The Department of Design(DoD), one of the thirteen departments at IIT Guwahati, was set up with a vision to enkindle some of the brightest technical minds of the country a passion for innovation in technology driven by a firm understanding, appreciation and celebration of design.\n    \n      The department offers an M.Des. degree, a B.Des. degree (the only undergraduate level degree of its kind in an Indian Institute of Technology) and a PhD degree in Design. The focus of the program is on the study, invention, and creative use of technologies to create effective, usable, enjoyable experiences with technology through interdisciplinary research in engineering, design, behavioral and social sciences, and to understand the impact of technology on individuals, groups, and organizations. The department envisions to produce successful graduates who will be capable of leading the changing scenarios of today and tomorrow through thought, innovation and values.\n    \n      The institute is situated in North Guwahati, Assam, on the north bank of the river Brahmaputra amidst breathtaking natural beauty and serenity. The full fledged campus sprawls over 285 hectares of gently undulating terrain with several hillocks covered with lush green vegetation, a few lakes and a panoramic view of the mighty river on one side and a ring of blue hills on the other. The Institute is conveniently accessible from all the transport hubs in the Guwahati city\n\n</p>\n</div> \n</div>\n\n<footer class=\"container-fluid text-center\" style=\"background-color:black; height:150px; \">\n  <p style=\"color:white;\">Footer Text</p>\n</footer>\n\n\n"
+module.exports = "\n<h3>where would you design your dreams?</h3>\n<img src=\"../assets/images/iitHome2.jpg\" class=\"img-fluid \"  >\n<div class=\"row\">\n\n<div class=\"intro justify-content-center\">\n  <p >The Department of Design(DoD), one of the thirteen departments at IIT Guwahati, was set up with a vision to enkindle some of the brightest technical minds of the country a passion for innovation in technology driven by a firm understanding, appreciation and celebration of design.\n    \n      The department offers an M.Des. degree, a B.Des. degree (the only undergraduate level degree of its kind in an Indian Institute of Technology) and a PhD degree in Design. The focus of the program is on the study, invention, and creative use of technologies to create effective, usable, enjoyable experiences with technology through interdisciplinary research in engineering, design, behavioral and social sciences, and to understand the impact of technology on individuals, groups, and organizations. The department envisions to produce successful graduates who will be capable of leading the changing scenarios of today and tomorrow through thought, innovation and values.\n    \n      The institute is situated in North Guwahati, Assam, on the north bank of the river Brahmaputra amidst breathtaking natural beauty and serenity. The full fledged campus sprawls over 285 hectares of gently undulating terrain with several hillocks covered with lush green vegetation, a few lakes and a panoramic view of the mighty river on one side and a ring of blue hills on the other. The Institute is conveniently accessible from all the transport hubs in the Guwahati city\n\n</p>\n</div> \n</div>\n\n<footer class=\"container-fluid text-center\" style=\"background-color:black; height:150px; \">\n  <p style=\"color:white;\">Footer Text</p>\n</footer>\n\n\n"
 
 /***/ }),
 
@@ -390,7 +390,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, ".peopleWrapper{\r\n    display:-ms-grid;\r\n    display:grid;\r\n    -ms-grid-columns: 30% 70%;\r\n        grid-template-columns: 30% 70%;\r\n    grid-auto-rows: minmax(600px,auto);\r\n    grid-auto-columns:minmax(100px,auto);\r\n    padding:0px 0px 0px 0px;\r\n}\r\n.peopleWrapper>div{\r\n    background:#eee;\r\n}\r\n\r\n.side{\r\n    font-size:13px;  position:relative; margin-left:-1em; \r\n\r\n}\r\n.imgHead{\r\n    max-width:100%;  height:30vw;\r\n}\r\n\r\n\r\n\r\n\r\n@media (min-width:600px) {\r\n    .side{  color:blue;\r\n\r\n        font-size:1.5vw;\r\n    }\r\n\r\n    .imgHead{\r\n        border:solid greenyellow; max-width:100%; height:auto;\r\n    }\r\n} \r\n\r\n", ""]);
+exports.push([module.i, ".peopleWrapper{\r\n    display:-ms-grid;\r\n    display:grid;\r\n    -ms-grid-columns: 30% 70%;\r\n        grid-template-columns: 30% 70%;\r\n    grid-auto-rows: minmax(600px,auto);\r\n    grid-auto-columns:minmax(100px,auto);\r\n    padding:0px 0px 0px 0px;\r\n}\r\n.peopleWrapper>div{\r\n    background:#eee;\r\n}\r\n\r\n.side{\r\n    font-size:13px;  position:relative; margin-left:-1em; \r\n\r\n}\r\n.imgHead{\r\n    max-width:100%;  height:30vw;\r\n}\r\n\r\n\r\n\r\n\r\n@media (min-width:600px) {\r\n    .side{  color:blue;\r\n\r\n        font-size:1.5vw;\r\n    }\r\n\r\n    .imgHead{\r\n        border:solid greenyellow; max-width:100%; height:auto;\r\n    }\r\n} \r\n", ""]);
 
 // exports
 
@@ -403,7 +403,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/people/people.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "\n\n\n\n  <img class=\"imgHead\" src=\"../assets/images/iitPeopleH.PNG\"  >\n\n\n<div class=\"container-fluid peopleWrapper\">\n <div> <form>\n    <select name=\"SELECT BATCH\" #selection> <span class=\"caret\"></span>\n      <option value=\"2016\">2016</option>\n      <option value=\"2017\">2017</option>\n    </select>\n</form>\n<ul  class=\"side\" > \n\n    <li ><a style=\"color:black;\" routerLink=\"student\" ><strong>students</strong></a></li>\n    <li ><a style=\"color:black;\"  routerLink=\"faculty\"><strong>faculty</strong></a></li>\n    <li ><a style=\"color:black;\"  routerLink=\"staff\"><strong>staff</strong></a></li>\n  </ul>  </div>\n  <div >\n  <router-outlet></router-outlet> </div>\n</div>\n  <footer class=\"container-fluid text-center\" style=\"background-color:black; height:150px; \">\n    <p style=\"color:white;\">Footer Text</p>\n  </footer> \n    \n  \n"
+module.exports = "\n\n\n\n  <img class=\"imgHead\" src=\"../assets/images/iitPeopleH.PNG\"  >\n\n\n\n<div class=\"container-fluid peopleWrapper\">\n <div> <form>\n    <select name=\"SELECT BATCH\" #selection> <span class=\"caret\"></span>\n      <option value=\"2016\">2016</option>\n      <option value=\"2017\">2017</option>\n    </select>\n</form>\n\n\n<div *ngIf=\"value==='2016'\" >ayush</div>\n<ul  class=\"side\" > \n\n    <li ><a style=\"color:black;\" routerLink=\"student\" ><strong>students</strong></a></li>\n    <li ><a style=\"color:black;\"  routerLink=\"faculty\"><strong>faculty</strong></a></li>\n    <li ><a style=\"color:black;\"  routerLink=\"staff\"><strong>staff</strong></a></li>\n  </ul>  </div>\n  <div >\n  <router-outlet></router-outlet></div>\n</div>\n  <footer class=\"container-fluid text-center\" style=\"background-color:black; height:150px; \">\n    <p style=\"color:white;\">Footer Text</p>\n  </footer> \n    \n  \n"
 
 /***/ }),
 
@@ -573,7 +573,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, "", ""]);
+exports.push([module.i, "@-webkit-keyframes example1 {\r\n    from {left:0px;}\r\n    to {left: 25px; }\r\n}\r\n\r\n@keyframes example1 {\r\n    from {left:0px;}\r\n    to {left: 25px; }\r\n}\r\n\r\nimg{\r\n    \r\n      position: relative;\r\n  \r\n      \r\n      -webkit-animation-name: example1;\r\n  \r\n      \r\n              animation-name: example1;\r\n      -webkit-animation-duration: 3s;\r\n              animation-duration: 3s;    \r\n      -webkit-animation-fill-mode: forwards;    \r\n              animation-fill-mode: forwards;\r\n    \r\n  }", ""]);
 
 // exports
 
@@ -634,7 +634,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, "", ""]);
+exports.push([module.i, "@-webkit-keyframes example1 {\r\n    from {left:0px;}\r\n    to {left: 25px; }\r\n}\r\n\r\n@keyframes example1 {\r\n    from {left:0px;}\r\n    to {left: 25px; }\r\n}\r\n\r\nimg{\r\n    \r\n      position: relative;\r\n  \r\n      \r\n      -webkit-animation-name: example1;\r\n  \r\n      \r\n              animation-name: example1;\r\n      -webkit-animation-duration: 3s;\r\n              animation-duration: 3s;    \r\n      -webkit-animation-fill-mode: forwards;    \r\n              animation-fill-mode: forwards;\r\n    \r\n  }", ""]);
 
 // exports
 
