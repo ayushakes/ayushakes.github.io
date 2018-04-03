@@ -95,16 +95,20 @@ var AppComponent = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__ = __webpack_require__("./node_modules/@angular/platform-browser/esm5/platform-browser.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_common_http__ = __webpack_require__("./node_modules/@angular/common/esm5/http.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_angular_stormpath__ = __webpack_require__("./node_modules/angular-stormpath/dist/esm/src/index.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__app_component__ = __webpack_require__("./src/app/app.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__people_people_component__ = __webpack_require__("./src/app/people/people.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__angular_router__ = __webpack_require__("./node_modules/@angular/router/esm5/router.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__home_home_component__ = __webpack_require__("./src/app/home/home.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__work_work_component__ = __webpack_require__("./src/app/work/work.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__contact_contact_component__ = __webpack_require__("./src/app/contact/contact.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__students_students_component__ = __webpack_require__("./src/app/students/students.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__faculty_faculty_component__ = __webpack_require__("./src/app/faculty/faculty.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__research_research_component__ = __webpack_require__("./src/app/research/research.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_forms__ = __webpack_require__("./node_modules/@angular/forms/esm5/forms.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_angular_stormpath__ = __webpack_require__("./node_modules/angular-stormpath/dist/esm/src/index.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__app_component__ = __webpack_require__("./src/app/app.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__people_people_component__ = __webpack_require__("./src/app/people/people.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__angular_router__ = __webpack_require__("./node_modules/@angular/router/esm5/router.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__home_home_component__ = __webpack_require__("./src/app/home/home.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__work_work_component__ = __webpack_require__("./src/app/work/work.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__contact_contact_component__ = __webpack_require__("./src/app/contact/contact.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__students_students_component__ = __webpack_require__("./src/app/students/students.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__faculty_faculty_component__ = __webpack_require__("./src/app/faculty/faculty.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__research_research_component__ = __webpack_require__("./src/app/research/research.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__home_posts_posts_component__ = __webpack_require__("./src/app/home/posts/posts.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__home_posts_post_post_component__ = __webpack_require__("./src/app/home/posts/post/post.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__back_directive__ = __webpack_require__("./src/app/back.directive.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -124,9 +128,13 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var appRoutes = [{ path: '', component: __WEBPACK_IMPORTED_MODULE_7__home_home_component__["a" /* HomeComponent */] }, { path: 'research', component: __WEBPACK_IMPORTED_MODULE_12__research_research_component__["a" /* ResearchComponent */] }, { path: 'home', component: __WEBPACK_IMPORTED_MODULE_7__home_home_component__["a" /* HomeComponent */] }, { path: 'faculty', component: __WEBPACK_IMPORTED_MODULE_11__faculty_faculty_component__["a" /* FacultyComponent */] }, { path: 'students', component: __WEBPACK_IMPORTED_MODULE_10__students_students_component__["a" /* StudentsComponent */] }, { path: 'people', component: __WEBPACK_IMPORTED_MODULE_5__people_people_component__["a" /* PeopleComponent */] }, { path: 'work', component: __WEBPACK_IMPORTED_MODULE_8__work_work_component__["a" /* WorkComponent */] }, { path: 'contact', component: __WEBPACK_IMPORTED_MODULE_9__contact_contact_component__["a" /* ContactComponent */] }];
+
+
+
+
+var appRoutes = [{ path: '', component: __WEBPACK_IMPORTED_MODULE_8__home_home_component__["a" /* HomeComponent */] }, { path: 'research', component: __WEBPACK_IMPORTED_MODULE_13__research_research_component__["a" /* ResearchComponent */] }, { path: 'home', component: __WEBPACK_IMPORTED_MODULE_8__home_home_component__["a" /* HomeComponent */] }, { path: 'faculty', component: __WEBPACK_IMPORTED_MODULE_12__faculty_faculty_component__["a" /* FacultyComponent */] }, { path: 'students', component: __WEBPACK_IMPORTED_MODULE_11__students_students_component__["a" /* StudentsComponent */] }, { path: 'people', component: __WEBPACK_IMPORTED_MODULE_6__people_people_component__["a" /* PeopleComponent */] }, { path: 'work', component: __WEBPACK_IMPORTED_MODULE_9__work_work_component__["a" /* WorkComponent */] }, { path: 'contact', component: __WEBPACK_IMPORTED_MODULE_10__contact_contact_component__["a" /* ContactComponent */] }];
 function stormpathConfig() {
-    var spConfig = new __WEBPACK_IMPORTED_MODULE_3_angular_stormpath__["a" /* StormpathConfiguration */]();
+    var spConfig = new __WEBPACK_IMPORTED_MODULE_4_angular_stormpath__["a" /* StormpathConfiguration */]();
     spConfig.endpointPrefix = 'https://{DNS-LABEL}.apps.stormpath.io';
     return spConfig;
 }
@@ -136,18 +144,55 @@ var AppModule = /** @class */ (function () {
     AppModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["NgModule"])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_4__app_component__["a" /* AppComponent */],
-                __WEBPACK_IMPORTED_MODULE_5__people_people_component__["a" /* PeopleComponent */], __WEBPACK_IMPORTED_MODULE_7__home_home_component__["a" /* HomeComponent */], __WEBPACK_IMPORTED_MODULE_8__work_work_component__["a" /* WorkComponent */], __WEBPACK_IMPORTED_MODULE_9__contact_contact_component__["a" /* ContactComponent */], __WEBPACK_IMPORTED_MODULE_10__students_students_component__["a" /* StudentsComponent */], __WEBPACK_IMPORTED_MODULE_11__faculty_faculty_component__["a" /* FacultyComponent */], __WEBPACK_IMPORTED_MODULE_12__research_research_component__["a" /* ResearchComponent */]
+                __WEBPACK_IMPORTED_MODULE_5__app_component__["a" /* AppComponent */],
+                __WEBPACK_IMPORTED_MODULE_6__people_people_component__["a" /* PeopleComponent */], __WEBPACK_IMPORTED_MODULE_8__home_home_component__["a" /* HomeComponent */], __WEBPACK_IMPORTED_MODULE_9__work_work_component__["a" /* WorkComponent */], __WEBPACK_IMPORTED_MODULE_10__contact_contact_component__["a" /* ContactComponent */], __WEBPACK_IMPORTED_MODULE_11__students_students_component__["a" /* StudentsComponent */], __WEBPACK_IMPORTED_MODULE_12__faculty_faculty_component__["a" /* FacultyComponent */], __WEBPACK_IMPORTED_MODULE_13__research_research_component__["a" /* ResearchComponent */], __WEBPACK_IMPORTED_MODULE_14__home_posts_posts_component__["a" /* PostsComponent */], __WEBPACK_IMPORTED_MODULE_15__home_posts_post_post_component__["a" /* PostComponent */], __WEBPACK_IMPORTED_MODULE_16__back_directive__["a" /* BackDirective */]
             ],
-            imports: [__WEBPACK_IMPORTED_MODULE_6__angular_router__["a" /* RouterModule */].forRoot(appRoutes),
+            imports: [__WEBPACK_IMPORTED_MODULE_7__angular_router__["a" /* RouterModule */].forRoot(appRoutes),
                 __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
-                __WEBPACK_IMPORTED_MODULE_2__angular_common_http__["b" /* HttpClientModule */],
+                __WEBPACK_IMPORTED_MODULE_2__angular_common_http__["b" /* HttpClientModule */], __WEBPACK_IMPORTED_MODULE_3__angular_forms__["a" /* FormsModule */]
             ],
             providers: [],
-            bootstrap: [__WEBPACK_IMPORTED_MODULE_4__app_component__["a" /* AppComponent */]]
+            bootstrap: [__WEBPACK_IMPORTED_MODULE_5__app_component__["a" /* AppComponent */]]
         })
     ], AppModule);
     return AppModule;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/back.directive.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return BackDirective; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var BackDirective = /** @class */ (function () {
+    function BackDirective(elref, renderer) {
+        this.elref = elref;
+        this.renderer = renderer;
+    }
+    BackDirective.prototype.ngOnInit = function () {
+        this.renderer.setStyle(this.elref.nativeElement, 'background-image', 'url(./assets/images/research-icon.png)');
+    };
+    BackDirective = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Directive"])({
+            selector: '[appBack]'
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__angular_core__["ElementRef"], __WEBPACK_IMPORTED_MODULE_0__angular_core__["Renderer2"]])
+    ], BackDirective);
+    return BackDirective;
 }());
 
 
@@ -164,7 +209,7 @@ module.exports = ""
 /***/ "./src/app/contact/contact.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "\n     \n    \n     \n     <link rel=\"stylesheet\" href=\"../assets/css/style_contact.css\">\n\n\n      <div id=\"form-main\">\n        <div id=\"form-div\">\n          <form class=\"form\" id=\"form1\">\n            \n            <p class=\"name\">\n              <input name=\"name\" type=\"text\" class=\"validate[required,custom[onlyLetter],length[0,100]] feedback-input\" placeholder=\"Name\" id=\"name\" />\n            </p>\n            \n            <p class=\"email\">\n              <input name=\"email\" type=\"text\" class=\"validate[required,custom[email]] feedback-input\" id=\"email\" placeholder=\"Email\" />\n            </p>\n            \n            <p class=\"text\">\n              <textarea name=\"text\" class=\"validate[required,length[6,300]] feedback-input\" id=\"comment\" placeholder=\"Comment\"></textarea>\n            </p>\n            \n            \n            <div class=\"submit\">\n              <input type=\"submit\" value=\"SEND\" id=\"button-blue\"/>\n              <div class=\"ease\"></div>\n            </div>\n          </form>\n        </div>\n      </div>\n    "
+module.exports = "\n     \n    \n     \n     <link rel=\"stylesheet\" href=\"../assets/css/style_contact.css\">\n\n\n      <div id=\"form-main\">\n        <div id=\"form-div\">\n          <form class=\"form\" id=\"form1\">\n            \n            <p class=\"name\">\n              <input name=\"name\" type=\"text\" class=\"validate[required,custom[onlyLetter],length[0,100]] feedback-input\" placeholder=\"Name\" id=\"name\" />\n            </p>\n            \n            <p class=\"email\">\n              <input name=\"email\" type=\"text\" class=\"validate[required,custom[email]] feedback-input\" id=\"email\" placeholder=\"Email\" />\n            </p>\n            \n            <p class=\"text\">\n              <textarea name=\"text\" class=\"validate[required,length[6,300]] feedback-input\" id=\"comment\" placeholder=\"Comment\"></textarea>\n            </p>\n            \n            \n            <div class=\"submit\">\n              <input type=\"submit\" value=\"SEND\" id=\"button-blue\"/>\n              <div class=\"ease\"></div>\n            </div>\n          </form>\n        </div>\n      </div>\n    \n\n      "
 
 /***/ }),
 
@@ -264,7 +309,7 @@ module.exports = ".BigHeading{\r\n\r\n    font-size:2.75Vmax;\r\n}"
 /***/ "./src/app/home/home.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<link rel=\"stylesheet\" type=\"text/css\" href=\"../assets/css/set1.css\" />\n<div class=\"jumbotron jumbotron-fluid \">\n  <div class=\"container\">\n   <div class=\"row\"> <div class=\"col\"> <h1 class=\"display-4 BigHeading\">Department of Design</h1> \n    <p class=\"lead\">Where you design your dreams</p> <p>\n      \n    </p>\n    <div class=\"collapse\" id=\"collapseExample\">\n      <div class=\"card card-body\">\n        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.\n      </div>\n    </div></div> <div class=\"col\"> <figure class=\"effect-lily\">\n      <img src=\"../assets/images/2.jpg\" alt=\"image not Loaded\"/>\n      <figcaption>\n        <div>\n          <h2 style=\"font-size:3vw ; text-shadow: 0px 0 lightcyan, 0 1px lightcyan, 3px 0 lightcyan, 0 -1px lightcyan;\">WE <span style=\"font-size:3vw\">Rock!!!</span></h2>\n          <p style=\"color:lightcyan; text-shadow: 0px 0 black, 0 1px black, 3px 0 black, 0 -1px black; font-size:2vw;\">IIT-G : Where we design our dreams</p>\n        </div>\n        \n      </figcaption>\t\t\t\n    </figure>\n  </div></div>"
+module.exports = "<link rel=\"stylesheet\" type=\"text/css\" href=\"../assets/css/set1.css\" />\n<div class=\"jumbotron jumbotron-fluid \">\n  <div class=\"container\">\n   <div class=\"row\"> <div class=\"col\"> <h1 class=\"display-4 BigHeading\">Department of Design</h1> \n    <p class=\"lead\">Where you design your dreams</p> <p>\n      \n    </p> \n    \n   <app-posts></app-posts>\n\n\n\n    </div> <div class=\"col\"> <figure class=\"effect-lily\">\n      <img src=\"../assets/images/2.jpg\" alt=\"image not Loaded\"/>\n      <figcaption>\n        <div>\n          <h2 style=\"font-size:3vw ; text-shadow: 0px 0 lightcyan, 0 1px lightcyan, 3px 0 lightcyan, 0 -1px lightcyan;\">WE <span style=\"font-size:3vw\">Rock!!!</span></h2>\n          <p style=\"color:lightcyan; text-shadow: 0px 0 black, 0 1px black, 3px 0 black, 0 -1px black; font-size:2vw;\">IIT-G : Where we design our dreams</p>\n        </div>\n        \n      </figcaption>\t\t\t\n    </figure>\n  </div></div>"
 
 /***/ }),
 
@@ -298,6 +343,157 @@ var HomeComponent = /** @class */ (function () {
         __metadata("design:paramtypes", [])
     ], HomeComponent);
     return HomeComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/home/posts/post.model.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Post; });
+var Post = /** @class */ (function () {
+    function Post(imageUrl, title, text, footerText) {
+        this.imageUrl = imageUrl;
+        this.title = title;
+        this.text = text;
+        this.footerText = footerText;
+    }
+    return Post;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/home/posts/post/post.component.css":
+/***/ (function(module, exports) {
+
+module.exports = ""
+
+/***/ }),
+
+/***/ "./src/app/home/posts/post/post.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"card sm-4\">\n  <img class=\"card-img-top\" src=\"{{post.imageUrl}}\" style=\"height:100px; width:100px;  \" alt=\"Card image cap\">\n  <div class=\"card-body\">\n    <h2 class=\"card-title\">{{post.title}}</h2>\n    <p class=\"card-text\">{{post.text}}</p>\n    <a href=\"#\" class=\"btn btn-primary\">Read More &rarr;</a>\n  </div>\n  <div class=\"card-footer text-muted\">\n   {{post.footerText}}\n    <a href=\"#\">Start Bootstrap</a>\n  </div>\n</div> \n"
+
+/***/ }),
+
+/***/ "./src/app/home/posts/post/post.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PostComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__post_model__ = __webpack_require__("./src/app/home/posts/post.model.ts");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var PostComponent = /** @class */ (function () {
+    function PostComponent() {
+    }
+    PostComponent.prototype.ngOnInit = function () {
+    };
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])(),
+        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1__post_model__["a" /* Post */])
+    ], PostComponent.prototype, "post", void 0);
+    PostComponent = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+            selector: 'app-post',
+            template: __webpack_require__("./src/app/home/posts/post/post.component.html"),
+            styles: [__webpack_require__("./src/app/home/posts/post/post.component.css")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], PostComponent);
+    return PostComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/home/posts/posts.component.css":
+/***/ (function(module, exports) {
+
+module.exports = "input.ng-invalid.ng-touched{\r\n    border:2px solid red;\r\n}"
+
+/***/ }),
+
+/***/ "./src/app/home/posts/posts.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<button class=\"btn btn-danger\" (click)=\"onCreatePost()\">new post</button>\n\n<div *ngIf=\"this.onCreate\">\n\n  <form  (ngSubmit)=\"onSubmit(f)\" #f=\"ngForm\">\n \n<label>Image Url</label><p *ngIf=\"!imageUrl.valid&&imageUrl.touched\">field can't be empty</p>\n  \n<input #imageUrl=\"ngModel\" required class=\"form-control\" ngModel name=\"imageUrl\" id=\"imageUrl\" type=\"text\" placeholder=\"type image url here\"   >\n  <label>title</label><p *ngIf=\"!title.valid&&title.touched\">field can't be empty</p>\n  <input #title=\"ngModel\" required class=\"form-control\" ngModel name=\"title\" id=\"title\" type=\"text\" placeholder=\"type title here\"  >\n  <label>text</label><p *ngIf=\"!text.valid&&text.touched\">field can't be empty</p>\n  <input #text=\"ngModel\" required class=\"form-control\" ngModel name=\"text\" id=\"text\" type=\"text\" placeholder=\"type body here\"  >\n  <label>footerText</label><p *ngIf=\"!footerText.valid&&footerText.touched\">field can't be empty</p>\n  <input #footerText=\"ngModel\" required class=\"form-control\" ngModel name=\"footerText\" id=\"footerText\" type=\"text\" placeholder=\"type footer text here\"  >\n\n<button  type=\"submit\"  class=\"btn btn-primary\">add the post</button>\n\n</form>\n</div>\n<!-- html5 validations  (which are by default disabled by angular can be enabled by using ngNativeValidate on the form-control we want to have on) -->\n\n<ul>\n    \n  <app-post *ngFor=\"let post of posts\" [post]=post></app-post>\n\n</ul>"
+
+/***/ }),
+
+/***/ "./src/app/home/posts/posts.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PostsComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__post_model__ = __webpack_require__("./src/app/home/posts/post.model.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__("./node_modules/@angular/forms/esm5/forms.js");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+var PostsComponent = /** @class */ (function () {
+    function PostsComponent() {
+        this.post = { imageUrl: 'pika', title: 'yoyo', text: 'hahah', footerText: 'hoho' };
+        this.onCreate = false;
+        this.posts = [new __WEBPACK_IMPORTED_MODULE_1__post_model__["a" /* Post */]('../../../assets/images/iit-brand.png', 'first post', 'here is the first news ', 'posted on 4/2/2018 by '), new __WEBPACK_IMPORTED_MODULE_1__post_model__["a" /* Post */]('../../../assets/images/iit-brand.png', 'second post', 'here is the second news ', 'posted on 4/2/2018 by ')];
+    }
+    PostsComponent.prototype.ngOnInit = function () {
+    };
+    PostsComponent.prototype.onCreatePost = function () {
+        this.onCreate = true;
+    };
+    PostsComponent.prototype.onSubmit = function () {
+        console.log("form has been submitted");
+        console.log(this.PostForm);
+        this.post.imageUrl = this.PostForm.value.imageUrl;
+        this.post.title = this.PostForm.value.title;
+        this.post.text = this.PostForm.value.text;
+        this.post.footerText = this.PostForm.value.footerText;
+        this.posts.push(this.post);
+        console.log("the data entered in the newly created post by you is as follows ");
+        console.log(this.post);
+        this.PostForm.reset();
+    };
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewChild"])('f'),
+        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_2__angular_forms__["b" /* NgForm */])
+    ], PostsComponent.prototype, "PostForm", void 0);
+    PostsComponent = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+            selector: 'app-posts',
+            template: __webpack_require__("./src/app/home/posts/posts.component.html"),
+            styles: [__webpack_require__("./src/app/home/posts/posts.component.css")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], PostsComponent);
+    return PostsComponent;
 }());
 
 
