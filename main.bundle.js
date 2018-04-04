@@ -460,7 +460,6 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 var PostsComponent = /** @class */ (function () {
     function PostsComponent() {
-        this.post = { imageUrl: 'pika', title: 'yoyo', text: 'hahah', footerText: 'hoho' };
         this.onCreate = false;
         this.posts = [new __WEBPACK_IMPORTED_MODULE_1__post_model__["a" /* Post */]('../../../assets/images/iit-brand.png', 'first post', 'here is the first news ', 'posted on 4/2/2018 by '), new __WEBPACK_IMPORTED_MODULE_1__post_model__["a" /* Post */]('../../../assets/images/iit-brand.png', 'second post', 'here is the second news ', 'posted on 4/2/2018 by ')];
     }
@@ -472,13 +471,11 @@ var PostsComponent = /** @class */ (function () {
     PostsComponent.prototype.onSubmit = function () {
         console.log("form has been submitted");
         console.log(this.PostForm);
-        this.post.imageUrl = this.PostForm.value.imageUrl;
-        this.post.title = this.PostForm.value.title;
-        this.post.text = this.PostForm.value.text;
-        this.post.footerText = this.PostForm.value.footerText;
+        this.post = new __WEBPACK_IMPORTED_MODULE_1__post_model__["a" /* Post */](this.PostForm.value.imageUrl, this.PostForm.value.title, this.PostForm.value.text, this.PostForm.value.footerText);
         this.posts.push(this.post);
         console.log("the data entered in the newly created post by you is as follows ");
         console.log(this.post);
+        console.log('post has been added succcessfully');
         this.PostForm.reset();
     };
     __decorate([
