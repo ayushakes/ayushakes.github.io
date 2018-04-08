@@ -331,7 +331,7 @@ module.exports = ""
 /***/ "./src/app/faculty/faculty.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "\r\n\r\n<button (click)=\"onClickEdit()\">go to edit section</button>\r\n\r\n\r\n<ul class=\"list-group\">\r\n    <li class=\"list-group-item\"  *ngFor=\"let teacher of teacherList\" >{{teacher.name}}-{{teacher.department}}</li>\r\n  </ul>\r\n"
+module.exports = "\r\n\r\n<button (click)=\"onClickEdit()\" class=\"btn btn-light\" style=\"border:1px solid black;\"> go to edit section</button>\r\n\r\n\r\n<ul class=\"list-group\">\r\n    <li class=\"list-group-item\"  *ngFor=\"let teacher of teacherList\" ><div class=\"card sm-4\">\r\n      <div  style=\"height:100px; width:100px;\" ><i style=\"height:100px; width:100px;\" class=\"fa fa-id-badge\"></i></div>\r\n      <div class=\"card-body\">\r\n        <h2 class=\"card-title\">{{teacher.name}}</h2>\r\n        <p class=\"card-text\">{{teacher.position}}</p>\r\n        <a href=\"#\" class=\"btn btn-light\" style=\"border:1px solid black;\">Read More &rarr;</a>\r\n      </div>\r\n      <div class=\"card-footer text-muted\">\r\n       {{teacher.department}}\r\n      \r\n      </div>\r\n    </div> </li>\r\n  </ul>\r\n"
 
 /***/ }),
 
@@ -471,7 +471,7 @@ module.exports = ""
 /***/ "./src/app/faculty/teacher-list-edit/teacher-list-edit.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div  style=\"text-align:center\">\n<h2 class=\"jumbotron\">teacher list edit section</h2>\n</div>\n<div class=\"row\">\n  <div class=\"col-md-7\">\n    <app-teacher></app-teacher>\n  </div>\n  <div class=\"col-md-5\">\n    <app-teacher-list></app-teacher-list>\n  </div>\n</div>"
+module.exports = "\n<button (click)=\"onClickBack()\" class=\"btn btn-light\" style=\"border:1px solid black;\">go back to faculty section</button>\n<div  style=\"text-align:center\">\n<h2 class=\"jumbotron\">teacher list edit section</h2>\n</div>\n<div class=\"row\">\n  <div class=\"col-md-7\">\n    <app-teacher></app-teacher>\n  </div>\n  <div class=\"col-md-5\">\n    <app-teacher-list></app-teacher-list>\n  </div>\n</div>"
 
 /***/ }),
 
@@ -482,6 +482,7 @@ module.exports = "<div  style=\"text-align:center\">\n<h2 class=\"jumbotron\">te
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TeacherListEditComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__shared_teacher_service__ = __webpack_require__("./src/app/faculty/shared/teacher.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__("./node_modules/@angular/router/esm5/router.js");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -493,11 +494,16 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 
 
+
 var TeacherListEditComponent = /** @class */ (function () {
-    function TeacherListEditComponent(teacherService) {
+    function TeacherListEditComponent(teacherService, router) {
         this.teacherService = teacherService;
+        this.router = router;
     }
     TeacherListEditComponent.prototype.ngOnInit = function () {
+    };
+    TeacherListEditComponent.prototype.onClickBack = function () {
+        this.router.navigate(['/faculty']);
     };
     TeacherListEditComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
@@ -505,7 +511,7 @@ var TeacherListEditComponent = /** @class */ (function () {
             template: __webpack_require__("./src/app/faculty/teacher-list-edit/teacher-list-edit.component.html"),
             styles: [__webpack_require__("./src/app/faculty/teacher-list-edit/teacher-list-edit.component.css")],
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__shared_teacher_service__["a" /* TeacherService */]])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__shared_teacher_service__["a" /* TeacherService */], __WEBPACK_IMPORTED_MODULE_2__angular_router__["a" /* Router */]])
     ], TeacherListEditComponent);
     return TeacherListEditComponent;
 }());
@@ -591,7 +597,7 @@ module.exports = ""
 /***/ "./src/app/faculty/teacher/teacher.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "\n<p *ngIf=\"inserted\" style=\"color:greenyellow;\">item inserted</p>\n<p *ngIf=\"updated\" style=\"color:greenyellow;\">item updated</p>\n<p *ngIf=\"deleted\" style=\"color:red;\">item deleted</p>\n<form (ngSubmit)=\"onSubmit(teacherForm)\" #teacherForm=\"ngForm\">\n<input type=\"hidden\" name=\"$key\" #$key=\"ngModel\" [(ngModel)]=\"teacherService.selectedTeacher.$key\">\n  <div class=\"form-group\">\n  <label>name</label>\n  <input type=\"text\" class=\"form-control\" name=\"name\" #name=\"ngModel\" required [(ngModel)]=\"teacherService.selectedTeacher.name\" placeholder=\"full name\">\n</div>\n\n<div class=\"form-group\">\n  <label>position</label>\n  <input type=\"text\" class=\"form-control\" name=\"position\" #name=\"ngModel\" required [(ngModel)]=\"teacherService.selectedTeacher.position\" placeholder=\"position\">\n</div>\n\n<div class=\"form-group\">\n  <label>department</label>\n  <div class=\"input-group\">\n    <div class=\"input-group-prepend\">\n        <span class=\"input-group-text\" id=\"basic-addon1\"><i class=\"fa fa-building\"></i></span>\n      \n    </div>\n    <input type=\"text\" class=\"form-control\" name=\"department\" #name=\"ngModel\" required [(ngModel)]=\"teacherService.selectedTeacher.department\" placeholder=\"department\">\n  </div>\n  \n</div>\n\n<div class=\"form-group\">\n  <label>image</label>\n  <input type=\"text\" class=\"form-control\" name=\"image\" #name=\"ngModel\" required [(ngModel)]=\"teacherService.selectedTeacher.image\" placeholder=\"imagePath\">\n</div>\n\n<div class=\"form-group\">\n<button type=\"submit\" class=\"btn btn-default\" [disabled]=\"!teacherForm.valid\"> <i class=\"fa fa-save\"></i>submit</button>\n<button type=\"button\" class=\"btn btn-default\" (click)=\"onDelete(teacherForm)\" *ngIf=\"teacherService.selectedTeacher.$key!=null\"><i class=\"fa fa-trash\"></i>delete</button>\n<button type=\"button\" class=\"btn btn-default\" (click)=\"resetForm()\"><i class=\"fa fa-redo\" ></i>reset</button>\n\n</div>\n</form>"
+module.exports = "\n<p *ngIf=\"inserted\" style=\"color:greenyellow;\">item inserted</p>\n<p *ngIf=\"updated\" style=\"color:greenyellow;\">item updated</p>\n<p *ngIf=\"deleted\" style=\"color:red;\">item deleted</p>\n<form (ngSubmit)=\"onSubmit(teacherForm)\" #teacherForm=\"ngForm\">\n<input type=\"hidden\" name=\"$key\" #$key=\"ngModel\" [(ngModel)]=\"teacherService.selectedTeacher.$key\">\n  <div class=\"form-group\">\n  <label>name</label>\n  <input type=\"text\" class=\"form-control\" name=\"name\" #name=\"ngModel\" required [(ngModel)]=\"teacherService.selectedTeacher.name\" placeholder=\"full name\">\n</div>\n\n<div class=\"form-group\">\n  <label>position</label>\n  <input type=\"text\" class=\"form-control\" name=\"position\" #name=\"ngModel\" required [(ngModel)]=\"teacherService.selectedTeacher.position\" placeholder=\"position\">\n</div>\n\n<div class=\"form-group\">\n  <label>department</label>\n  <div class=\"input-group\">\n    <div class=\"input-group-prepend\">\n        <span class=\"input-group-text\" id=\"basic-addon1\"><i class=\"fa fa-building\"></i></span>\n      \n    </div>\n    <input type=\"text\" class=\"form-control\" name=\"department\" #name=\"ngModel\" required [(ngModel)]=\"teacherService.selectedTeacher.department\" placeholder=\"department\">\n  </div>\n  \n</div>\n\n<div class=\"form-group\">\n  <label>image</label>\n  <input type=\"text\" class=\"form-control\" name=\"image\" #name=\"ngModel\" required [(ngModel)]=\"teacherService.selectedTeacher.image\" placeholder=\"imagePath\">\n</div>\n\n<div class=\"form-group\">\n<button type=\"submit\" class=\"btn btn-light\" style=\"border:1px solid black;\" [disabled]=\"!teacherForm.valid\"> <i class=\"fa fa-save\"></i>submit</button>\n<button type=\"button\" class=\"btn btn-light\" style=\"border:1px solid black;\" (click)=\"onDelete(teacherForm)\" *ngIf=\"teacherService.selectedTeacher.$key!=null\"><i class=\"fa fa-trash\"></i>delete</button>\n<button type=\"button\" class=\"btn btn-light\" style=\"border:1px solid black;\" (click)=\"resetForm()\"><i class=\"fa fa-redo\" ></i>reset</button>\n\n</div>\n</form>"
 
 /***/ }),
 
