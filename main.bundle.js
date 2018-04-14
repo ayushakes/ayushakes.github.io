@@ -701,7 +701,7 @@ module.exports = ".BigHeading{\r\n\r\n    font-size:2.75Vmax;\r\n}"
 /***/ "./src/app/home/home.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<link rel=\"stylesheet\" type=\"text/css\" href=\"../assets/css/set1.css\" />\n<div class=\"jumbotron jumbotron-fluid \">\n  <div class=\"container\">\n   <div class=\"row\"> <div class=\"col\"> <h1 class=\"display-4 BigHeading\">Department of Design</h1> \n    <p class=\"lead\">Where you design your dreams</p> <p>\n      \n    </p> \n    \n   <app-posts></app-posts>\n\n\n\n    </div> <div class=\"col\"> <figure class=\"effect-lily\">\n      <img src=\"../assets/images/2.jpg\" alt=\"image not Loaded\"/>\n      <figcaption>\n        <div>\n          <h2 style=\"font-size:3vw ; text-shadow: 0px 0 lightcyan, 0 1px lightcyan, 3px 0 lightcyan, 0 -1px lightcyan;\">WE <span style=\"font-size:3vw\">Rock!!!</span></h2>\n          <p style=\"color:lightcyan; text-shadow: 0px 0 black, 0 1px black, 3px 0 black, 0 -1px black; font-size:2vw;\">IIT-G : Where we design our dreams</p>\n        </div>\n        \n      </figcaption>\t\t\t\n    </figure>\n  </div></div>"
+module.exports = "<link rel=\"stylesheet\" type=\"text/css\" href=\"../assets/css/set1.css\" />\n<div class=\"jumbotron jumbotron-fluid \">\n  <div class=\"container-fluid\">\n   <div class=\"row\"> <div class=\"col\"> <h1 class=\"display-4 BigHeading\">Department of Design</h1> \n    <p class=\"lead\">Where you design your dreams</p> <p>\n      \n    </p> \n    \n   <app-posts></app-posts>\n\n\n\n    </div> <div class=\"col\"> <figure class=\"effect-lily\">\n      <img src=\"../assets/images/2.jpg\" alt=\"image not Loaded\"/>\n      <figcaption>\n        <div>\n          <h2 style=\"font-size:3vw ; text-shadow: 0px 0 lightcyan, 0 1px lightcyan, 3px 0 lightcyan, 0 -1px lightcyan;\">WE <span style=\"font-size:3vw\">Rock!!!</span></h2>\n          <p style=\"color:lightcyan; text-shadow: 0px 0 black, 0 1px black, 3px 0 black, 0 -1px black; font-size:2vw;\">IIT-G : Where we design our dreams</p>\n        </div>\n        \n      </figcaption>\t\t\t\n    </figure>\n  </div></div>"
 
 /***/ }),
 
@@ -1489,6 +1489,7 @@ module.exports = "<div class=\"container text-center\">\n   \n  <h1  style=\"pos
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__shared_oproject_service__ = __webpack_require__("./src/app/research/shared/oproject.service.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__("./node_modules/@angular/router/esm5/router.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__shared_cproject_service__ = __webpack_require__("./src/app/research/shared/cproject.service.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1501,10 +1502,12 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
+
 var ResearchComponent = /** @class */ (function () {
-    function ResearchComponent(oprojectService, router) {
+    function ResearchComponent(oprojectService, router, cprojectService) {
         this.oprojectService = oprojectService;
         this.router = router;
+        this.cprojectService = cprojectService;
     }
     ResearchComponent.prototype.ngOnInit = function () {
         var _this = this;
@@ -1515,6 +1518,15 @@ var ResearchComponent = /** @class */ (function () {
                 var y = element.payload.toJSON();
                 y["$key"] = element.key;
                 _this.oprojectList.push(y);
+            });
+        });
+        var y = this.cprojectService.getData();
+        y.snapshotChanges().subscribe(function (item) {
+            _this.cprojectList = [];
+            item.forEach(function (element) {
+                var y = element.payload.toJSON();
+                y["$key"] = element.key;
+                _this.cprojectList.push(y);
             });
         });
     };
@@ -1530,7 +1542,7 @@ var ResearchComponent = /** @class */ (function () {
             template: __webpack_require__("./src/app/research/research.component.html"),
             styles: [__webpack_require__("./src/app/research/research.component.css")]
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__shared_oproject_service__["a" /* OprojectService */], __WEBPACK_IMPORTED_MODULE_2__angular_router__["a" /* Router */]])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__shared_oproject_service__["a" /* OprojectService */], __WEBPACK_IMPORTED_MODULE_2__angular_router__["a" /* Router */], __WEBPACK_IMPORTED_MODULE_3__shared_cproject_service__["a" /* CprojectService */]])
     ], ResearchComponent);
     return ResearchComponent;
 }());
