@@ -34,6 +34,8 @@ webpackEmptyAsyncContext.id = "./src/$$_lazy_route_resource lazy recursive";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__home_posts_new_post_new_post_component__ = __webpack_require__("./src/app/home/posts/new-post/new-post.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__home_posts_new_post_can_deactivate_guard_service__ = __webpack_require__("./src/app/home/posts/new-post/can-deactivate-guard.service.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__faculty_teacher_list_edit_teacher_list_edit_component__ = __webpack_require__("./src/app/faculty/teacher-list-edit/teacher-list-edit.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__research_oproject_list_edit_oproject_list_edit_component__ = __webpack_require__("./src/app/research/oproject-list-edit/oproject-list-edit.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__research_cproject_list_edit_cproject_list_edit_component__ = __webpack_require__("./src/app/research/cproject-list-edit/cproject-list-edit.component.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -52,8 +54,10 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
+
+
 var appRoutes = [{ path: '', component: __WEBPACK_IMPORTED_MODULE_2__home_home_component__["a" /* HomeComponent */] },
-    { path: 'research', component: __WEBPACK_IMPORTED_MODULE_8__research_research_component__["a" /* ResearchComponent */] },
+    { path: 'research', component: __WEBPACK_IMPORTED_MODULE_8__research_research_component__["a" /* ResearchComponent */] }, { path: 'oproject-list-edit', component: __WEBPACK_IMPORTED_MODULE_12__research_oproject_list_edit_oproject_list_edit_component__["a" /* OprojectListEditComponent */] }, { path: 'cproject-list-edit', component: __WEBPACK_IMPORTED_MODULE_13__research_cproject_list_edit_cproject_list_edit_component__["a" /* CprojectListEditComponent */] },
     { path: 'home', component: __WEBPACK_IMPORTED_MODULE_2__home_home_component__["a" /* HomeComponent */] },
     { path: 'home/newPost', component: __WEBPACK_IMPORTED_MODULE_9__home_posts_new_post_new_post_component__["a" /* NewPostComponent */], canDeactivate: [__WEBPACK_IMPORTED_MODULE_10__home_posts_new_post_can_deactivate_guard_service__["a" /* CanDeactivateGuard */]] },
     { path: 'faculty', component: __WEBPACK_IMPORTED_MODULE_7__faculty_faculty_component__["a" /* FacultyComponent */] }, { path: 'teacher-edit', component: __WEBPACK_IMPORTED_MODULE_11__faculty_teacher_list_edit_teacher_list_edit_component__["a" /* TeacherListEditComponent */] },
@@ -177,12 +181,28 @@ var AppComponent = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__faculty_teacher_list_edit_teacher_list_edit_component__ = __webpack_require__("./src/app/faculty/teacher-list-edit/teacher-list-edit.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__environments_environment__ = __webpack_require__("./src/environments/environment.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__faculty_shared_teacher_service__ = __webpack_require__("./src/app/faculty/shared/teacher.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__research_oproject_oproject_component__ = __webpack_require__("./src/app/research/oproject/oproject.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_27__research_cproject_cproject_component__ = __webpack_require__("./src/app/research/cproject/cproject.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_28__research_oproject_list_oproject_list_component__ = __webpack_require__("./src/app/research/oproject-list/oproject-list.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_29__research_cproject_list_cproject_list_component__ = __webpack_require__("./src/app/research/cproject-list/cproject-list.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_30__research_oproject_list_edit_oproject_list_edit_component__ = __webpack_require__("./src/app/research/oproject-list-edit/oproject-list-edit.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_31__research_cproject_list_edit_cproject_list_edit_component__ = __webpack_require__("./src/app/research/cproject-list-edit/cproject-list-edit.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_32__research_shared_oproject_service__ = __webpack_require__("./src/app/research/shared/oproject.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_33__research_shared_cproject_service__ = __webpack_require__("./src/app/research/shared/cproject.service.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
+
+
+
+
+
+
+
 
 
 
@@ -216,14 +236,14 @@ var AppModule = /** @class */ (function () {
         Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["I" /* NgModule */])({
             declarations: [
                 __WEBPACK_IMPORTED_MODULE_4__app_component__["a" /* AppComponent */],
-                __WEBPACK_IMPORTED_MODULE_5__people_people_component__["a" /* PeopleComponent */], __WEBPACK_IMPORTED_MODULE_6__home_home_component__["a" /* HomeComponent */], __WEBPACK_IMPORTED_MODULE_7__work_work_component__["a" /* WorkComponent */], __WEBPACK_IMPORTED_MODULE_8__contact_contact_component__["a" /* ContactComponent */], __WEBPACK_IMPORTED_MODULE_9__students_students_component__["a" /* StudentsComponent */], __WEBPACK_IMPORTED_MODULE_10__faculty_faculty_component__["a" /* FacultyComponent */], __WEBPACK_IMPORTED_MODULE_11__research_research_component__["a" /* ResearchComponent */], __WEBPACK_IMPORTED_MODULE_12__home_posts_posts_component__["a" /* PostsComponent */], __WEBPACK_IMPORTED_MODULE_13__home_posts_post_post_component__["a" /* PostComponent */], __WEBPACK_IMPORTED_MODULE_14__back_directive__["a" /* BackDirective */], __WEBPACK_IMPORTED_MODULE_15__home_posts_new_post_new_post_component__["a" /* NewPostComponent */], __WEBPACK_IMPORTED_MODULE_21__faculty_teacher_teacher_component__["a" /* TeacherComponent */], __WEBPACK_IMPORTED_MODULE_22__faculty_teacher_list_teacher_list_component__["a" /* TeacherListComponent */], __WEBPACK_IMPORTED_MODULE_23__faculty_teacher_list_edit_teacher_list_edit_component__["a" /* TeacherListEditComponent */]
+                __WEBPACK_IMPORTED_MODULE_5__people_people_component__["a" /* PeopleComponent */], __WEBPACK_IMPORTED_MODULE_6__home_home_component__["a" /* HomeComponent */], __WEBPACK_IMPORTED_MODULE_7__work_work_component__["a" /* WorkComponent */], __WEBPACK_IMPORTED_MODULE_8__contact_contact_component__["a" /* ContactComponent */], __WEBPACK_IMPORTED_MODULE_9__students_students_component__["a" /* StudentsComponent */], __WEBPACK_IMPORTED_MODULE_10__faculty_faculty_component__["a" /* FacultyComponent */], __WEBPACK_IMPORTED_MODULE_11__research_research_component__["a" /* ResearchComponent */], __WEBPACK_IMPORTED_MODULE_12__home_posts_posts_component__["a" /* PostsComponent */], __WEBPACK_IMPORTED_MODULE_13__home_posts_post_post_component__["a" /* PostComponent */], __WEBPACK_IMPORTED_MODULE_14__back_directive__["a" /* BackDirective */], __WEBPACK_IMPORTED_MODULE_15__home_posts_new_post_new_post_component__["a" /* NewPostComponent */], __WEBPACK_IMPORTED_MODULE_21__faculty_teacher_teacher_component__["a" /* TeacherComponent */], __WEBPACK_IMPORTED_MODULE_22__faculty_teacher_list_teacher_list_component__["a" /* TeacherListComponent */], __WEBPACK_IMPORTED_MODULE_23__faculty_teacher_list_edit_teacher_list_edit_component__["a" /* TeacherListEditComponent */], __WEBPACK_IMPORTED_MODULE_26__research_oproject_oproject_component__["a" /* OprojectComponent */], __WEBPACK_IMPORTED_MODULE_27__research_cproject_cproject_component__["a" /* CprojectComponent */], __WEBPACK_IMPORTED_MODULE_28__research_oproject_list_oproject_list_component__["a" /* OprojectListComponent */], __WEBPACK_IMPORTED_MODULE_29__research_cproject_list_cproject_list_component__["a" /* CprojectListComponent */], __WEBPACK_IMPORTED_MODULE_30__research_oproject_list_edit_oproject_list_edit_component__["a" /* OprojectListEditComponent */], __WEBPACK_IMPORTED_MODULE_31__research_cproject_list_edit_cproject_list_edit_component__["a" /* CprojectListEditComponent */]
             ],
             imports: [
                 __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
                 __WEBPACK_IMPORTED_MODULE_2__angular_common_http__["b" /* HttpClientModule */], __WEBPACK_IMPORTED_MODULE_3__angular_forms__["a" /* FormsModule */], __WEBPACK_IMPORTED_MODULE_17__app_routing_module__["a" /* AppRoutingModule */], __WEBPACK_IMPORTED_MODULE_19_angularfire2__["a" /* AngularFireModule */].initializeApp(__WEBPACK_IMPORTED_MODULE_24__environments_environment__["a" /* environment */].firebaseConfig),
                 __WEBPACK_IMPORTED_MODULE_20_angularfire2_database__["b" /* AngularFireDatabaseModule */]
             ],
-            providers: [__WEBPACK_IMPORTED_MODULE_16__shared_post_service__["a" /* PostService */], __WEBPACK_IMPORTED_MODULE_18__home_posts_new_post_can_deactivate_guard_service__["a" /* CanDeactivateGuard */], __WEBPACK_IMPORTED_MODULE_25__faculty_shared_teacher_service__["a" /* TeacherService */]],
+            providers: [__WEBPACK_IMPORTED_MODULE_16__shared_post_service__["a" /* PostService */], __WEBPACK_IMPORTED_MODULE_18__home_posts_new_post_can_deactivate_guard_service__["a" /* CanDeactivateGuard */], __WEBPACK_IMPORTED_MODULE_25__faculty_shared_teacher_service__["a" /* TeacherService */], __WEBPACK_IMPORTED_MODULE_32__research_shared_oproject_service__["a" /* OprojectService */], __WEBPACK_IMPORTED_MODULE_33__research_shared_cproject_service__["a" /* CprojectService */]],
             bootstrap: [__WEBPACK_IMPORTED_MODULE_4__app_component__["a" /* AppComponent */]]
         })
     ], AppModule);
@@ -471,7 +491,7 @@ module.exports = ""
 /***/ "./src/app/faculty/teacher-list-edit/teacher-list-edit.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "\n<button (click)=\"onClickBack()\" class=\"btn btn-light\" style=\"border:1px solid black;\">go back to faculty section</button>\n<div  style=\"text-align:center\">\n<h2 class=\"jumbotron\">teacher list edit section</h2>\n</div>\n<div class=\"row\">\n  <div class=\"col-md-7\">\n    <app-teacher></app-teacher>\n  </div>\n  <div class=\"col-md-5\">\n    <app-teacher-list></app-teacher-list>\n  </div>\n</div>"
+module.exports = "\n<button (click)=\"onClickBack()\" class=\"btn btn-light\" style=\"border:1px solid black;\">go back to faculty section</button>\n<div  style=\"text-align:center\">\n<h2 class=\"jumbotron\">teacher list edit section</h2>\n</div>\n<div class=\"row\">\n  <div class=\"col-md-7\">\n    <app-teacher></app-teacher>\n  </div>\n  <div class=\"col-md-5\">\n    <app-teacher-list></app-teacher-list>\n  </div>\n</div> "
 
 /***/ }),
 
@@ -1027,26 +1047,28 @@ var PeopleComponent = /** @class */ (function () {
 
 /***/ }),
 
-/***/ "./src/app/research/research.component.css":
+/***/ "./src/app/research/cproject-list-edit/cproject-list-edit.component.css":
 /***/ (function(module, exports) {
 
-module.exports = ".card-body{\r\n    background-color:lightgray;\r\n}"
+module.exports = ""
 
 /***/ }),
 
-/***/ "./src/app/research/research.component.html":
+/***/ "./src/app/research/cproject-list-edit/cproject-list-edit.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container text-center\">\n   \n  <h1  style=\"position:relative; z-index:1; margin-bottom:-10px; color:darksalmon; font-size:3em;  \">we love our work  </h1>\n  <div id=\"carouselExampleIndicators\" class=\"carousel slide\" data-ride=\"carousel\">\n    <ol class=\"carousel-indicators\">\n      <li data-target=\"#carouselExampleIndicators\" data-slide-to=\"0\" class=\"active\"></li>\n      <li data-target=\"#carouselExampleIndicators\" data-slide-to=\"1\"></li>\n      <li data-target=\"#carouselExampleIndicators\" data-slide-to=\"2\"></li>\n    </ol>\n    <div class=\"carousel-inner\">\n      <div class=\"carousel-item active\">\n        <img class=\"d-block w-100\" src=\"../assets/images/typography.jpg\" alt=\"First slide\">\n      </div>\n      <div class=\"carousel-item\">\n        <img class=\"d-block w-100\" src=\"../assets/images/diwali.jpg\" alt=\"Second slide\">\n      </div>\n      <div class=\"carousel-item\">\n        <img class=\"d-block w-100\" src=\"../assets/images/exhibition1.jpg\" alt=\"Third slide\">\n      </div>\n    </div>\n    <a class=\"carousel-control-prev\" href=\"#carouselExampleIndicators\" role=\"button\" data-slide=\"prev\">\n      <span class=\"carousel-control-prev-icon\" aria-hidden=\"true\"></span>\n      <span class=\"sr-only\">Previous</span>\n    </a>\n    <a class=\"carousel-control-next\" href=\"#carouselExampleIndicators\" role=\"button\" data-slide=\"next\">\n      <span class=\"carousel-control-next-icon\" aria-hidden=\"true\"></span>\n      <span class=\"sr-only\">Next</span>\n    </a>\n  </div>\n  <div class=\"row justify-content-center\">\n            <p class=\"lead\">The research program in Design at DoD –IITG aims at training researchers in Design not only to consolidate what is known in design but also to build a design knowledge base through original inquiry, experimentation and investigation.\n                DoD is open to new and emerging areas in Design that fall in the triadic cusp of Science, Engineering and the Arts.Research and sponsored projects are the integral part of the department where faculties conduct research experimentation and projects in several areas such as product design, industrial design, transportation design, sustainability, ergonomics, usability engineering, interaction design, graphic design, film and video and many more.\n                \n                Possibilities to pursue research in collaboration with other Engineering and Social Sciences departments in IITG also exist. Interested scholars are invited to get in touch through email with the Faculty at DoD-IITG to explore possibilities.</p>\n            <div class=\"container text-left\">\n              <div class=\"row no-gutters\">\n                <div class=\"col-sm-4\">\n                  <div class=\"card \">\n                    <img  style=\"height:300px; width:250px;\" src=\"../assets/images/research-icon.png\" alt=\"\" class=\"card-img-top\">\n                    <div class=\"card-block\">\n                      <h3 class=\"card-title text-center\"> <a class=\"btn btn-outline-secondary\" data-toggle=\"collapse\" href=\"#collapseExample\" role=\"button\" aria-expanded=\"false\" aria-controls=\"collapseExample\">\n                          Ongoing Research Projects\n                        </a></h3>\n                        <div class=\"collapse\" id=\"collapseExample\">\n                            <div class=\"card card-body\">\n                              \n\n\t\nTitle: Design Intervention in Street Food Vending in Assam with special emphasis to packaging, display, cart design and space design for improvement of livelihood and hygiene\nPrinciple Investigator: Pratul Kalita, Assistant Professor <br>\nSponsoring Agency: Design Innovation Centre (DIC), MHRD<br>\nTitle: Toolkit for primary school teachers to deliver Education for Sustainability with an activity based teaching approach<br>\nPrinciple Investigator: Sharmistha Banerjee, Assitant Professor<br>\nSponsoring Agency: IIT Guwahati Start-up Research Grant.<br>\n\nTitle: Design, Production and Branding of Bamboo craft in Meghalay <br>\nPrinciple Investigator: Avinash Shinde, Assitant Professor<br>\nCo-Investigator: Ravi MOkashi Punekar, Professor<br>\nSponsoring Agency: Directorate of commerce and Industries Shillong, Government of Meghalaya<br>\n\nTitle: Design Intervention to ameliorate exposure to vibration during use of hand-held vibrating tools in unorganized sector (Stone-polishing work) <br>\nPrinciple Investigator: Sougata Karmakar, Assitant Professor<br>\nSponsoring Agency: DIC, MHRD<br>\n\nTitle: Ecosystem-based livelihood promotion in Mizoram <br>\nPrinciple Investigator: Avinash Shinde, Assitant Professor<br>\nSponsoring Agency: UNITED NATIONS INDUSTRIAL DEVELOPMENT ORGANIZATION<br>\n\nTitle: Learning Network on Sustainability of Product Services and Systems for Distributed Economies (LeNSin) for DE <br>\nPrinciple Investigator: Ravi Mokashi Punekar, Professor<br>\nCo-Investigator: Pankaj Upadhyay & Sharmistha Banerjee, Assistant Professor\nSponsoring Agency: Education, Audiovisual and Culture Executive Agency (EACEA)<br>\n<br>\nTitle: Improved packaging for long distance transportation of high value horticultural crops<br>\nPrinciple Investigator: Nanki Nath, Assitant Professor<br>\nSponsoring Agency: DIC, MHRD<br>\n<br>\nTitle: Design Intervention in Street Food Vending in Assam with special emphasis to packaging, display, cart design and space design for improvement of livelihood and hygiene <br>\nPrinciple Investigator: Pratul Kalita, Assitant Professor<br>\nSponsoring Agency: DIC, MHRD<br>\n\nTitle: A Documentary film & Documentation of craft practices on the banks of Brahmaputra in Assam<br>\nPrinciple Investigator: Charu Monga, Assitant Professor<br>\nSponsoring Agency: IIT Guwahati startup grant<br>\n\nTitle: Design and Development of the Self Assistance Learning Robot for students as DIY kits for North East India<br>\nPrinciple Investigator: Charu Monga, Assitant Professor<br>\nSponsoring Agency: DIC, MHRD<br>\n\nTitle: Design intervention using Animation techniques in the field of Technology and Entertainment<br>\nPrinciple Investigator: Charu Monga, Assitant Professor<br>\nSponsoring Agency: Microsoft Research<br>\n<br>\nTitle: Kanimuni: Game design for school education<br>\nPrinciple Investigator: Prasad Bokil, Assitant Professor<br>\nSponsoring Agency: DIC, MHRD<br>\n\nTitle: Design and Development of Interactive Application for Progressive Assessment of Patients with Cleft Lip and Palate (CLP). <br>\nPrinciple Investigator: Abhishek Srivastava, Assitant Professor<br>\nSponsoring Agency: DIC, MHRD<br>\n<br>\nTitle: Design and evaluation of effective visual interactive voice response system <br>\nPrinciple Investigator: Abhishek Srivastava, Assitant Professor<br>\nSponsoring Agency: IIT Guwahati startup grant<br>\n\nTitle: Electric Vehicle for Urban Use<br>\nPrinciple Investigator: Abhishek Singh, Assitant Professor<br>\nSponsoring Agency: DIC, MHRD<br>\n\nTitle: Generation of invention reports on future of mobile communication<br>\nPrinciple Investigator: Keyur Sorathia, Assitant Professor<br>\nSponsoring Agency: Nokia Global Patent Division<br>\n\nTitle: Creating digital learning environment for design education in India <br>\nPrinciple Investigator: Ravi Mokashi Punekar, Professor<br>\nCo-Investigator: Keyur Sorathia and Avinash Shinde, Assistant Professor<br>\nSponsoring Agency: Ministry of Human Resource and Development (MHRD), Government of India<br>\n                            </div>\n                          </div>\n                      <p class=\"card-text\"></p>\n                    </div>\n                  </div>\n                </div>\n                <div class=\"col-sm-4\">\n                  <div class=\"card\">\n                    <img style=\"height:300px; width:250px;\" src=\"../assets/images/research-icon.png\" alt=\"\" class=\"card-img-top\">\n                    <div class=\"card-block\">\n                      <h3 class=\"card-title text-center\"><a class=\"btn btn-outline-secondary\" data-toggle=\"collapse\" href=\"#collapseExample2\" role=\"button\" aria-expanded=\"false\" aria-controls=\"collapseExample2\">\n                          Completed Research Projects\n                        </a></h3><div class=\"collapse\" id=\"collapseExample2\">\n                            <div class=\"card card-body\">\n                                Title: Standardization of Virtual Keyboards in Indic Languages\n                                Principle Investigator: Pradeep Yammiyawar, Professor<br>\n                                Sponsoring Agency: Ministry of Communications & Information Technology<br>\n                                \n                                Title: Design of Gear for Avalanche Survival\n                                Principle Investigator: Ravi Mokashi Punekar, Professor<br>\n                                Sponsoring Agency: ARTRAC, Indian Army<br>\n                                \n                                Title: Visual and Tactile Information Processing in Product Selection Process\n                                Principle Investigator: Sougata Karmakar, Assistant Professor<br>\n                                Sponsoring Agency: Dept. of Biotechnology, Govt. of India<br>\n                                \n                                Title: Research investigations on wearable computing interventions in healthcare and entertainment\n                                Principle Investigator: Keyur Sorathia, Assistant Professor<br>\n                                Sponsoring Agency: Nokia Research Center India<br>\n                                \n                                Title: Accessibility and Mobile User Interfaces\n                                Principle Investigator: Keyur Sorathia, Assistant Professor<br>\n                                Co-Investigator: Prasad Bokil, Assistant Professor <br>\n                                Sponsoring Agency: Samsung Research Institute Bangalore (SRIB)<br>\n                                \n                                Title: Revised DPR of Common Sliver Plant \n                                Principle Investigator: Amarendra Kumar Das, Professor<br> \n                                Sponsoring Agency: KVIC<br>\n                                \n                                Title: Revised DPR of Khadi Haat \n                                Principle Investigator: Amarendra Kumar Das, Professor<br> \n                                Sponsoring Agency: KVIC<br>\n                                \n                                Title: Flag and Badge Design \n                                Principle Investigator: D Udaya Kumar, Assistant Professor <br>\n                                Sponsoring Agency: Assam Rajiv Gandhi University of Cooperative Management<br>\n                                \n                                Title: Presentations & Infographics \n                                Principle Investigator: D Udaya Kumar, Assistant Professor <br>\n                                Sponsoring Agency: Northeast Consumer Awards<br>\n                                \n                                Title: Logo Design for IIIT Sricity \n                                Principle Investigator: D Udaya Kumar, Assistant Professor <br>\n                                Sponsoring Agency: IIIT Sricity<br>\n                                \n                                Title: Designing Bamboo Products \n                                Principle Investigator: Avinash Shinde, Assistant Professor <br>\n                                Sponsoring Agency: UNIDO\n                                <br>\n                                Title: Development of an online design ideation tool \n                                Principle Investigator: Pratul Kalita, Assistant Professor <br>\n                                Sponsoring Agency: All India Council for Technical Education<br>\n                                \n                                Title: Short term training program on Automotive Ergonomics and Design \n                                Principle Investigator: Sougata Karmakar, Assistant Professor <br>\n                                Sponsoring Agency: TATA Elxsi Ltd<br>\n                                \n                                Title:Impact Evaluation Study on Irrigation and Roads & Bridges Projects supported under RIDF in Assam \n                                Principle Investigator: Amarendra Kumar Das, Professor <br>\n                                Sponsoring Agency: National Bank for Agriculture and Rural Development(NABARD)<br>\n                                \n                                Title:Redesigning the Bed‐Planter agro‐machine according to the principles of the Human Centered Design (HCD) approach in the Cereal Systems Initiative for South Asia – Mechanization and Irrigation (CSISA‐MI) in Bangladesh \n                                Principle Investigator: Sharmistha Banerjee, Assistant Professor <br>\n                                Sponsoring Agency: International Development Enterprise Bangladesh<br>\n                                \n                                Title:Design of Fruit and Vegetable Cart for Guwahati Municipal Corporation\n                                Principle Investigator: D Udaya Kumar, Assistant Professor <br>\n                                Co-Investigators: Supradip Das & Pankaj Upadhyay, Assistant Professors Sponsoring Agency: Guwahati Municipal Corporation\n                                <br>\n                                Title:Research on Dhobi and Dhobighats - Phase I \n                                Principle Investigator: Keyur Sorathia, Assistant Professor <br>\n                                Sponsoring Agency: P&G, Brussels<br>\n                                \n                                Title:Impact Evaluation Study on Irrigation andRoads & Bridges Projects supported under RIDF in Assam\n                                Principle Investigator: Amarendra Kumar Das, Professor <br>\n                                Co-Investigators: Pratul Kalita, Assistant Professor <br>\n                                Sponsoring Agency: National Bank for Agriculture and Rural Development(NABARD)<br>\n                                \n                                Title:Research in Smartphone Accessibility Domain\n                                Principle Investigator: Keyur Sorathia, Assistant Professor <br>\n                                Sponsoring Agency: Samsung Research Institute Bangalore (SRIB)<br>\n                                \n                                Title:Workshop on Development of bamboo products in Assam\n                                Principle Investigator: Ravi Mokashi Punekar, Professor <br>\n                                Co-Investigators: Avinash Shinde, Assistant Professor <br>\n                                Sponsoring Agency: State Institute of Rural Development, Guwahati<br>\n                                \n                                Title: Design of a logo for rural networking buses, Assam State Transportation Corporation (ASTC) \n                                Principle Investigator: D.Udaya Kumar, Assistant Pr<br>ofessor<br>\n                                Sponsoring Agency: Government of Assam<br>\n                                \n                                Title: Logo design for IIT Hyderabad, Hyderabad\n                                Principle Investigator: D.Udaya Kumar, Assistant Professor<br>\n                                Sponsoring Agency: Indian Institute of Technology Hyderabad<br>\n                                \n                                Title: Design of Logo for Assam Rajiv Gandhi University of Cooperative Management\n                                Principle Investigator: D.Udaya Kumar, Assistant Professor<br>\n                                Sponsoring Agency: Assam Rajiv Gandhi University of Cooperative Management<br>\n                                \n                                Title: Logo Design for Integrated Guwahati Flood Management Project\n                                Principle Investigator: D.Udaya Kumar, Assistant Professor<br>\n                                Sponsoring Agency: District Disaster Management Authority<br>\n                                \n                                Title: Logo Design for District Disaster Management Authority\n                                Principle Investigator: D.Udaya Kumar, Assistant Professor<br>\n                                Sponsoring Agency: District Disaster Management Authority<br>\n                                \n                                Title: Design and Evaluation of Play Ground for Primary School Children in Virtual Environment\n                                Principle Investigator: Sougata Karmakar, Assistant Professor <br>\n                                Sponsoring Agency: Indian Institute of Technology Guwahati<br>\n                                \n                                Title: Design and development of an information system to educate pregnant women and family members about prenatal and postnatal care in Assam, India\n                                Principle Investigator: Keyur Sorathia, Assistant Professor<br>\n                                Sponsoring Agency: Indian Institute of Technology Guwahati<br>\n                                \n                                Title: Study of social acceptance of gesture based interfaces for low literate, low socio-economic rural users\n                                Principle Investigator: Keyur Sorathia, Assistant Professor<br>\n                                Sponsoring Agency: IBM Research India<br>\n                                \n                                Title: Creative Design, Prototyping & Experiential Simulation Lab In  Human Computer Interaction<br>\n                                Principle Investigator: Pradeep Yammiyavar<br>\n                                Sponsoring Agency: Ministry of Human Resource and Development (MHRD), GOI<br>\n                                \n                                Title: Lecture notes preparatory to a text book: Digital Human Modeling and Simulation in Product and workstation Design\n                                Principle Investigator: Sougata Karmakar, Assistant Professor <br>\n                                Sponsoring Agency: QIP CD Cell, Indian Institute of Technology Guwahati<br>\n                                \n                                Title: Introduction to ergonomics special reference to industrial design’, course ID 107103004- 40 video lecture series\n                                Principle Investigator: Debkumar Chakrabarti, Professor <br>\n                                Sponsoring Agency: Ministry of Human Resource and Development (MHRD), Government of India<br>\n                                \n                                Title: Fundamental of Design (Web Course<br>)\n                                Principle Investigator: Utpal Barua, Associate Professor <br>\n                                Sponsoring Agency: NPTEL<br>\n                                \n                                Title: Logo Design Book <br>\n                                Principle Investigator: D.Udaya Kumar, Assistant Professor<br>\n                                Sponsoring Agency: Assam Rajiv Gandhi University of Cooperative Management<br>\n                                \n                                Title: Wireframe design of False Alarm application design<br>\n                                Principle Investigator: Keyur Sorathia, Assistant Professor<br>\n                                Sponsoring Agency: PMAM Pvt. Ltd.<br>\n                            </div>\n                          </div>\n                      <p class=\"card-text\"></p>\n                    </div>\n                  </div>\n                </div>\n                <div class=\"col-sm-4\">\n                  <div class=\"card\">\n                    <img style=\"height:300px; width:250px;\" src=\"../assets/images/research-icon.png\" alt=\"\" class=\"card-img-top\">\n                    <div class=\"card-block\">\n                      <h3 class=\"card-title text-center\"><a class=\"btn btn-outline-secondary\" data-toggle=\"collapse\" href=\"#collapseExample3\" role=\"button\" aria-expanded=\"false\" aria-controls=\"collapseExample3\">\n                        Publications \n                      </a></h3><div class=\"collapse\" id=\"collapseExample3\">\n                          <div class=\"card card-body\">hello</div>\n                      <p class=\"card-text\"></p>\n                    </div>\n                  </div>\n                </div>\n              </div>\n            </div>\n       </div>\n      </div>\n      <div class=\"jumbotron jumbotron-fluid\">\n        <div class=\"container\">\n          <h1 class=\"display-4\">Always looking forward to make world better designed</h1>\n          <p class=\"lead\">we worship our commitments </p>\n        </div>\n      </div>\n\n</div>"
+module.exports = "\n<button (click)=\"onClickBack()\" class=\"btn btn-light\" style=\"border:1px solid black;\">go back to research </button>\n<div  style=\"text-align:center\">\n<h2 class=\"jumbotron\">completed projects list edit section</h2>\n</div>\n<div class=\"row\">\n  <div class=\"col-md-7\">\n    <app-cproject></app-cproject>\n  </div>\n  <div class=\"col-md-5\">\n    <app-cproject-list></app-cproject-list>\n  </div>\n</div> "
 
 /***/ }),
 
-/***/ "./src/app/research/research.component.ts":
+/***/ "./src/app/research/cproject-list-edit/cproject-list-edit.component.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ResearchComponent; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CprojectListEditComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__("./node_modules/@angular/router/esm5/router.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__shared_cproject_service__ = __webpack_require__("./src/app/research/shared/cproject.service.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1057,10 +1079,450 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
+
+
+var CprojectListEditComponent = /** @class */ (function () {
+    function CprojectListEditComponent(cprojectService, router) {
+        this.cprojectService = cprojectService;
+        this.router = router;
+    }
+    CprojectListEditComponent.prototype.ngOnInit = function () {
+    };
+    CprojectListEditComponent.prototype.onClickBack = function () {
+        this.router.navigate(['/research']);
+    };
+    CprojectListEditComponent = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+            selector: 'app-cproject-list-edit',
+            template: __webpack_require__("./src/app/research/cproject-list-edit/cproject-list-edit.component.html"),
+            styles: [__webpack_require__("./src/app/research/cproject-list-edit/cproject-list-edit.component.css")]
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2__shared_cproject_service__["a" /* CprojectService */], __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* Router */]])
+    ], CprojectListEditComponent);
+    return CprojectListEditComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/research/cproject-list/cproject-list.component.css":
+/***/ (function(module, exports) {
+
+module.exports = "button,ul.list-group.hover li:hover{\r\n    cursor:pointer;\r\n    border:2px solid grey;\r\n}\r\n"
+
+/***/ }),
+
+/***/ "./src/app/research/cproject-list/cproject-list.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "\n<h3>click on the list item to edit/delete</h3>\n<ul class=\"list-group hover\">\n  <li class=\"list-group-item\"  *ngFor=\"let cproject of cprojectList\" (click)=\"onItemClick(cproject)\">{{cproject.title}}</li>\n</ul>"
+
+/***/ }),
+
+/***/ "./src/app/research/cproject-list/cproject-list.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CprojectListComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__shared_cproject_service__ = __webpack_require__("./src/app/research/shared/cproject.service.ts");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var CprojectListComponent = /** @class */ (function () {
+    function CprojectListComponent(cprojectService) {
+        this.cprojectService = cprojectService;
+    }
+    CprojectListComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        var x = this.cprojectService.getData();
+        x.snapshotChanges().subscribe(function (item) {
+            _this.cprojectList = [];
+            item.forEach(function (element) {
+                var y = element.payload.toJSON();
+                y["$key"] = element.key;
+                _this.cprojectList.push(y);
+            });
+        });
+    };
+    CprojectListComponent.prototype.onItemClick = function (cproject) {
+        this.cprojectService.selectedCproject = Object.assign({}, cproject);
+        // code is fine but better option is used for performance: this.teacherService.selectedTeacher=teacher;
+    };
+    CprojectListComponent = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+            selector: 'app-cproject-list',
+            template: __webpack_require__("./src/app/research/cproject-list/cproject-list.component.html"),
+            styles: [__webpack_require__("./src/app/research/cproject-list/cproject-list.component.css")]
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__shared_cproject_service__["a" /* CprojectService */]])
+    ], CprojectListComponent);
+    return CprojectListComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/research/cproject/cproject.component.css":
+/***/ (function(module, exports) {
+
+module.exports = ""
+
+/***/ }),
+
+/***/ "./src/app/research/cproject/cproject.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "\n<p *ngIf=\"inserted\" style=\"color:greenyellow;\">item inserted</p>\n<p *ngIf=\"updated\" style=\"color:greenyellow;\">item updated</p>\n<p *ngIf=\"deleted\" style=\"color:red;\">item deleted</p>\n<form (ngSubmit)=\"onSubmit(cprojectForm)\" #cprojectForm=\"ngForm\">\n<input type=\"hidden\" name=\"$key\" #$key=\"ngModel\" [(ngModel)]=\"cprojectService.selectedCproject.$key\">\n  <div class=\"form-group\">\n  <label>Title</label>\n  <input type=\"text\" class=\"form-control\" name=\"title\" #name=\"ngModel\" required [(ngModel)]=\"cprojectService.selectedCproject.title\" placeholder=\"Title\">\n</div>\n<div class=\"form-group\">\n  \n<label>principle Investigator</label>\n  <input type=\"text\" class=\"form-control\" name=\"principleInvestigator\" #name=\"ngModel\" required [(ngModel)]=\"cprojectService.selectedCproject.principleInvestigator\" placeholder=\"principle Investigator\">\n</div>\n\n<div class=\"form-group\">\n  <label>co-Investigator</label>\n  <div class=\"input-group\">\n    <div class=\"input-group-prepend\">\n        <span class=\"input-group-text\" id=\"basic-addon1\"><i class=\"fas fa-female\"></i></span>\n      \n    </div>\n    <input type=\"text\" class=\"form-control\" name=\"coInvestigator\" #name=\"ngModel\" required [(ngModel)]=\"cprojectService.selectedCproject.coInvestigator\" placeholder=\"co-investigator\">\n  </div>\n  \n</div>\n\n<div class=\"form-group\">\n  <label>Sponsoring Agency</label>\n  <input type=\"text\" class=\"form-control\" name=\"sponsoringAgency\" #name=\"ngModel\" required [(ngModel)]=\"cprojectService.selectedCproject.sponsoringAgency\" placeholder=\"sponsoring agency\">\n</div>\n\n<div class=\"form-group\">\n<button type=\"submit\" class=\"btn btn-light\" style=\"border:1px solid black;\" [disabled]=\"!cprojectForm.valid\"> <i class=\"fa fa-save\"></i>submit</button>\n<button type=\"button\" class=\"btn btn-light\" style=\"border:1px solid black;\" (click)=\"onDelete(cprojectForm)\" *ngIf=\"cprojectService.selectedCproject.$key!=null\"><i class=\"fa fa-trash\"></i>delete</button>\n<button type=\"button\" class=\"btn btn-light\" style=\"border:1px solid black;\" (click)=\"resetForm()\"><i class=\"fa fa-redo\" ></i>reset</button>\n\n</div>\n</form>"
+
+/***/ }),
+
+/***/ "./src/app/research/cproject/cproject.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CprojectComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__shared_cproject_service__ = __webpack_require__("./src/app/research/shared/cproject.service.ts");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var CprojectComponent = /** @class */ (function () {
+    function CprojectComponent(cprojectService) {
+        this.cprojectService = cprojectService;
+        this.inserted = false;
+        this.updated = false;
+        this.deleted = false;
+    }
+    CprojectComponent.prototype.ngOnInit = function () {
+    };
+    CprojectComponent.prototype.onSubmit = function (form) {
+        if (form.value.$key == null) {
+            this.cprojectService.insertCproject(form.value);
+            this.resetForm();
+            this.inserted = true;
+        }
+        else {
+            this.cprojectService.updateCproject(form.value);
+            this.updated = true;
+        }
+    };
+    CprojectComponent.prototype.resetForm = function (form) {
+        if (form != null)
+            form.reset();
+        this.cprojectService.selectedCproject = {
+            $key: null,
+            title: '',
+            principleInvestigator: '',
+            coInvestigator: '',
+            sponsoringAgency: ''
+        };
+    };
+    CprojectComponent.prototype.onDelete = function (form) {
+        if (confirm("are you sure you want to delete this record") == true) {
+            this.cprojectService.deleteCproject(form.value.$key);
+            this.resetForm(form);
+        }
+    };
+    CprojectComponent = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+            selector: 'app-cproject',
+            template: __webpack_require__("./src/app/research/cproject/cproject.component.html"),
+            styles: [__webpack_require__("./src/app/research/cproject/cproject.component.css")]
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__shared_cproject_service__["a" /* CprojectService */]])
+    ], CprojectComponent);
+    return CprojectComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/research/oproject-list-edit/oproject-list-edit.component.css":
+/***/ (function(module, exports) {
+
+module.exports = ""
+
+/***/ }),
+
+/***/ "./src/app/research/oproject-list-edit/oproject-list-edit.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "\n<button (click)=\"onClickBack()\" class=\"btn btn-light\" style=\"border:1px solid black;\">go back to research </button>\n<div  style=\"text-align:center\">\n<h2 class=\"jumbotron\">ongoing projects list edit section</h2>\n</div>\n<div class=\"row\">\n  <div class=\"col-md-7\">\n    <app-oproject></app-oproject>\n  </div>\n  <div class=\"col-md-5\">\n    <app-oproject-list></app-oproject-list>\n  </div>\n</div> "
+
+/***/ }),
+
+/***/ "./src/app/research/oproject-list-edit/oproject-list-edit.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return OprojectListEditComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__("./node_modules/@angular/router/esm5/router.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__shared_oproject_service__ = __webpack_require__("./src/app/research/shared/oproject.service.ts");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+var OprojectListEditComponent = /** @class */ (function () {
+    function OprojectListEditComponent(oprojectService, router) {
+        this.oprojectService = oprojectService;
+        this.router = router;
+    }
+    OprojectListEditComponent.prototype.ngOnInit = function () {
+    };
+    OprojectListEditComponent.prototype.onClickBack = function () {
+        this.router.navigate(['/research']);
+    };
+    OprojectListEditComponent = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+            selector: 'app-oproject-list-edit',
+            template: __webpack_require__("./src/app/research/oproject-list-edit/oproject-list-edit.component.html"),
+            styles: [__webpack_require__("./src/app/research/oproject-list-edit/oproject-list-edit.component.css")]
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2__shared_oproject_service__["a" /* OprojectService */], __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* Router */]])
+    ], OprojectListEditComponent);
+    return OprojectListEditComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/research/oproject-list/oproject-list.component.css":
+/***/ (function(module, exports) {
+
+module.exports = "button,ul.list-group.hover li:hover{\r\n    cursor:pointer;\r\n    border:2px solid grey;\r\n}\r\n"
+
+/***/ }),
+
+/***/ "./src/app/research/oproject-list/oproject-list.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "\n<h3>click on the list item to edit/delete</h3>\n<ul class=\"list-group hover\">\n  <li class=\"list-group-item\"  *ngFor=\"let oproject of oprojectList\" (click)=\"onItemClick(oproject)\">{{oproject.title}}</li>\n</ul>"
+
+/***/ }),
+
+/***/ "./src/app/research/oproject-list/oproject-list.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return OprojectListComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__shared_oproject_service__ = __webpack_require__("./src/app/research/shared/oproject.service.ts");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var OprojectListComponent = /** @class */ (function () {
+    function OprojectListComponent(oprojectService) {
+        this.oprojectService = oprojectService;
+    }
+    OprojectListComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        var x = this.oprojectService.getData();
+        x.snapshotChanges().subscribe(function (item) {
+            _this.oprojectList = [];
+            item.forEach(function (element) {
+                var y = element.payload.toJSON();
+                y["$key"] = element.key;
+                _this.oprojectList.push(y);
+            });
+        });
+    };
+    OprojectListComponent.prototype.onItemClick = function (oproject) {
+        this.oprojectService.selectedOproject = Object.assign({}, oproject);
+        // code is fine but better option is used for performance: this.teacherService.selectedTeacher=teacher;
+    };
+    OprojectListComponent = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+            selector: 'app-oproject-list',
+            template: __webpack_require__("./src/app/research/oproject-list/oproject-list.component.html"),
+            styles: [__webpack_require__("./src/app/research/oproject-list/oproject-list.component.css")]
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__shared_oproject_service__["a" /* OprojectService */]])
+    ], OprojectListComponent);
+    return OprojectListComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/research/oproject/oproject.component.css":
+/***/ (function(module, exports) {
+
+module.exports = ""
+
+/***/ }),
+
+/***/ "./src/app/research/oproject/oproject.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "\n<p *ngIf=\"inserted\" style=\"color:greenyellow;\">item inserted</p>\n<p *ngIf=\"updated\" style=\"color:greenyellow;\">item updated</p>\n<p *ngIf=\"deleted\" style=\"color:red;\">item deleted</p>\n<form (ngSubmit)=\"onSubmit(oprojectForm)\" #oprojectForm=\"ngForm\">\n<input type=\"hidden\" name=\"$key\" #$key=\"ngModel\" [(ngModel)]=\"oprojectService.selectedOproject.$key\">\n  <div class=\"form-group\">\n  <label>Title</label>\n  <input type=\"text\" class=\"form-control\" name=\"title\" #name=\"ngModel\" required [(ngModel)]=\"oprojectService.selectedOproject.title\" placeholder=\"Title\">\n</div>\n<div class=\"form-group\">\n  \n<label>principle Investigator</label>\n  <input type=\"text\" class=\"form-control\" name=\"principleInvestigator\" #name=\"ngModel\" required [(ngModel)]=\"oprojectService.selectedOproject.principleInvestigator\" placeholder=\"principle Investigator\">\n</div>\n\n<div class=\"form-group\">\n  <label>co-Investigator</label>\n  <div class=\"input-group\">\n    <div class=\"input-group-prepend\">\n        <span class=\"input-group-text\" id=\"basic-addon1\"><i class=\"fas fa-female\"></i></span>\n      \n    </div>\n    <input type=\"text\" class=\"form-control\" name=\"coInvestigator\" #name=\"ngModel\" required [(ngModel)]=\"oprojectService.selectedOproject.coInvestigator\" placeholder=\"co-investigator\">\n  </div>\n  \n</div>\n\n<div class=\"form-group\">\n  <label>Sponsoring Agency</label>\n  <input type=\"text\" class=\"form-control\" name=\"sponsoringAgency\" #name=\"ngModel\" required [(ngModel)]=\"oprojectService.selectedOproject.sponsoringAgency\" placeholder=\"sponsoring agency\">\n</div>\n\n<div class=\"form-group\">\n<button type=\"submit\" class=\"btn btn-light\" style=\"border:1px solid black;\" [disabled]=\"!oprojectForm.valid\"> <i class=\"fa fa-save\"></i>submit</button>\n<button type=\"button\" class=\"btn btn-light\" style=\"border:1px solid black;\" (click)=\"onDelete(oprojectForm)\" *ngIf=\"oprojectService.selectedOproject.$key!=null\"><i class=\"fa fa-trash\"></i>delete</button>\n<button type=\"button\" class=\"btn btn-light\" style=\"border:1px solid black;\" (click)=\"resetForm()\"><i class=\"fa fa-redo\" ></i>reset</button>\n\n</div>\n</form>"
+
+/***/ }),
+
+/***/ "./src/app/research/oproject/oproject.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return OprojectComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__shared_oproject_service__ = __webpack_require__("./src/app/research/shared/oproject.service.ts");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var OprojectComponent = /** @class */ (function () {
+    function OprojectComponent(oprojectService) {
+        this.oprojectService = oprojectService;
+        this.inserted = false;
+        this.updated = false;
+        this.deleted = false;
+    }
+    OprojectComponent.prototype.ngOnInit = function () {
+    };
+    OprojectComponent.prototype.onSubmit = function (form) {
+        if (form.value.$key == null) {
+            this.oprojectService.insertOproject(form.value);
+            this.resetForm();
+            this.inserted = true;
+        }
+        else {
+            this.oprojectService.updateOproject(form.value);
+            this.updated = true;
+        }
+    };
+    OprojectComponent.prototype.resetForm = function (form) {
+        if (form != null)
+            form.reset();
+        this.oprojectService.selectedOproject = {
+            $key: null,
+            title: '',
+            principleInvestigator: '',
+            coInvestigator: '',
+            sponsoringAgency: ''
+        };
+    };
+    OprojectComponent.prototype.onDelete = function (form) {
+        if (confirm("are you sure you want to delete this record") == true) {
+            this.oprojectService.deleteOproject(form.value.$key);
+            this.resetForm(form);
+        }
+    };
+    OprojectComponent = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+            selector: 'app-oproject',
+            template: __webpack_require__("./src/app/research/oproject/oproject.component.html"),
+            styles: [__webpack_require__("./src/app/research/oproject/oproject.component.css")]
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__shared_oproject_service__["a" /* OprojectService */]])
+    ], OprojectComponent);
+    return OprojectComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/research/research.component.css":
+/***/ (function(module, exports) {
+
+module.exports = ".card-body{\r\n    background-color:lightgray;\r\n}"
+
+/***/ }),
+
+/***/ "./src/app/research/research.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"container text-center\">\n   \n  <h1  style=\"position:relative; z-index:1; margin-bottom:-10px; color:darksalmon; font-size:3em;  \">we love our work  </h1>\n  <div id=\"carouselExampleIndicators\" class=\"carousel slide\" data-ride=\"carousel\">\n    <ol class=\"carousel-indicators\">\n      <li data-target=\"#carouselExampleIndicators\" data-slide-to=\"0\" class=\"active\"></li>\n      <li data-target=\"#carouselExampleIndicators\" data-slide-to=\"1\"></li>\n      <li data-target=\"#carouselExampleIndicators\" data-slide-to=\"2\"></li>\n    </ol>\n    <div class=\"carousel-inner\">\n      <div class=\"carousel-item active\">\n        <img class=\"d-block w-100\" src=\"../assets/images/typography.jpg\" alt=\"First slide\">\n      </div>\n      <div class=\"carousel-item\">\n        <img class=\"d-block w-100\" src=\"../assets/images/diwali.jpg\" alt=\"Second slide\">\n      </div>\n      <div class=\"carousel-item\">\n        <img class=\"d-block w-100\" src=\"../assets/images/exhibition1.jpg\" alt=\"Third slide\">\n      </div>\n    </div>\n    <a class=\"carousel-control-prev\" href=\"#carouselExampleIndicators\" role=\"button\" data-slide=\"prev\">\n      <span class=\"carousel-control-prev-icon\" aria-hidden=\"true\"></span>\n      <span class=\"sr-only\">Previous</span>\n    </a>\n    <a class=\"carousel-control-next\" href=\"#carouselExampleIndicators\" role=\"button\" data-slide=\"next\">\n      <span class=\"carousel-control-next-icon\" aria-hidden=\"true\"></span>\n      <span class=\"sr-only\">Next</span>\n    </a>\n  </div>\n  <div class=\"row justify-content-center\">\n            <p class=\"lead\">The research program in Design at DoD –IITG aims at training researchers in Design not only to consolidate what is known in design but also to build a design knowledge base through original inquiry, experimentation and investigation.\n                DoD is open to new and emerging areas in Design that fall in the triadic cusp of Science, Engineering and the Arts.Research and sponsored projects are the integral part of the department where faculties conduct research experimentation and projects in several areas such as product design, industrial design, transportation design, sustainability, ergonomics, usability engineering, interaction design, graphic design, film and video and many more.\n                \n                Possibilities to pursue research in collaboration with other Engineering and Social Sciences departments in IITG also exist. Interested scholars are invited to get in touch through email with the Faculty at DoD-IITG to explore possibilities.</p>\n            <div class=\"container text-left\">\n              <div class=\"row no-gutters\">\n                <div class=\"col-sm-4\">\n                  <div class=\"card \">\n                    <img  style=\"height:300px; width:250px;\" src=\"../assets/images/research-icon.png\" alt=\"\" class=\"card-img-top\">\n                    <div class=\"card-block\">\n                      <h3 class=\"card-title text-center\"> <a class=\"btn btn-outline-secondary\" data-toggle=\"collapse\" href=\"#collapseExample\" role=\"button\" aria-expanded=\"false\" aria-controls=\"collapseExample\">\n                          Ongoing Research Projects\n                        </a></h3>\n                        <div class=\"collapse\" id=\"collapseExample\">\n                            <div class=\"card card-body\">\n                              \n                              <button (click)=\"onClickEdit()\" class=\"btn btn-light\" style=\"border:1px solid black;\"> go to edit section</button>\n\n\n                              <ul class=\"list-group\">\n                                  <li class=\"list-group-item\"  *ngFor=\"let oproject of oprojectList\" ><div class=\"card sm-4\">\n                                    <div  style=\"height:50px; width:100px;\" ><i style=\"height:50px; width:25px;\" class=\"fa fa-rocket\"></i></div>\n                                    <div class=\"card-body\">\n                                      <h2 class=\"card-title\">{{oproject.title}}</h2>\n                                      <p class=\"card-text\">Principle Investigator: {{oproject.principleInvestigator}}</p>\n                                      <p class=\"card-text\">Co Investigator:{{oproject.coInvestigator}}</p>\n                                      \n                                    </div>\n                                    <div class=\"card-footer text-muted\">\n                                    <p>Sponsoring Agency: {{oproject.sponsoringAgency}}</p>\n                                    \n                                    </div>\n                                  </div> </li>\n                                </ul>\n                              \n\n                            </div>\n                          </div>\n                      <p class=\"card-text\"></p>\n                    </div>\n                  </div>\n                </div>\n                <div class=\"col-sm-4\">\n                  <div class=\"card\">\n                    <img style=\"height:300px; width:250px;\" src=\"../assets/images/research-icon.png\" alt=\"\" class=\"card-img-top\">\n                    <div class=\"card-block\">\n                      <h3 class=\"card-title text-center\"><a class=\"btn btn-outline-secondary\" data-toggle=\"collapse\" href=\"#collapseExample2\" role=\"button\" aria-expanded=\"false\" aria-controls=\"collapseExample2\">\n                          Completed Research Projects\n                        </a></h3><div class=\"collapse\" id=\"collapseExample2\">\n                            <div class=\"card card-body\">\n                                \n                              <button (click)=\"onClickEdit2()\" class=\"btn btn-light\" style=\"border:1px solid black;\"> go to edit section</button>\n\n\n                              <ul class=\"list-group\">\n                                  <li class=\"list-group-item\"  *ngFor=\"let cproject of cprojectList\" ><div class=\"card sm-4\">\n                                    <div  style=\"height:50px; width:100px;\" ><i style=\"height:50px; width:25px;\" class=\"fa fa-rocket\"></i></div>\n                                    <div class=\"card-body\">\n                                      <h2 class=\"card-title\">{{cproject.title}}</h2>\n                                      <p class=\"card-text\">Principle Investigator: {{cproject.principleInvestigator}}</p>\n                                      <p class=\"card-text\">Co Investigator:{{cproject.coInvestigator}}</p>\n                                      \n                                    </div>\n                                    <div class=\"card-footer text-muted\">\n                                    <p>Sponsoring Agency: {{cproject.sponsoringAgency}}</p>\n                                    \n                                    </div>\n                                  </div> </li>\n                                </ul>\n                            </div>\n                          </div>\n                      <p class=\"card-text\"></p>\n                    </div>\n                  </div>\n                </div>\n                <div class=\"col-sm-4\">\n                  <div class=\"card\">\n                    <img style=\"height:300px; width:250px;\" src=\"../assets/images/research-icon.png\" alt=\"\" class=\"card-img-top\">\n                    <div class=\"card-block\">\n                      <h3 class=\"card-title text-center\"><a class=\"btn btn-outline-secondary\" data-toggle=\"collapse\" href=\"#collapseExample3\" role=\"button\" aria-expanded=\"false\" aria-controls=\"collapseExample3\">\n                        Publications \n                      </a></h3><div class=\"collapse\" id=\"collapseExample3\">\n                          <div class=\"card card-body\">hello</div>\n                      <p class=\"card-text\"></p>\n                    </div>\n                  </div>\n                </div>\n              </div>\n            </div>\n       </div>\n      </div>\n      <div class=\"jumbotron jumbotron-fluid\">\n        <div class=\"container\">\n          <h1 class=\"display-4\">Always looking forward to make world better designed</h1>\n          <p class=\"lead\">we worship our commitments </p>\n        </div>\n      </div>\n\n</div>"
+
+/***/ }),
+
+/***/ "./src/app/research/research.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ResearchComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__shared_oproject_service__ = __webpack_require__("./src/app/research/shared/oproject.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__("./node_modules/@angular/router/esm5/router.js");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
 var ResearchComponent = /** @class */ (function () {
-    function ResearchComponent() {
+    function ResearchComponent(oprojectService, router) {
+        this.oprojectService = oprojectService;
+        this.router = router;
     }
     ResearchComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        var x = this.oprojectService.getData();
+        x.snapshotChanges().subscribe(function (item) {
+            _this.oprojectList = [];
+            item.forEach(function (element) {
+                var y = element.payload.toJSON();
+                y["$key"] = element.key;
+                _this.oprojectList.push(y);
+            });
+        });
+    };
+    ResearchComponent.prototype.onClickEdit = function () {
+        this.router.navigate(['/oproject-list-edit']);
+    };
+    ResearchComponent.prototype.onClickEdit2 = function () {
+        this.router.navigate(['/cproject-list-edit']);
     };
     ResearchComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
@@ -1068,9 +1530,151 @@ var ResearchComponent = /** @class */ (function () {
             template: __webpack_require__("./src/app/research/research.component.html"),
             styles: [__webpack_require__("./src/app/research/research.component.css")]
         }),
-        __metadata("design:paramtypes", [])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__shared_oproject_service__["a" /* OprojectService */], __WEBPACK_IMPORTED_MODULE_2__angular_router__["a" /* Router */]])
     ], ResearchComponent);
     return ResearchComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/research/shared/cproject.model.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Cproject; });
+var Cproject = /** @class */ (function () {
+    function Cproject() {
+    }
+    return Cproject;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/research/shared/cproject.service.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CprojectService; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__cproject_model__ = __webpack_require__("./src/app/research/shared/cproject.model.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_angularfire2_database__ = __webpack_require__("./node_modules/angularfire2/database/index.js");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+var CprojectService = /** @class */ (function () {
+    function CprojectService(firebase) {
+        this.firebase = firebase;
+        this.selectedCproject = new __WEBPACK_IMPORTED_MODULE_1__cproject_model__["a" /* Cproject */]();
+    }
+    CprojectService.prototype.getData = function () {
+        this.cprojectList = this.firebase.list('projects/cproject');
+        return this.cprojectList;
+    };
+    CprojectService.prototype.insertCproject = function (cproject) {
+        this.cprojectList.push({
+            title: cproject.title,
+            principleInvestigator: cproject.principleInvestigator,
+            coInvestigator: cproject.coInvestigator,
+            sponsoringAgency: cproject.sponsoringAgency
+        });
+    };
+    CprojectService.prototype.updateCproject = function (cproject) {
+        this.cprojectList.update(cproject.$key, { title: cproject.title,
+            principleInvestigator: cproject.principleInvestigator,
+            coInvestigator: cproject.coInvestigator,
+            sponsoringAgency: cproject.sponsoringAgency
+        });
+    };
+    CprojectService.prototype.deleteCproject = function (key) { this.cprojectList.remove(key); };
+    CprojectService = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["A" /* Injectable */])(),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2_angularfire2_database__["a" /* AngularFireDatabase */]])
+    ], CprojectService);
+    return CprojectService;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/research/shared/oproject.model.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Oproject; });
+var Oproject = /** @class */ (function () {
+    function Oproject() {
+    }
+    return Oproject;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/research/shared/oproject.service.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return OprojectService; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__oproject_model__ = __webpack_require__("./src/app/research/shared/oproject.model.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_angularfire2_database__ = __webpack_require__("./node_modules/angularfire2/database/index.js");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+var OprojectService = /** @class */ (function () {
+    function OprojectService(firebase) {
+        this.firebase = firebase;
+        this.selectedOproject = new __WEBPACK_IMPORTED_MODULE_1__oproject_model__["a" /* Oproject */]();
+    }
+    OprojectService.prototype.getData = function () {
+        this.oprojectList = this.firebase.list('projects/oproject');
+        return this.oprojectList;
+    };
+    OprojectService.prototype.insertOproject = function (oproject) {
+        this.oprojectList.push({
+            title: oproject.title,
+            principleInvestigator: oproject.principleInvestigator,
+            coInvestigator: oproject.coInvestigator,
+            sponsoringAgency: oproject.sponsoringAgency
+        });
+    };
+    OprojectService.prototype.updateOproject = function (oproject) {
+        this.oprojectList.update(oproject.$key, { title: oproject.title,
+            principleInvestigator: oproject.principleInvestigator,
+            coInvestigator: oproject.coInvestigator,
+            sponsoringAgency: oproject.sponsoringAgency
+        });
+    };
+    OprojectService.prototype.deleteOproject = function (key) { this.oprojectList.remove(key); };
+    OprojectService = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["A" /* Injectable */])(),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2_angularfire2_database__["a" /* AngularFireDatabase */]])
+    ], OprojectService);
+    return OprojectService;
 }());
 
 
