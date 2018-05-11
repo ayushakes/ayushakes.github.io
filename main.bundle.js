@@ -38,6 +38,7 @@ webpackEmptyAsyncContext.id = "./src/$$_lazy_route_resource lazy recursive";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__research_cproject_list_edit_cproject_list_edit_component__ = __webpack_require__("./src/app/research/cproject-list-edit/cproject-list-edit.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__home_news_list_edit_news_list_edit_component__ = __webpack_require__("./src/app/home/news-list-edit/news-list-edit.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__home_links_list_edit_links_list_edit_component__ = __webpack_require__("./src/app/home/links-list-edit/links-list-edit.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__research_publications_list_edit_publications_list_edit_component__ = __webpack_require__("./src/app/research/publications-list-edit/publications-list-edit.component.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -60,9 +61,10 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
+
 var appRoutes = [{ path: '', component: __WEBPACK_IMPORTED_MODULE_2__home_home_component__["a" /* HomeComponent */] },
     { path: 'research', component: __WEBPACK_IMPORTED_MODULE_8__research_research_component__["a" /* ResearchComponent */] }, { path: 'oproject-list-edit', component: __WEBPACK_IMPORTED_MODULE_12__research_oproject_list_edit_oproject_list_edit_component__["a" /* OprojectListEditComponent */] }, { path: 'cproject-list-edit', component: __WEBPACK_IMPORTED_MODULE_13__research_cproject_list_edit_cproject_list_edit_component__["a" /* CprojectListEditComponent */] },
-    { path: 'home', component: __WEBPACK_IMPORTED_MODULE_2__home_home_component__["a" /* HomeComponent */] }, { path: 'news-list-edit', component: __WEBPACK_IMPORTED_MODULE_14__home_news_list_edit_news_list_edit_component__["a" /* NewsListEditComponent */] }, { path: 'links-list-edit', component: __WEBPACK_IMPORTED_MODULE_15__home_links_list_edit_links_list_edit_component__["a" /* LinksListEditComponent */] },
+    { path: 'home', component: __WEBPACK_IMPORTED_MODULE_2__home_home_component__["a" /* HomeComponent */] }, { path: 'news-list-edit', component: __WEBPACK_IMPORTED_MODULE_14__home_news_list_edit_news_list_edit_component__["a" /* NewsListEditComponent */] }, { path: 'publications-list-edit', component: __WEBPACK_IMPORTED_MODULE_16__research_publications_list_edit_publications_list_edit_component__["a" /* PublicationsListEditComponent */] }, { path: 'links-list-edit', component: __WEBPACK_IMPORTED_MODULE_15__home_links_list_edit_links_list_edit_component__["a" /* LinksListEditComponent */] },
     { path: 'home/newPost', component: __WEBPACK_IMPORTED_MODULE_9__home_posts_new_post_new_post_component__["a" /* NewPostComponent */], canDeactivate: [__WEBPACK_IMPORTED_MODULE_10__home_posts_new_post_can_deactivate_guard_service__["a" /* CanDeactivateGuard */]] },
     { path: 'faculty', component: __WEBPACK_IMPORTED_MODULE_7__faculty_faculty_component__["a" /* FacultyComponent */] }, { path: 'teacher-edit', component: __WEBPACK_IMPORTED_MODULE_11__faculty_teacher_list_edit_teacher_list_edit_component__["a" /* TeacherListEditComponent */] },
     { path: 'students', component: __WEBPACK_IMPORTED_MODULE_6__students_students_component__["a" /* StudentsComponent */] },
@@ -88,14 +90,14 @@ var AppRoutingModule = /** @class */ (function () {
 /***/ "./src/app/app.component.css":
 /***/ (function(module, exports) {
 
-module.exports = ""
+module.exports = ".bg-dark{\r\n    background-image: url('navBackground.126c4f2f3cbe0dd1c295.jpg');\r\n}\r\n.bg-info{\r\n    background-image: url('dark_circles.b3a14fc93230967fa089.png');\r\n}\r\n"
 
 /***/ }),
 
 /***/ "./src/app/app.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<link rel=\"stylesheet\" type=\"text/css\" href=\"../assets/css/set1.css\" />\r\n<link rel=\"stylesheet\" href=\"../assets/css/style.css\">\r\n<nav class=\"navbar navbar-expand-lg navbar-dark bg-dark fixed-top\">\r\n  <a class=\"navbar-brand\" routerLink=\"home\"><img height='40px' width=\"40px\" src=\"../assets/images/iit-brand.png\" ></a>\r\n  <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarSupportedContent\" aria-controls=\"navbarSupportedContent\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\r\n    <span class=\"navbar-toggler-icon\"></span>\r\n  </button>\r\n\r\n  <div class=\"collapse navbar-collapse\" id=\"navbarSupportedContent\">\r\n    <ul class=\"navbar-nav mr-auto\">\r\n      <li class=\"nav-item active\">\r\n        <a class=\"nav-link\" routerLink=\"home\">Home <span class=\"sr-only\">(current)</span></a>\r\n      </li>\r\n      <li class=\"nav-item\">\r\n        <a class=\"nav-link\" routerLink=\"research\">research</a>\r\n      </li>\r\n      <li class=\"nav-item dropdown\">\r\n        <a class=\"nav-link dropdown-toggle\"  id=\"navbarDropdown\" role=\"button\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">\r\n          people\r\n        </a>\r\n        <div class=\"dropdown-menu\" aria-labelledby=\"navbarDropdown\">\r\n          <a class=\"dropdown-item\" routerLink='students'>students</a>\r\n          <a class=\"dropdown-item\" routerLink='faculty'>faculty</a>\r\n       \r\n          <a class=\"dropdown-item\" href=\"#\">staff</a>\r\n        </div>\r\n      </li>\r\n      <li class=\"nav-item\">\r\n        <a class=\"nav-link\" routerLink=\"contact\">contact</a>\r\n      </li>\r\n    </ul>\r\n    <ul class=\"nav navbar-nav navbar-right nav-pills\">\r\n      <li class=\"nav-item\"><a  class=\"nav-link\" routerLink=\"/signup\">signup</a></li>\r\n      <li class=\"nav-item\"><a  class=\"nav-link\" routerLink=\"/signin\">signin</a></li>\r\n    </ul>\r\n  </div>\r\n</nav>\r\n\r\n<div style=\"position:relative; margin-top:68px;\">\r\n<router-outlet></router-outlet>\r\n</div>\r\n<div class=\"footer\" >\r\n  <div id=\"button\"></div>\r\n<div id=\"container\">\r\n<div id=\"cont\">\r\n<div class=\"footer_center\">\r\n\t   <h3 style=\"color:darkgray;\">Department of Design IIT Guwahati</h3>\r\n</div>\r\n</div>\r\n</div>\r\n</div>"
+module.exports = "<link rel=\"stylesheet\" type=\"text/css\" href=\"../assets/css/set1.css\" />\r\n<link rel=\"stylesheet\" href=\"../assets/css/style.css\">\r\n<div class=\"container-fluid\">\r\n<nav class=\"navbar navbar-expand-lg navbar-dark bg-dark fixed-top\">\r\n  <a class=\"navbar-brand\" routerLink=\"home\"><img height='40px' width=\"40px\" src=\"../assets/images/iit-brand.png\" ></a>\r\n  <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarSupportedContent\" aria-controls=\"navbarSupportedContent\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\r\n    <span class=\"navbar-toggler-icon\"></span>\r\n  </button>\r\n\r\n  <div class=\"collapse navbar-collapse\" id=\"navbarSupportedContent\">\r\n    <ul class=\"navbar-nav mr-auto\">\r\n      <li class=\"nav-item active\">\r\n        <a class=\"nav-link\" routerLink=\"home\">Home <span class=\"sr-only\">(current)</span></a>\r\n      </li>\r\n      <li class=\"nav-item\">\r\n        <a class=\"nav-link\" routerLink=\"research\">research</a>\r\n      </li>\r\n      <li class=\"nav-item dropdown\">\r\n        <a class=\"nav-link dropdown-toggle\"  id=\"navbarDropdown\" role=\"button\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">\r\n          people\r\n        </a>\r\n        <div class=\"dropdown-menu\" aria-labelledby=\"navbarDropdown\">\r\n          <a class=\"dropdown-item\" routerLink='students'>students</a>\r\n          <a class=\"dropdown-item\" routerLink='faculty'>faculty</a>\r\n       \r\n          <a class=\"dropdown-item\" href=\"#\">staff</a>\r\n        </div>\r\n      </li>\r\n      <li class=\"nav-item\">\r\n        <a class=\"nav-link\" routerLink=\"contact\">contact</a>\r\n      </li>\r\n    </ul>\r\n    <ul class=\"nav navbar-nav navbar-right nav-pills\">\r\n      <li class=\"nav-item\"><a  class=\"nav-link\" routerLink=\"/signup\">signup</a></li>\r\n      <li class=\"nav-item\"><a  class=\"nav-link\" routerLink=\"/signin\">signin</a></li>\r\n    </ul>\r\n  </div>\r\n</nav>\r\n\r\n<div style=\"position:relative; margin-top:68px;\">\r\n<router-outlet></router-outlet>\r\n</div>\r\n\r\n<div class=\"jumbotron jumbotron-fluid rounded-top bg-info\" style=\"margin-bottom:0px;\">\r\n  <div class=\"container\">\r\n    <h1 class=\"display-4\" style=\"color:white;\">Department of Design IIT-guwahati </h1>\r\n    <p class=\"lead\" style=\"color:white;\">Things look better,work better and feel better when properly designed</p>\r\n  </div>\r\n</div>\r\n</div>"
 
 /***/ }),
 
@@ -213,12 +215,20 @@ var AppComponent = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_41__home_links_list_edit_links_list_edit_component__ = __webpack_require__("./src/app/home/links-list-edit/links-list-edit.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_42__home_links_links_component__ = __webpack_require__("./src/app/home/links/links.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_43__home_shared_links_service__ = __webpack_require__("./src/app/home/shared/links.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_44__research_publications_publications_component__ = __webpack_require__("./src/app/research/publications/publications.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_45__research_publications_list_publications_list_component__ = __webpack_require__("./src/app/research/publications-list/publications-list.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_46__research_publications_list_edit_publications_list_edit_component__ = __webpack_require__("./src/app/research/publications-list-edit/publications-list-edit.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_47__research_shared_publications_service__ = __webpack_require__("./src/app/research/shared/publications.service.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
+
+
+
 
 
 
@@ -278,14 +288,14 @@ var AppModule = /** @class */ (function () {
         Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["K" /* NgModule */])({
             declarations: [
                 __WEBPACK_IMPORTED_MODULE_4__app_component__["a" /* AppComponent */], __WEBPACK_IMPORTED_MODULE_36__home_news_news_component__["a" /* NewsComponent */], __WEBPACK_IMPORTED_MODULE_37__home_news_list_edit_news_list_edit_component__["a" /* NewsListEditComponent */], __WEBPACK_IMPORTED_MODULE_38__home_news_list_news_list_component__["a" /* NewsListComponent */],
-                __WEBPACK_IMPORTED_MODULE_5__people_people_component__["a" /* PeopleComponent */], __WEBPACK_IMPORTED_MODULE_6__home_home_component__["a" /* HomeComponent */], __WEBPACK_IMPORTED_MODULE_7__work_work_component__["a" /* WorkComponent */], __WEBPACK_IMPORTED_MODULE_8__contact_contact_component__["a" /* ContactComponent */], __WEBPACK_IMPORTED_MODULE_9__students_students_component__["a" /* StudentsComponent */], __WEBPACK_IMPORTED_MODULE_10__faculty_faculty_component__["a" /* FacultyComponent */], __WEBPACK_IMPORTED_MODULE_11__research_research_component__["a" /* ResearchComponent */], __WEBPACK_IMPORTED_MODULE_12__home_posts_posts_component__["a" /* PostsComponent */], __WEBPACK_IMPORTED_MODULE_13__home_posts_post_post_component__["a" /* PostComponent */], __WEBPACK_IMPORTED_MODULE_14__back_directive__["a" /* BackDirective */], __WEBPACK_IMPORTED_MODULE_15__home_posts_new_post_new_post_component__["a" /* NewPostComponent */], __WEBPACK_IMPORTED_MODULE_21__faculty_teacher_teacher_component__["a" /* TeacherComponent */], __WEBPACK_IMPORTED_MODULE_22__faculty_teacher_list_teacher_list_component__["a" /* TeacherListComponent */], __WEBPACK_IMPORTED_MODULE_23__faculty_teacher_list_edit_teacher_list_edit_component__["a" /* TeacherListEditComponent */], __WEBPACK_IMPORTED_MODULE_25__research_oproject_oproject_component__["a" /* OprojectComponent */], __WEBPACK_IMPORTED_MODULE_26__research_cproject_cproject_component__["a" /* CprojectComponent */], __WEBPACK_IMPORTED_MODULE_27__research_oproject_list_oproject_list_component__["a" /* OprojectListComponent */], __WEBPACK_IMPORTED_MODULE_28__research_cproject_list_cproject_list_component__["a" /* CprojectListComponent */], __WEBPACK_IMPORTED_MODULE_29__research_oproject_list_edit_oproject_list_edit_component__["a" /* OprojectListEditComponent */], __WEBPACK_IMPORTED_MODULE_30__research_cproject_list_edit_cproject_list_edit_component__["a" /* CprojectListEditComponent */], __WEBPACK_IMPORTED_MODULE_40__home_links_list_links_list_component__["a" /* LinksListComponent */], __WEBPACK_IMPORTED_MODULE_41__home_links_list_edit_links_list_edit_component__["a" /* LinksListEditComponent */], __WEBPACK_IMPORTED_MODULE_42__home_links_links_component__["a" /* LinksComponent */]
+                __WEBPACK_IMPORTED_MODULE_5__people_people_component__["a" /* PeopleComponent */], __WEBPACK_IMPORTED_MODULE_6__home_home_component__["a" /* HomeComponent */], __WEBPACK_IMPORTED_MODULE_7__work_work_component__["a" /* WorkComponent */], __WEBPACK_IMPORTED_MODULE_8__contact_contact_component__["a" /* ContactComponent */], __WEBPACK_IMPORTED_MODULE_9__students_students_component__["a" /* StudentsComponent */], __WEBPACK_IMPORTED_MODULE_10__faculty_faculty_component__["a" /* FacultyComponent */], __WEBPACK_IMPORTED_MODULE_11__research_research_component__["a" /* ResearchComponent */], __WEBPACK_IMPORTED_MODULE_12__home_posts_posts_component__["a" /* PostsComponent */], __WEBPACK_IMPORTED_MODULE_13__home_posts_post_post_component__["a" /* PostComponent */], __WEBPACK_IMPORTED_MODULE_14__back_directive__["a" /* BackDirective */], __WEBPACK_IMPORTED_MODULE_15__home_posts_new_post_new_post_component__["a" /* NewPostComponent */], __WEBPACK_IMPORTED_MODULE_21__faculty_teacher_teacher_component__["a" /* TeacherComponent */], __WEBPACK_IMPORTED_MODULE_22__faculty_teacher_list_teacher_list_component__["a" /* TeacherListComponent */], __WEBPACK_IMPORTED_MODULE_23__faculty_teacher_list_edit_teacher_list_edit_component__["a" /* TeacherListEditComponent */], __WEBPACK_IMPORTED_MODULE_25__research_oproject_oproject_component__["a" /* OprojectComponent */], __WEBPACK_IMPORTED_MODULE_26__research_cproject_cproject_component__["a" /* CprojectComponent */], __WEBPACK_IMPORTED_MODULE_27__research_oproject_list_oproject_list_component__["a" /* OprojectListComponent */], __WEBPACK_IMPORTED_MODULE_28__research_cproject_list_cproject_list_component__["a" /* CprojectListComponent */], __WEBPACK_IMPORTED_MODULE_29__research_oproject_list_edit_oproject_list_edit_component__["a" /* OprojectListEditComponent */], __WEBPACK_IMPORTED_MODULE_30__research_cproject_list_edit_cproject_list_edit_component__["a" /* CprojectListEditComponent */], __WEBPACK_IMPORTED_MODULE_40__home_links_list_links_list_component__["a" /* LinksListComponent */], __WEBPACK_IMPORTED_MODULE_41__home_links_list_edit_links_list_edit_component__["a" /* LinksListEditComponent */], __WEBPACK_IMPORTED_MODULE_42__home_links_links_component__["a" /* LinksComponent */], __WEBPACK_IMPORTED_MODULE_44__research_publications_publications_component__["a" /* PublicationsComponent */], __WEBPACK_IMPORTED_MODULE_45__research_publications_list_publications_list_component__["a" /* PublicationsListComponent */], __WEBPACK_IMPORTED_MODULE_46__research_publications_list_edit_publications_list_edit_component__["a" /* PublicationsListEditComponent */]
             ],
             imports: [
                 __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
                 __WEBPACK_IMPORTED_MODULE_2__angular_common_http__["b" /* HttpClientModule */], __WEBPACK_IMPORTED_MODULE_3__angular_forms__["c" /* FormsModule */], __WEBPACK_IMPORTED_MODULE_17__app_routing_module__["a" /* AppRoutingModule */], __WEBPACK_IMPORTED_MODULE_19_angularfire2__["a" /* AngularFireModule */].initializeApp(firebaseConfig),
                 __WEBPACK_IMPORTED_MODULE_20_angularfire2_database__["b" /* AngularFireDatabaseModule */], __WEBPACK_IMPORTED_MODULE_33_angularfire2_storage__["b" /* AngularFireStorageModule */], __WEBPACK_IMPORTED_MODULE_34__material_module__["a" /* MaterialModule */], __WEBPACK_IMPORTED_MODULE_35__core_core_module__["a" /* CoreModule */]
             ],
-            providers: [__WEBPACK_IMPORTED_MODULE_43__home_shared_links_service__["a" /* LinksService */], __WEBPACK_IMPORTED_MODULE_16__shared_post_service__["a" /* PostService */], __WEBPACK_IMPORTED_MODULE_18__home_posts_new_post_can_deactivate_guard_service__["a" /* CanDeactivateGuard */], __WEBPACK_IMPORTED_MODULE_24__faculty_shared_teacher_service__["a" /* TeacherService */], __WEBPACK_IMPORTED_MODULE_31__research_shared_oproject_service__["a" /* OprojectService */], __WEBPACK_IMPORTED_MODULE_32__research_shared_cproject_service__["a" /* CprojectService */], __WEBPACK_IMPORTED_MODULE_39__home_shared_news_service__["a" /* NewsService */]],
+            providers: [__WEBPACK_IMPORTED_MODULE_47__research_shared_publications_service__["a" /* PublicationsService */], __WEBPACK_IMPORTED_MODULE_43__home_shared_links_service__["a" /* LinksService */], __WEBPACK_IMPORTED_MODULE_16__shared_post_service__["a" /* PostService */], __WEBPACK_IMPORTED_MODULE_18__home_posts_new_post_can_deactivate_guard_service__["a" /* CanDeactivateGuard */], __WEBPACK_IMPORTED_MODULE_24__faculty_shared_teacher_service__["a" /* TeacherService */], __WEBPACK_IMPORTED_MODULE_31__research_shared_oproject_service__["a" /* OprojectService */], __WEBPACK_IMPORTED_MODULE_32__research_shared_cproject_service__["a" /* CprojectService */], __WEBPACK_IMPORTED_MODULE_39__home_shared_news_service__["a" /* NewsService */]],
             bootstrap: [__WEBPACK_IMPORTED_MODULE_4__app_component__["a" /* AppComponent */]]
         })
     ], AppModule);
@@ -810,14 +820,14 @@ var TeacherComponent = /** @class */ (function () {
 /***/ "./src/app/home/home.component.css":
 /***/ (function(module, exports) {
 
-module.exports = ".BigHeading{\r\n\r\n    font-size:2.75Vmax;\r\n}\r\n.media{\r\n    background-color:silver;\r\n    width:70%; \r\n}\r\n"
+module.exports = ".BigHeading{\r\n\r\n    font-size:2.75Vmax;\r\n}\r\n.media{\r\n        width:70%; \r\n}\r\n"
 
 /***/ }),
 
 /***/ "./src/app/home/home.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<link rel=\"stylesheet\" type=\"text/css\" href=\"../assets/css/set1.css\" />\n<div class=\"jumbotron\">\n  <div class=\"container-fluid\">\n   <div class=\"row\"> <div class=\"col\"> <h1 class=\"display-4 BigHeading\">Department of Design</h1> \n    <p class=\"lead\">Where you design your dreams</p> <p>\n      \n    </p> \n    \n  <!--news -->\n\n  \n\n\n    <mat-tab-group>\n      <mat-tab label=\"Tab 1\"><button (click)=\"onClickEdit()\" class=\"btn btn-light\" style=\"border:1px solid black;\"> go to edit section</button>\n\n\n        <div class=\"media\" *ngFor=\"let news of newsList\">\n          <img class=\"mr-3\" src=\"../assets/images/radio.png\" alt=\"image not loaded yet\">\n          <div class=\"media-body\">\n            <h5 class=\"mt-0\">{{news.title}}</h5>\n            {{news.content}}\n          </div>\n        </div></mat-tab>\n      <mat-tab label=\"Tab 2\"><button (click)=\"onClickEdit2()\" class=\"btn btn-light\" style=\"border:1px solid black;\"> go to edit section</button>\n\n\n        <div class=\"media\" *ngFor=\"let links of linksList\">\n          <img class=\"mr-3\" src=\"../assets/images/icons8-link-50.png\" alt=\"image not loaded yet\">\n          <div class=\"media-body\">\n            <h5 class=\"mt-0\">{{links.name}}</h5>\n            <a href=\"{{links.url}}\">{{links.name}}</a>\n          </div>\n        </div></mat-tab>\n    </mat-tab-group>\n    \n   \n\n\n\n    </div> <div class=\"col\"> <figure class=\"effect-lily\">\n      <img src=\"../assets/images/2.jpg\" alt=\"image not Loaded\"/>\n      <figcaption>\n        <div>\n          <h2 style=\"font-size:3vw ; text-shadow: 0px 0 lightcyan, 0 1px lightcyan, 3px 0 lightcyan, 0 -1px lightcyan;\">WE <span style=\"font-size:3vw\">Rock!!!</span></h2>\n          <p style=\"color:lightcyan; text-shadow: 0px 0 black, 0 1px black, 3px 0 black, 0 -1px black; font-size:2vw;\">IIT-G : Where we design our dreams</p>\n        </div>\n        \n      </figcaption>\t\t\t\n    </figure>\n  </div></div>"
+module.exports = "<link rel=\"stylesheet\" type=\"text/css\" href=\"../assets/css/set1.css\" />\n\n  <div class=\"container-fluid rounded\">\n    \n   <div class=\"row\"> \n      <div class=\"col\"> <figure class=\"rounded\">\n          <img src=\"../assets/images/2.jpg\" alt=\"image not Loaded\"/>\n          <figcaption>\n            <div>\n              <h2 style=\"font-size:3vw; color:rgb(74, 215, 236); \" >WE <span style=\"font-size:3vw\">Rock!!!</span></h2>\n              <p style=\"font-size:2vw;\" class=\"text-info\">IIT-G : Where we design our dreams</p>\n            </div>\n            \n          </figcaption>\t\t\t\n        </figure>\n      </div> \n    \n    <div class=\"col\"> <h1 class=\"display-4 BigHeading\">Department of Design</h1> \n    <p class=\"lead\">Where you design your dreams</p> <p>\n      \n    </p> \n    \n  <!--news -->\n\n  \n\n\n    <mat-tab-group>\n      <mat-tab label=\"Tab 1\"><button (click)=\"onClickEdit()\" class=\"btn btn-light\" style=\"border:1px solid black;\"> go to edit section</button>\n\n\n        <div class=\"media border border-info rounded\" *ngFor=\"let news of newsList\">\n          <img class=\"mr-3\" src=\"../assets/images/radio.png\" alt=\"image not loaded yet\">\n          <div class=\"media-body\">\n            <h5 class=\"mt-0\">{{news.title}}</h5>\n            {{news.content}}\n          </div>\n        </div></mat-tab>\n      <mat-tab label=\"Tab 2\"><button (click)=\"onClickEdit2()\" class=\"btn btn-light\" style=\"border:1px solid black;\"> go to edit section</button>\n\n\n        <div class=\"media border border-primary rounded\" *ngFor=\"let links of linksList\">\n          <img class=\"mr-3\" src=\"../assets/images/icons8-link-50.png\" alt=\"image not loaded yet\">\n          <div class=\"media-body\">\n            <h5 class=\"mt-0\">{{links.name}}</h5>\n            <a href=\"{{links.url}}\">{{links.name}}</a>\n          </div>\n        </div></mat-tab>\n    </mat-tab-group>\n    \n   \n\n\n\n    </div> </div>"
 
 /***/ }),
 
@@ -2211,6 +2221,215 @@ var OprojectComponent = /** @class */ (function () {
 
 /***/ }),
 
+/***/ "./src/app/research/publications-list-edit/publications-list-edit.component.css":
+/***/ (function(module, exports) {
+
+module.exports = ""
+
+/***/ }),
+
+/***/ "./src/app/research/publications-list-edit/publications-list-edit.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "\n<button (click)=\"onClickBack()\" class=\"btn btn-light\" style=\"border:1px solid black;\">go back to research </button>\n<div  style=\"text-align:center\">\n<h2 class=\"jumbotron\">publications list edit section</h2>\n</div>\n<div class=\"row\">\n  <div class=\"col-md-7\">\n    <app-publications></app-publications>\n  </div>\n  <div class=\"col-md-5\">\n    <app-publications-list></app-publications-list>\n  </div>\n</div> "
+
+/***/ }),
+
+/***/ "./src/app/research/publications-list-edit/publications-list-edit.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PublicationsListEditComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__shared_publications_service__ = __webpack_require__("./src/app/research/shared/publications.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__("./node_modules/@angular/router/esm5/router.js");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+var PublicationsListEditComponent = /** @class */ (function () {
+    function PublicationsListEditComponent(publicationsService, router) {
+        this.publicationsService = publicationsService;
+        this.router = router;
+    }
+    PublicationsListEditComponent.prototype.ngOnInit = function () {
+    };
+    PublicationsListEditComponent.prototype.onClickBack = function () {
+        this.router.navigate(['/research']);
+    };
+    PublicationsListEditComponent = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+            selector: 'app-publications-list-edit',
+            template: __webpack_require__("./src/app/research/publications-list-edit/publications-list-edit.component.html"),
+            styles: [__webpack_require__("./src/app/research/publications-list-edit/publications-list-edit.component.css")]
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__shared_publications_service__["a" /* PublicationsService */], __WEBPACK_IMPORTED_MODULE_2__angular_router__["a" /* Router */]])
+    ], PublicationsListEditComponent);
+    return PublicationsListEditComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/research/publications-list/publications-list.component.css":
+/***/ (function(module, exports) {
+
+module.exports = "button,ul.list-group.hover li:hover{\r\n    cursor:pointer;\r\n    border:2px solid grey;\r\n}\r\n"
+
+/***/ }),
+
+/***/ "./src/app/research/publications-list/publications-list.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "\n<h3>click on the list item to edit/delete</h3>\n<ul class=\"list-group hover\">\n  <li class=\"list-group-item\"  *ngFor=\"let publications of publicationsList\" (click)=\"onItemClick(publications)\">{{publications.title}}</li>\n</ul>"
+
+/***/ }),
+
+/***/ "./src/app/research/publications-list/publications-list.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PublicationsListComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__shared_publications_service__ = __webpack_require__("./src/app/research/shared/publications.service.ts");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var PublicationsListComponent = /** @class */ (function () {
+    function PublicationsListComponent(publicationsService) {
+        this.publicationsService = publicationsService;
+    }
+    PublicationsListComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        var x = this.publicationsService.getData();
+        x.snapshotChanges().subscribe(function (item) {
+            _this.publicationsList = [];
+            item.forEach(function (element) {
+                var y = element.payload.toJSON();
+                y["$key"] = element.key;
+                _this.publicationsList.push(y);
+            });
+        });
+    };
+    PublicationsListComponent.prototype.onItemClick = function (publications) {
+        this.publicationsService.selectedpublications = Object.assign({}, publications);
+        // code is fine but better option is used for performance: this.teacherService.selectedTeacher=teacher;
+    };
+    PublicationsListComponent = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+            selector: 'app-publications-list',
+            template: __webpack_require__("./src/app/research/publications-list/publications-list.component.html"),
+            styles: [__webpack_require__("./src/app/research/publications-list/publications-list.component.css")]
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__shared_publications_service__["a" /* PublicationsService */]])
+    ], PublicationsListComponent);
+    return PublicationsListComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/research/publications/publications.component.css":
+/***/ (function(module, exports) {
+
+module.exports = ""
+
+/***/ }),
+
+/***/ "./src/app/research/publications/publications.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "\n<p *ngIf=\"inserted\" style=\"color:greenyellow;\">item inserted</p>\n<p *ngIf=\"updated\" style=\"color:greenyellow;\">item updated</p>\n<p *ngIf=\"deleted\" style=\"color:red;\">item deleted</p>\n<form (ngSubmit)=\"onSubmit(publicationsForm)\" #publicationsForm=\"ngForm\">\n<input type=\"hidden\" name=\"$key\" #$key=\"ngModel\" [(ngModel)]=\"publicationsService.selectedpublications.$key\">\n<div class=\"form-group\">\n  <label>title</label>\n  <input type=\"text\" class=\"form-control\" name=\"title\" #name=\"ngModel\" required [(ngModel)]=\"publicationsService.selectedpublications.title\" placeholder=\"title\">\n</div>  \n<div class=\"form-group\">\n  <label>content</label>\n  <input type=\"textarea\" class=\"form-control\" name=\"content\" #name=\"ngModel\" required [(ngModel)]=\"publicationsService.selectedpublications.content\" placeholder=\"content\">\n</div>\n<div class=\"form-group\">\n  \n<label>year</label>\n  <input type=\"number\" class=\"form-control\" name=\"year\" #name=\"ngModel\" required [(ngModel)]=\"publicationsService.selectedpublications.year\" placeholder=\"year\">\n</div>\n\n\n<div class=\"form-group\">\n<button type=\"submit\" class=\"btn btn-light\" style=\"border:1px solid black;\" [disabled]=\"!publicationsForm.valid\"> <i class=\"fa fa-save\"></i>submit</button>\n<button type=\"button\" class=\"btn btn-light\" style=\"border:1px solid black;\" (click)=\"onDelete(publicationsForm)\" *ngIf=\"publicationsService.selectedpublications.$key!=null\"><i class=\"fa fa-trash\"></i>delete</button>\n<button type=\"button\" class=\"btn btn-light\" style=\"border:1px solid black;\" (click)=\"resetForm()\"><i class=\"fa fa-redo\" ></i>reset</button>\n\n</div>\n</form>"
+
+/***/ }),
+
+/***/ "./src/app/research/publications/publications.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PublicationsComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__shared_publications_service__ = __webpack_require__("./src/app/research/shared/publications.service.ts");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var PublicationsComponent = /** @class */ (function () {
+    function PublicationsComponent(publicationsService) {
+        this.publicationsService = publicationsService;
+        this.inserted = false;
+        this.updated = false;
+        this.deleted = false;
+    }
+    PublicationsComponent.prototype.ngOnInit = function () {
+    };
+    PublicationsComponent.prototype.onSubmit = function (form) {
+        if (form.value.$key == null) {
+            this.publicationsService.insertPublications(form.value);
+            this.resetForm();
+            this.inserted = true;
+        }
+        else {
+            this.publicationsService.updatePublications(form.value);
+            this.updated = true;
+        }
+    };
+    PublicationsComponent.prototype.resetForm = function (form) {
+        if (form != null)
+            form.reset();
+        this.publicationsService.selectedpublications = {
+            $key: null,
+            title: '',
+            content: '',
+            year: null,
+        };
+    };
+    PublicationsComponent.prototype.onDelete = function (form) {
+        if (confirm("are you sure you want to delete this record") == true) {
+            this.publicationsService.deletePublications(form.value.$key);
+            this.resetForm(form);
+        }
+    };
+    PublicationsComponent = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+            selector: 'app-publications',
+            template: __webpack_require__("./src/app/research/publications/publications.component.html"),
+            styles: [__webpack_require__("./src/app/research/publications/publications.component.css")]
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__shared_publications_service__["a" /* PublicationsService */]])
+    ], PublicationsComponent);
+    return PublicationsComponent;
+}());
+
+
+
+/***/ }),
+
 /***/ "./src/app/research/research.component.css":
 /***/ (function(module, exports) {
 
@@ -2221,7 +2440,7 @@ module.exports = ".card-body{\r\n    background-color:lightgray;\r\n}"
 /***/ "./src/app/research/research.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container text-center\">\n   \n  <h1  style=\"position:relative; z-index:1; margin-bottom:-10px; color:darksalmon; font-size:3em;  \">we love our work  </h1>\n  <div id=\"carouselExampleIndicators\" class=\"carousel slide\" data-ride=\"carousel\">\n    <ol class=\"carousel-indicators\">\n      <li data-target=\"#carouselExampleIndicators\" data-slide-to=\"0\" class=\"active\"></li>\n      <li data-target=\"#carouselExampleIndicators\" data-slide-to=\"1\"></li>\n      <li data-target=\"#carouselExampleIndicators\" data-slide-to=\"2\"></li>\n    </ol>\n    <div class=\"carousel-inner\">\n      <div class=\"carousel-item active\">\n        <img class=\"d-block w-100\" src=\"../assets/images/typography.jpg\" alt=\"First slide\">\n      </div>\n      <div class=\"carousel-item\">\n        <img class=\"d-block w-100\" src=\"../assets/images/diwali.jpg\" alt=\"Second slide\">\n      </div>\n      <div class=\"carousel-item\">\n        <img class=\"d-block w-100\" src=\"../assets/images/exhibition1.jpg\" alt=\"Third slide\">\n      </div>\n    </div>\n    <a class=\"carousel-control-prev\" href=\"#carouselExampleIndicators\" role=\"button\" data-slide=\"prev\">\n      <span class=\"carousel-control-prev-icon\" aria-hidden=\"true\"></span>\n      <span class=\"sr-only\">Previous</span>\n    </a>\n    <a class=\"carousel-control-next\" href=\"#carouselExampleIndicators\" role=\"button\" data-slide=\"next\">\n      <span class=\"carousel-control-next-icon\" aria-hidden=\"true\"></span>\n      <span class=\"sr-only\">Next</span>\n    </a>\n  </div>\n  <div class=\"row justify-content-center\">\n            <p class=\"lead\">The research program in Design at DoD –IITG aims at training researchers in Design not only to consolidate what is known in design but also to build a design knowledge base through original inquiry, experimentation and investigation.\n                DoD is open to new and emerging areas in Design that fall in the triadic cusp of Science, Engineering and the Arts.Research and sponsored projects are the integral part of the department where faculties conduct research experimentation and projects in several areas such as product design, industrial design, transportation design, sustainability, ergonomics, usability engineering, interaction design, graphic design, film and video and many more.\n                \n                Possibilities to pursue research in collaboration with other Engineering and Social Sciences departments in IITG also exist. Interested scholars are invited to get in touch through email with the Faculty at DoD-IITG to explore possibilities.</p>\n            <div class=\"container text-left\">\n              <div class=\"row no-gutters\">\n                <div class=\"col-sm-4\">\n                  <div class=\"card \">\n                    <img  style=\"height:300px; width:250px;\" src=\"../assets/images/research-icon.png\" alt=\"\" class=\"card-img-top\">\n                    <div class=\"card-block\">\n                      <h3 class=\"card-title text-center\"> <a class=\"btn btn-outline-secondary\" data-toggle=\"collapse\" href=\"#collapseExample\" role=\"button\" aria-expanded=\"false\" aria-controls=\"collapseExample\">\n                          Ongoing Research Projects\n                        </a></h3>\n                        <div class=\"collapse\" id=\"collapseExample\">\n                            <div class=\"card card-body\">\n                              \n                              <button (click)=\"onClickEdit()\" class=\"btn btn-light\" style=\"border:1px solid black;\"> go to edit section</button>\n\n\n                              <ul class=\"list-group\">\n                                  <li class=\"list-group-item\"  *ngFor=\"let oproject of oprojectList\" ><div class=\"card sm-4\">\n                                    <div  style=\"height:50px; width:100px;\" ><i style=\"height:50px; width:25px;\" class=\"fa fa-rocket\"></i></div>\n                                    <div class=\"card-body\">\n                                      <h2 class=\"card-title\">{{oproject.title}}</h2>\n                                      <p class=\"card-text\">Principle Investigator: {{oproject.principleInvestigator}}</p>\n                                      <p class=\"card-text\">Co Investigator:{{oproject.coInvestigator}}</p>\n                                      \n                                    </div>\n                                    <div class=\"card-footer text-muted\">\n                                    <p>Sponsoring Agency: {{oproject.sponsoringAgency}}</p>\n                                    \n                                    </div>\n                                  </div> </li>\n                                </ul>\n                              \n\n                            </div>\n                          </div>\n                      <p class=\"card-text\"></p>\n                    </div>\n                  </div>\n                </div>\n                <div class=\"col-sm-4\">\n                  <div class=\"card\">\n                    <img style=\"height:300px; width:250px;\" src=\"../assets/images/research-icon.png\" alt=\"\" class=\"card-img-top\">\n                    <div class=\"card-block\">\n                      <h3 class=\"card-title text-center\"><a class=\"btn btn-outline-secondary\" data-toggle=\"collapse\" href=\"#collapseExample2\" role=\"button\" aria-expanded=\"false\" aria-controls=\"collapseExample2\">\n                          Completed Research Projects\n                        </a></h3><div class=\"collapse\" id=\"collapseExample2\">\n                            <div class=\"card card-body\">\n                                \n                              <button (click)=\"onClickEdit2()\" class=\"btn btn-light\" style=\"border:1px solid black;\"> go to edit section</button>\n\n\n                              <ul class=\"list-group\">\n                                  <li class=\"list-group-item\"  *ngFor=\"let cproject of cprojectList\" ><div class=\"card sm-4\">\n                                    <div  style=\"height:50px; width:100px;\" ><i style=\"height:50px; width:25px;\" class=\"fa fa-rocket\"></i></div>\n                                    <div class=\"card-body\">\n                                      <h2 class=\"card-title\">{{cproject.title}}</h2>\n                                      <p class=\"card-text\">Principle Investigator: {{cproject.principleInvestigator}}</p>\n                                      <p class=\"card-text\">Co Investigator:{{cproject.coInvestigator}}</p>\n                                      \n                                    </div>\n                                    <div class=\"card-footer text-muted\">\n                                    <p>Sponsoring Agency: {{cproject.sponsoringAgency}}</p>\n                                    \n                                    </div>\n                                  </div> </li>\n                                </ul>\n                            </div>\n                          </div>\n                      <p class=\"card-text\"></p>\n                    </div>\n                  </div>\n                </div>\n                <div class=\"col-sm-4\">\n                  <div class=\"card\">\n                    <img style=\"height:300px; width:250px;\" src=\"../assets/images/research-icon.png\" alt=\"\" class=\"card-img-top\">\n                    <div class=\"card-block\">\n                      <h3 class=\"card-title text-center\"><a class=\"btn btn-outline-secondary\" data-toggle=\"collapse\" href=\"#collapseExample3\" role=\"button\" aria-expanded=\"false\" aria-controls=\"collapseExample3\">\n                        Publications \n                      </a></h3><div class=\"collapse\" id=\"collapseExample3\">\n                          <div class=\"card card-body\">hello</div>\n                      <p class=\"card-text\"></p>\n                    </div>\n                  </div>\n                </div>\n              </div>\n            </div>\n       </div>\n      </div>\n      <div class=\"jumbotron jumbotron-fluid\">\n        <div class=\"container\">\n          <h1 class=\"display-4\">Always looking forward to make world better designed</h1>\n          <p class=\"lead\">we worship our commitments </p>\n        </div>\n      </div>\n\n</div>"
+module.exports = "<div class=\"container text-center\">\n   \n  <h1  style=\"position:relative; z-index:1; margin-bottom:-10px; color:darksalmon; font-size:3em;  \">we love our work  </h1>\n  <div id=\"carouselExampleIndicators\" class=\"carousel slide\" data-ride=\"carousel\">\n    <ol class=\"carousel-indicators\">\n      <li data-target=\"#carouselExampleIndicators\" data-slide-to=\"0\" class=\"active\"></li>\n      <li data-target=\"#carouselExampleIndicators\" data-slide-to=\"1\"></li>\n      <li data-target=\"#carouselExampleIndicators\" data-slide-to=\"2\"></li>\n    </ol>\n    <div class=\"carousel-inner\">\n      <div class=\"carousel-item active\">\n        <img class=\"d-block w-100\" src=\"../assets/images/typography.jpg\" alt=\"First slide\">\n      </div>\n      <div class=\"carousel-item\">\n        <img class=\"d-block w-100\" src=\"../assets/images/diwali.jpg\" alt=\"Second slide\">\n      </div>\n      <div class=\"carousel-item\">\n        <img class=\"d-block w-100\" src=\"../assets/images/exhibition1.jpg\" alt=\"Third slide\">\n      </div>\n    </div>\n    <a class=\"carousel-control-prev\" href=\"#carouselExampleIndicators\" role=\"button\" data-slide=\"prev\">\n      <span class=\"carousel-control-prev-icon\" aria-hidden=\"true\"></span>\n      <span class=\"sr-only\">Previous</span>\n    </a>\n    <a class=\"carousel-control-next\" href=\"#carouselExampleIndicators\" role=\"button\" data-slide=\"next\">\n      <span class=\"carousel-control-next-icon\" aria-hidden=\"true\"></span>\n      <span class=\"sr-only\">Next</span>\n    </a>\n  </div>\n  <div class=\"row justify-content-center\">\n            <p class=\"lead\">The research program in Design at DoD –IITG aims at training researchers in Design not only to consolidate what is known in design but also to build a design knowledge base through original inquiry, experimentation and investigation.\n                DoD is open to new and emerging areas in Design that fall in the triadic cusp of Science, Engineering and the Arts.Research and sponsored projects are the integral part of the department where faculties conduct research experimentation and projects in several areas such as product design, industrial design, transportation design, sustainability, ergonomics, usability engineering, interaction design, graphic design, film and video and many more.\n                \n                Possibilities to pursue research in collaboration with other Engineering and Social Sciences departments in IITG also exist. Interested scholars are invited to get in touch through email with the Faculty at DoD-IITG to explore possibilities.</p>\n            <div class=\"container text-left\">\n              <div class=\"row no-gutters\">\n                <div class=\"col-sm-4\">\n                  <div class=\"card \">\n                    <img  style=\"height:300px; width:250px;\" src=\"../assets/images/research-icon.png\" alt=\"\" class=\"card-img-top\">\n                    <div class=\"card-block\">\n                      <h3 class=\"card-title text-center\"> <a class=\"btn btn-outline-secondary\" data-toggle=\"collapse\" href=\"#collapseExample\" role=\"button\" aria-expanded=\"false\" aria-controls=\"collapseExample\">\n                          Ongoing Research Projects\n                        </a></h3>\n                        <div class=\"collapse\" id=\"collapseExample\">\n                            <div class=\"card card-body\">\n                              \n                              <button (click)=\"onClickEdit()\" class=\"btn btn-light\" style=\"border:1px solid black;\"> go to edit section</button>\n\n\n                              <ul class=\"list-group\">\n                                  <li class=\"list-group-item\"  *ngFor=\"let oproject of oprojectList\" ><div class=\"card sm-4\">\n                                    <div  style=\"height:50px; width:100px;\" ><i style=\"height:50px; width:25px;\" class=\"fa fa-rocket\"></i></div>\n                                    <div class=\"card-body\">\n                                      <h2 class=\"card-title\">{{oproject.title}}</h2>\n                                      <p class=\"card-text\">Principle Investigator: {{oproject.principleInvestigator}}</p>\n                                      <p class=\"card-text\">Co Investigator:{{oproject.coInvestigator}}</p>\n                                      \n                                    </div>\n                                    <div class=\"card-footer text-muted\">\n                                    <p>Sponsoring Agency: {{oproject.sponsoringAgency}}</p>\n                                    \n                                    </div>\n                                  </div> </li>\n                                </ul>\n                              \n\n                            </div>\n                          </div>\n                      <p class=\"card-text\"></p>\n                    </div>\n                  </div>\n                </div>\n                <div class=\"col-sm-4\">\n                  <div class=\"card\">\n                    <img style=\"height:300px; width:250px;\" src=\"../assets/images/research-icon.png\" alt=\"\" class=\"card-img-top\">\n                    <div class=\"card-block\">\n                      <h3 class=\"card-title text-center\"><a class=\"btn btn-outline-secondary\" data-toggle=\"collapse\" href=\"#collapseExample2\" role=\"button\" aria-expanded=\"false\" aria-controls=\"collapseExample2\">\n                          Completed Research Projects\n                        </a></h3><div class=\"collapse\" id=\"collapseExample2\">\n                            <div class=\"card card-body\">\n                                \n                              <button (click)=\"onClickEdit2()\" class=\"btn btn-light\" style=\"border:1px solid black;\"> go to edit section</button>\n\n\n                              <ul class=\"list-group\">\n                                  <li class=\"list-group-item\"  *ngFor=\"let cproject of cprojectList\" ><div class=\"card sm-4\">\n                                    <div  style=\"height:50px; width:100px;\" ><i style=\"height:50px; width:25px;\" class=\"fa fa-rocket\"></i></div>\n                                    <div class=\"card-body\">\n                                      <h2 class=\"card-title\">{{cproject.title}}</h2>\n                                      <p class=\"card-text\">Principle Investigator: {{cproject.principleInvestigator}}</p>\n                                      <p class=\"card-text\">Co Investigator:{{cproject.coInvestigator}}</p>\n                                      \n                                    </div>\n                                    <div class=\"card-footer text-muted\">\n                                    <p>Sponsoring Agency: {{cproject.sponsoringAgency}}</p>\n                                    \n                                    </div>\n                                  </div> </li>\n                                </ul>\n                            </div>\n                          </div>\n                      <p class=\"card-text\"></p>\n                    </div>\n                  </div>\n                </div>\n                <div class=\"col-sm-4\">\n                  <div class=\"card\">\n                    <img style=\"height:300px; width:250px;\" src=\"../assets/images/research-icon.png\" alt=\"\" class=\"card-img-top\">\n                    <div class=\"card-block\">\n                      <h3 class=\"card-title text-center\"><a class=\"btn btn-outline-secondary\" data-toggle=\"collapse\" href=\"#collapseExample3\" role=\"button\" aria-expanded=\"false\" aria-controls=\"collapseExample3\">\n                        Publications \n                      </a></h3><div class=\"collapse\" id=\"collapseExample3\">\n                          <div class=\"card card-body\">\n                                \n                              <button (click)=\"onClickEdit3()\" class=\"btn btn-light\" style=\"border:1px solid black;\"> go to edit section</button>\n\n\n                              <ul class=\"list-group\">\n                                  <li class=\"list-group-item\"  *ngFor=\"let publications of publicationsList\" ><div class=\"card sm-4\">\n                                    <div  style=\"height:50px; width:100px;\" ><i style=\"height:50px; width:25px;\" class=\"fa fa-rocket\"></i></div>\n                                    <div class=\"card-body\">\n                                      <h2 class=\"card-title\">{{publications.title}}</h2>\n                                      <p class=\"card-text\">{{publications.content}}</p>\n                                      \n                                      \n                                    </div>\n                                    <div class=\"card-footer text-muted\">\n                                    <p>published in year:{{publications.year}}</p>\n                                    \n                                    </div>\n                                  </div> </li>\n                                </ul>\n                            </div>\n                      <p class=\"card-text\"></p>\n                    </div>\n                  </div>\n                </div>\n              </div>\n            </div>\n       </div>\n      </div>\n      <div class=\"jumbotron jumbotron-fluid\">\n        <div class=\"container\">\n          <h1 class=\"display-4\">Always looking forward to make world better designed</h1>\n          <p class=\"lead\">we worship our commitments </p>\n        </div>\n      </div>\n\n</div>"
 
 /***/ }),
 
@@ -2234,6 +2453,7 @@ module.exports = "<div class=\"container text-center\">\n   \n  <h1  style=\"pos
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__shared_oproject_service__ = __webpack_require__("./src/app/research/shared/oproject.service.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__("./node_modules/@angular/router/esm5/router.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__shared_cproject_service__ = __webpack_require__("./src/app/research/shared/cproject.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__shared_publications_service__ = __webpack_require__("./src/app/research/shared/publications.service.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -2247,9 +2467,11 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
+
 var ResearchComponent = /** @class */ (function () {
-    function ResearchComponent(oprojectService, router, cprojectService) {
+    function ResearchComponent(oprojectService, publicationsService, router, cprojectService) {
         this.oprojectService = oprojectService;
+        this.publicationsService = publicationsService;
         this.router = router;
         this.cprojectService = cprojectService;
     }
@@ -2273,6 +2495,15 @@ var ResearchComponent = /** @class */ (function () {
                 _this.cprojectList.push(y);
             });
         });
+        var z = this.publicationsService.getData();
+        z.snapshotChanges().subscribe(function (item) {
+            _this.publicationsList = [];
+            item.forEach(function (element) {
+                var z = element.payload.toJSON();
+                z["$key"] = element.key;
+                _this.publicationsList.push(z);
+            });
+        });
     };
     ResearchComponent.prototype.onClickEdit = function () {
         this.router.navigate(['/oproject-list-edit']);
@@ -2280,13 +2511,16 @@ var ResearchComponent = /** @class */ (function () {
     ResearchComponent.prototype.onClickEdit2 = function () {
         this.router.navigate(['/cproject-list-edit']);
     };
+    ResearchComponent.prototype.onClickEdit3 = function () {
+        this.router.navigate(['/publications-list-edit']);
+    };
     ResearchComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
             selector: 'app-research',
             template: __webpack_require__("./src/app/research/research.component.html"),
             styles: [__webpack_require__("./src/app/research/research.component.css")]
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__shared_oproject_service__["a" /* OprojectService */], __WEBPACK_IMPORTED_MODULE_2__angular_router__["a" /* Router */], __WEBPACK_IMPORTED_MODULE_3__shared_cproject_service__["a" /* CprojectService */]])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__shared_oproject_service__["a" /* OprojectService */], __WEBPACK_IMPORTED_MODULE_4__shared_publications_service__["a" /* PublicationsService */], __WEBPACK_IMPORTED_MODULE_2__angular_router__["a" /* Router */], __WEBPACK_IMPORTED_MODULE_3__shared_cproject_service__["a" /* CprojectService */]])
     ], ResearchComponent);
     return ResearchComponent;
 }());
@@ -2437,6 +2671,73 @@ var OprojectService = /** @class */ (function () {
 
 /***/ }),
 
+/***/ "./src/app/research/shared/publications.model.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Publications; });
+var Publications = /** @class */ (function () {
+    function Publications() {
+    }
+    return Publications;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/research/shared/publications.service.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PublicationsService; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__publications_model__ = __webpack_require__("./src/app/research/shared/publications.model.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_angularfire2_database__ = __webpack_require__("./node_modules/angularfire2/database/index.js");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+var PublicationsService = /** @class */ (function () {
+    function PublicationsService(firebase) {
+        this.firebase = firebase;
+        this.selectedpublications = new __WEBPACK_IMPORTED_MODULE_1__publications_model__["a" /* Publications */]();
+    }
+    PublicationsService.prototype.getData = function () {
+        this.publicationsList = this.firebase.list('home/publications');
+        return this.publicationsList;
+    };
+    PublicationsService.prototype.insertPublications = function (publications) {
+        this.publicationsList.push({ title: publications.title,
+            content: publications.content,
+            year: publications.year,
+        });
+    };
+    PublicationsService.prototype.updatePublications = function (publications) {
+        this.publicationsList.update(publications.$key, { title: publications.title, content: publications.content,
+            year: publications.year
+        });
+    };
+    PublicationsService.prototype.deletePublications = function (key) { this.publicationsList.remove(key); };
+    PublicationsService = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["C" /* Injectable */])(),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2_angularfire2_database__["a" /* AngularFireDatabase */]])
+    ], PublicationsService);
+    return PublicationsService;
+}());
+
+
+
+/***/ }),
+
 /***/ "./src/app/shared/post.service.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -2494,7 +2795,7 @@ module.exports = ""
 /***/ "./src/app/students/students.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<link rel=\"stylesheet\" type=\"text/css\" href=\"../assets/css/set1.css\" />\n<div class=\"grid\">\n  <figure class=\"effect-lily\">\n    <img src=\"../assets/images/students2018.png\" alt=\"image not loaded\"/>\n    <figcaption>\n      <div>\n        <h2>batch <span>2018</span></h2>\n        \n      </div>\n     \n    </figcaption>\t\t\t\n  </figure>\n  <figure class=\"effect-lily\">\n    <img src=\"../assets/images/students2019.png\" alt=\"image not loaded\"/>\n    <figcaption>\n      <div>\n        <h2>batch<span>2019</span></h2>\n        \n      </div>\n    \n    </figcaption>\t\t\t\n  </figure>\n</div>\n\n\n\n\n\n<div class=\"row\">\n  <div class=\"col-sm-3\"></div>\n</div>"
+module.exports = "\n\n  <link rel=\"stylesheet\" type=\"text/css\" href=\"../assets/css/set1.css\" />\n<div class=\"container\">\n  <div class=\"row justify-content-center\">\n    <div class=\"col-xs-12\">\n<div class=\"grid\">\n  <figure class=\"effect-lily\">\n    <img src=\"../assets/images/students2018.png\" alt=\"image not loaded\"/>\n    <figcaption>\n      <div>\n        <h2>batch <span>2018</span></h2>\n        \n      </div>\n     \n    </figcaption>\t\t\t\n  </figure>\n  <figure class=\"effect-lily\">\n    <img src=\"../assets/images/students2019.png\" alt=\"image not loaded\"/>\n    <figcaption>\n      <div>\n        <h2>batch<span>2019</span></h2>\n        \n      </div>\n    \n    </figcaption>\t\t\t\n  </figure>\n</div>\n    </div>\n\n\n\n"
 
 /***/ }),
 
