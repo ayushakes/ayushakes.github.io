@@ -17,6 +17,56 @@ webpackEmptyAsyncContext.id = "./src/$$_lazy_route_resource lazy recursive";
 
 /***/ }),
 
+/***/ "./src/app/academics/academics.component.css":
+/***/ (function(module, exports) {
+
+module.exports = ""
+
+/***/ }),
+
+/***/ "./src/app/academics/academics.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"jumbotron\">\n  <div class=\"display-4\">overview</div>\n  \n  The Department of Design, DoD, is one of thirteen departments at the Indian Institute of Technology Guwahati. The Department of Design at IITG nurtures Innovators, Creators, Communicators and Inventors. It offers programs leading to B.Des, M.Des and PhD in the creative design discipline. B Des degree offered by the department is the only undergraduate level degree of its kind in an Indian Institute of Technology in Design.\nThe focus of the programmes is on the study, invention, and creative use of technologies to create effective, usable, enjoyable experiences with technology through interdisciplinary research in engineering, design, behavioral and social sciences, and to understand the impact of technology on individuals, groups, and organizations.\n\nThe Instructional program aims to prepare students in the use of analytical and methodical approaches to solving design problems. Issues such as culture studies, aesthetics, human engineering, consumer behavior, design management, cognitive psychology and related socio-economic factors are researched and integrated into the curriculums. The utilization of cutting edge production and prototyping technology ensures, in the students, a firm base to excel in contemporary work environments.\n</div>\n\n<mat-list>\n  <mat-list-item>Departmental Undergraduate Program Committee (DUPC)\n    Committee members: \n    Debkumar Chakrabarti (Professor & HOD), Ravi Mokashi Punekar (Professor), Amarendra Kumar Das (Professor), S. R. M. Prasanna (Professor)\n    DUPC Secretary: \n    Prasad Bokil (Assistant Professor)</mat-list-item>\n    <br/><br/><mat-divider></mat-divider> <br/> <br/>\n   <mat-list-item>Departmental Postgraduate Program Committee (DPPC)\n    Committee members: \n    Debkumar Chakrabarti (Professor & HOD), Ravi Mokashi Punekar (Professor), Amarendra umar Das (Professor), Utpal Barua (Associate Professor)\n    DPPC Secretary: \n    Keyur Sorathia (Associate Professor)</mat-list-item>\n    <br/> <br/> <mat-divider></mat-divider> <br/><br/>\n  <mat-list-item>Faculty Advisors\n    Bachelors in Design (1st & 2nd year): Pankaj Upadhyay (Assistant Professor)\n    Bachelors in Design (3rd & 4th year): Charu Monga (Assistant Professor) \n    Masters in Design: Keyur Sorathia (Associate Professor) \n    PhD in Design: Keyur Sorathia (Associate Professor)</mat-list-item>\n</mat-list>"
+
+/***/ }),
+
+/***/ "./src/app/academics/academics.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AcademicsComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var AcademicsComponent = /** @class */ (function () {
+    function AcademicsComponent() {
+    }
+    AcademicsComponent.prototype.ngOnInit = function () {
+    };
+    AcademicsComponent = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+            selector: 'app-academics',
+            template: __webpack_require__("./src/app/academics/academics.component.html"),
+            styles: [__webpack_require__("./src/app/academics/academics.component.css")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], AcademicsComponent);
+    return AcademicsComponent;
+}());
+
+
+
+/***/ }),
+
 /***/ "./src/app/app-routing.module.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -26,20 +76,22 @@ webpackEmptyAsyncContext.id = "./src/$$_lazy_route_resource lazy recursive";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__("./node_modules/@angular/router/esm5/router.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__home_home_component__ = __webpack_require__("./src/app/home/home.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__contact_contact_component__ = __webpack_require__("./src/app/contact/contact.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__work_work_component__ = __webpack_require__("./src/app/work/work.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__people_people_component__ = __webpack_require__("./src/app/people/people.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__students_students_component__ = __webpack_require__("./src/app/students/students.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__faculty_faculty_component__ = __webpack_require__("./src/app/faculty/faculty.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__research_research_component__ = __webpack_require__("./src/app/research/research.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__home_posts_new_post_new_post_component__ = __webpack_require__("./src/app/home/posts/new-post/new-post.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__home_posts_new_post_can_deactivate_guard_service__ = __webpack_require__("./src/app/home/posts/new-post/can-deactivate-guard.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__faculty_teacher_list_edit_teacher_list_edit_component__ = __webpack_require__("./src/app/faculty/teacher-list-edit/teacher-list-edit.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__research_oproject_list_edit_oproject_list_edit_component__ = __webpack_require__("./src/app/research/oproject-list-edit/oproject-list-edit.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__research_cproject_list_edit_cproject_list_edit_component__ = __webpack_require__("./src/app/research/cproject-list-edit/cproject-list-edit.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__home_news_list_edit_news_list_edit_component__ = __webpack_require__("./src/app/home/news-list-edit/news-list-edit.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__home_links_list_edit_links_list_edit_component__ = __webpack_require__("./src/app/home/links-list-edit/links-list-edit.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__research_publications_list_edit_publications_list_edit_component__ = __webpack_require__("./src/app/research/publications-list-edit/publications-list-edit.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__students_students_list_edit_students_list_edit_component__ = __webpack_require__("./src/app/students/students-list-edit/students-list-edit.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__people_people_component__ = __webpack_require__("./src/app/people/people.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__students_students_component__ = __webpack_require__("./src/app/students/students.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__faculty_faculty_component__ = __webpack_require__("./src/app/faculty/faculty.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__research_research_component__ = __webpack_require__("./src/app/research/research.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__home_posts_new_post_new_post_component__ = __webpack_require__("./src/app/home/posts/new-post/new-post.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__home_posts_new_post_can_deactivate_guard_service__ = __webpack_require__("./src/app/home/posts/new-post/can-deactivate-guard.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__faculty_teacher_list_edit_teacher_list_edit_component__ = __webpack_require__("./src/app/faculty/teacher-list-edit/teacher-list-edit.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__research_oproject_list_edit_oproject_list_edit_component__ = __webpack_require__("./src/app/research/oproject-list-edit/oproject-list-edit.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__research_cproject_list_edit_cproject_list_edit_component__ = __webpack_require__("./src/app/research/cproject-list-edit/cproject-list-edit.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__home_news_list_edit_news_list_edit_component__ = __webpack_require__("./src/app/home/news-list-edit/news-list-edit.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__home_links_list_edit_links_list_edit_component__ = __webpack_require__("./src/app/home/links-list-edit/links-list-edit.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__research_publications_list_edit_publications_list_edit_component__ = __webpack_require__("./src/app/research/publications-list-edit/publications-list-edit.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__students_students_list_edit_students_list_edit_component__ = __webpack_require__("./src/app/students/students-list-edit/students-list-edit.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__academics_academics_component__ = __webpack_require__("./src/app/academics/academics.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__places_places_component__ = __webpack_require__("./src/app/places/places.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__events_events_component__ = __webpack_require__("./src/app/events/events.component.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -64,14 +116,17 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
+
+
 var appRoutes = [{ path: '', component: __WEBPACK_IMPORTED_MODULE_2__home_home_component__["a" /* HomeComponent */] },
-    { path: 'research', component: __WEBPACK_IMPORTED_MODULE_8__research_research_component__["a" /* ResearchComponent */] }, { path: 'oproject-list-edit', component: __WEBPACK_IMPORTED_MODULE_12__research_oproject_list_edit_oproject_list_edit_component__["a" /* OprojectListEditComponent */] }, { path: 'cproject-list-edit', component: __WEBPACK_IMPORTED_MODULE_13__research_cproject_list_edit_cproject_list_edit_component__["a" /* CprojectListEditComponent */] },
-    { path: 'home', component: __WEBPACK_IMPORTED_MODULE_2__home_home_component__["a" /* HomeComponent */] }, { path: 'students-list-edit', component: __WEBPACK_IMPORTED_MODULE_17__students_students_list_edit_students_list_edit_component__["a" /* StudentsListEditComponent */] }, { path: 'news-list-edit', component: __WEBPACK_IMPORTED_MODULE_14__home_news_list_edit_news_list_edit_component__["a" /* NewsListEditComponent */] }, { path: 'publications-list-edit', component: __WEBPACK_IMPORTED_MODULE_16__research_publications_list_edit_publications_list_edit_component__["a" /* PublicationsListEditComponent */] }, { path: 'links-list-edit', component: __WEBPACK_IMPORTED_MODULE_15__home_links_list_edit_links_list_edit_component__["a" /* LinksListEditComponent */] },
-    { path: 'home/newPost', component: __WEBPACK_IMPORTED_MODULE_9__home_posts_new_post_new_post_component__["a" /* NewPostComponent */], canDeactivate: [__WEBPACK_IMPORTED_MODULE_10__home_posts_new_post_can_deactivate_guard_service__["a" /* CanDeactivateGuard */]] },
-    { path: 'faculty', component: __WEBPACK_IMPORTED_MODULE_7__faculty_faculty_component__["a" /* FacultyComponent */] }, { path: 'teacher-edit', component: __WEBPACK_IMPORTED_MODULE_11__faculty_teacher_list_edit_teacher_list_edit_component__["a" /* TeacherListEditComponent */] },
-    { path: 'students', component: __WEBPACK_IMPORTED_MODULE_6__students_students_component__["a" /* StudentsComponent */] },
-    { path: 'people', component: __WEBPACK_IMPORTED_MODULE_5__people_people_component__["a" /* PeopleComponent */] },
-    { path: 'work', component: __WEBPACK_IMPORTED_MODULE_4__work_work_component__["a" /* WorkComponent */] },
+    { path: 'research', component: __WEBPACK_IMPORTED_MODULE_7__research_research_component__["a" /* ResearchComponent */] }, { path: 'oproject-list-edit', component: __WEBPACK_IMPORTED_MODULE_11__research_oproject_list_edit_oproject_list_edit_component__["a" /* OprojectListEditComponent */] }, { path: 'cproject-list-edit', component: __WEBPACK_IMPORTED_MODULE_12__research_cproject_list_edit_cproject_list_edit_component__["a" /* CprojectListEditComponent */] },
+    { path: 'home', component: __WEBPACK_IMPORTED_MODULE_2__home_home_component__["a" /* HomeComponent */] }, { path: 'students-list-edit', component: __WEBPACK_IMPORTED_MODULE_16__students_students_list_edit_students_list_edit_component__["a" /* StudentsListEditComponent */] }, { path: 'news-list-edit', component: __WEBPACK_IMPORTED_MODULE_13__home_news_list_edit_news_list_edit_component__["a" /* NewsListEditComponent */] }, { path: 'publications-list-edit', component: __WEBPACK_IMPORTED_MODULE_15__research_publications_list_edit_publications_list_edit_component__["a" /* PublicationsListEditComponent */] }, { path: 'links-list-edit', component: __WEBPACK_IMPORTED_MODULE_14__home_links_list_edit_links_list_edit_component__["a" /* LinksListEditComponent */] },
+    { path: 'home/newPost', component: __WEBPACK_IMPORTED_MODULE_8__home_posts_new_post_new_post_component__["a" /* NewPostComponent */], canDeactivate: [__WEBPACK_IMPORTED_MODULE_9__home_posts_new_post_can_deactivate_guard_service__["a" /* CanDeactivateGuard */]] },
+    { path: 'faculty', component: __WEBPACK_IMPORTED_MODULE_6__faculty_faculty_component__["a" /* FacultyComponent */] }, { path: 'teacher-edit', component: __WEBPACK_IMPORTED_MODULE_10__faculty_teacher_list_edit_teacher_list_edit_component__["a" /* TeacherListEditComponent */] },
+    { path: 'students', component: __WEBPACK_IMPORTED_MODULE_5__students_students_component__["a" /* StudentsComponent */] },
+    { path: 'people', component: __WEBPACK_IMPORTED_MODULE_4__people_people_component__["a" /* PeopleComponent */] }, { path: 'academics', component: __WEBPACK_IMPORTED_MODULE_17__academics_academics_component__["a" /* AcademicsComponent */] },
+    { path: 'places', component: __WEBPACK_IMPORTED_MODULE_18__places_places_component__["a" /* PlacesComponent */] },
+    { path: 'events', component: __WEBPACK_IMPORTED_MODULE_19__events_events_component__["a" /* EventsComponent */] },
     { path: 'contact', component: __WEBPACK_IMPORTED_MODULE_3__contact_contact_component__["a" /* ContactComponent */] }];
 var AppRoutingModule = /** @class */ (function () {
     function AppRoutingModule() {
@@ -99,7 +154,7 @@ module.exports = "\r\n.bg-info{\r\n    background-image: url('dark_circles.b3a14
 /***/ "./src/app/app.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<link rel=\"stylesheet\" type=\"text/css\" href=\"../assets/css/set1.css\" />\r\n<link rel=\"stylesheet\" href=\"../assets/css/style.css\">\r\n<div class=\"whole\" appBack >\r\n\r\n  <div class=\"header\" style=\"background-color:dimgray; height:20vh; width:100%;\" >\r\n    <div class=\"row\"> <a  routerLink=\"home\"><img style=\"width:13vmin; height:13vmin; margin-left:2vw;\" src=\"../assets/images/iit-brand.png\" ></a><div class=\"col\"></div> <div class=\"col\"> <p style=\"font-size:4vw; \">Department Of Design</p> </div>\r\n  </div>\r\n<nav class=\"navbar navbar-expand-lg navbar-dark bg-dark\" >\r\n\r\n  <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarSupportedContent\" aria-controls=\"navbarSupportedContent\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\r\n    <span class=\"navbar-toggler-icon\"></span>\r\n  </button>\r\n\r\n  <div class=\"collapse navbar-collapse\" id=\"navbarSupportedContent\">\r\n    <ul class=\"navbar-nav mr-auto\">\r\n      <li class=\"nav-item\">\r\n        <a class=\"nav-link\" routerLink=\"home\">Home <span class=\"sr-only\">(current)</span></a>\r\n      </li>\r\n      <li class=\"nav-item\">\r\n        <a class=\"nav-link\" routerLink=\"research\">research</a>\r\n      </li>\r\n      <li class=\"nav-item dropdown\">\r\n        <a class=\"nav-link dropdown-toggle\"  id=\"navbarDropdown\" role=\"button\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">\r\n          people\r\n        </a>\r\n        <div class=\"dropdown-menu\" aria-labelledby=\"navbarDropdown\">\r\n          <a class=\"dropdown-item\" routerLink='students'>students</a>\r\n          <a class=\"dropdown-item\" routerLink='faculty'>faculty</a>\r\n       \r\n          <a class=\"dropdown-item\" href=\"#\">staff</a>\r\n        </div>\r\n      </li>\r\n      <li class=\"nav-item\">\r\n        <a class=\"nav-link\" routerLink=\"contact\">contact</a>\r\n      </li>\r\n    </ul>\r\n    <mat-chip-list>\r\n      \r\n      <mat-chip color=\"primary\" selected='true' >signup</mat-chip>\r\n      <mat-chip color=\"accent\" >signin</mat-chip>\r\n    </mat-chip-list>\r\n  </div>\r\n</nav>\r\n\r\n<div style=\"position:relative; margin-top:68px;\">\r\n<router-outlet></router-outlet>\r\n</div>\r\n\r\n<div class=\"jumbotron jumbotron-fluid rounded-top bg-info\" style=\"margin-bottom:0px;\">\r\n  <div class=\"container\">\r\n    <h1 class=\"display-4\" style=\"color:white;\">Department of Design IIT-guwahati </h1>\r\n    <p class=\"lead\" style=\"color:white;\">Things look better,work better and feel better when properly designed</p>\r\n  </div>\r\n</div>\r\n</div>"
+module.exports = "<link rel=\"stylesheet\" type=\"text/css\" href=\"../assets/css/set1.css\" />\r\n<link rel=\"stylesheet\" href=\"../assets/css/style.css\">\r\n<div class=\"whole\" appBack >\r\n\r\n  <div class=\"header\" style=\"background-color:dimgray; height:20vh; width:100%;\" >\r\n    <div class=\"row\"> <a  routerLink=\"home\"><img style=\"width:13vmin; height:13vmin; margin-left:2vw;\" src=\"../assets/images/iit-brand.png\" ></a><div class=\"col\"></div> <div class=\"col\"> <p style=\"font-size:4vw; \">Department Of Design</p> </div>\r\n  </div>\r\n<nav class=\"navbar navbar-expand-lg navbar-dark bg-dark\" >\r\n\r\n  <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarSupportedContent\" aria-controls=\"navbarSupportedContent\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\r\n    <span class=\"navbar-toggler-icon\"></span>\r\n  </button>\r\n\r\n  <div class=\"collapse navbar-collapse\" id=\"navbarSupportedContent\">\r\n    <ul class=\"navbar-nav mr-auto\">\r\n      <li class=\"nav-item\">\r\n        <a class=\"nav-link\" routerLink=\"home\">Home <span class=\"sr-only\">(current)</span></a>\r\n      </li>\r\n      <li class=\"nav-item\">\r\n        <a class=\"nav-link\" routerLink=\"research\">research</a>\r\n      </li>\r\n      <li class=\"nav-item dropdown\">\r\n        <a class=\"nav-link dropdown-toggle\"  id=\"navbarDropdown\" role=\"button\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">\r\n          people\r\n        </a>\r\n        <div class=\"dropdown-menu\" aria-labelledby=\"navbarDropdown\">\r\n          <a class=\"dropdown-item\" routerLink='students'>students</a>\r\n          <a class=\"dropdown-item\" routerLink='faculty'>faculty</a>\r\n       \r\n          <a class=\"dropdown-item\" href=\"#\">staff</a>\r\n        </div>\r\n      </li>\r\n      <li class=\"nav-item\">\r\n        <a class=\"nav-link\" routerLink=\"places\">Places</a>\r\n      </li>\r\n      <li class=\"nav-item\">\r\n        <a class=\"nav-link\" routerLink=\"events\">Events</a>\r\n      </li>\r\n      <li class=\"nav-item\">\r\n        <a class=\"nav-link\" routerLink=\"academics\">Academics</a>\r\n      </li>\r\n      <li class=\"nav-item\">\r\n        <a class=\"nav-link\" routerLink=\"contact\">contact</a>\r\n      </li>\r\n    </ul>\r\n    <mat-chip-list>\r\n      \r\n      <mat-chip color=\"primary\" selected='true' >signup</mat-chip>\r\n      <mat-chip color=\"accent\" >signin</mat-chip>\r\n    </mat-chip-list>\r\n  </div>\r\n</nav>\r\n\r\n<div style=\"position:relative; margin-top:68px;\">\r\n<router-outlet></router-outlet>\r\n</div>\r\n\r\n<div class=\"jumbotron jumbotron-fluid rounded-top bg-info\" style=\"margin-bottom:0px;\">\r\n  <div class=\"container\">\r\n    <h1 class=\"display-4\" style=\"color:white;\">Department of Design IIT-guwahati </h1>\r\n    <p class=\"lead\" style=\"color:white;\">Things look better,work better and feel better when properly designed</p>\r\n  </div>\r\n</div>\r\n</div>"
 
 /***/ }),
 
@@ -225,12 +280,18 @@ var AppComponent = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_49__students_students_list_students_list_component__ = __webpack_require__("./src/app/students/students-list/students-list.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_50__students_students_list_edit_students_list_edit_component__ = __webpack_require__("./src/app/students/students-list-edit/students-list-edit.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_51__students_shared_students_service__ = __webpack_require__("./src/app/students/shared/students.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_52__academics_academics_component__ = __webpack_require__("./src/app/academics/academics.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_53__places_places_component__ = __webpack_require__("./src/app/places/places.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_54__events_events_component__ = __webpack_require__("./src/app/events/events.component.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
+
+
 
 
 
@@ -298,7 +359,7 @@ var AppModule = /** @class */ (function () {
         Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["K" /* NgModule */])({
             declarations: [
                 __WEBPACK_IMPORTED_MODULE_4__app_component__["a" /* AppComponent */], __WEBPACK_IMPORTED_MODULE_36__home_news_news_component__["a" /* NewsComponent */], __WEBPACK_IMPORTED_MODULE_37__home_news_list_edit_news_list_edit_component__["a" /* NewsListEditComponent */], __WEBPACK_IMPORTED_MODULE_38__home_news_list_news_list_component__["a" /* NewsListComponent */],
-                __WEBPACK_IMPORTED_MODULE_5__people_people_component__["a" /* PeopleComponent */], __WEBPACK_IMPORTED_MODULE_6__home_home_component__["a" /* HomeComponent */], __WEBPACK_IMPORTED_MODULE_7__work_work_component__["a" /* WorkComponent */], __WEBPACK_IMPORTED_MODULE_8__contact_contact_component__["a" /* ContactComponent */], __WEBPACK_IMPORTED_MODULE_9__students_students_component__["a" /* StudentsComponent */], __WEBPACK_IMPORTED_MODULE_10__faculty_faculty_component__["a" /* FacultyComponent */], __WEBPACK_IMPORTED_MODULE_11__research_research_component__["a" /* ResearchComponent */], __WEBPACK_IMPORTED_MODULE_12__home_posts_posts_component__["a" /* PostsComponent */], __WEBPACK_IMPORTED_MODULE_13__home_posts_post_post_component__["a" /* PostComponent */], __WEBPACK_IMPORTED_MODULE_14__back_directive__["a" /* BackDirective */], __WEBPACK_IMPORTED_MODULE_15__home_posts_new_post_new_post_component__["a" /* NewPostComponent */], __WEBPACK_IMPORTED_MODULE_21__faculty_teacher_teacher_component__["a" /* TeacherComponent */], __WEBPACK_IMPORTED_MODULE_22__faculty_teacher_list_teacher_list_component__["a" /* TeacherListComponent */], __WEBPACK_IMPORTED_MODULE_23__faculty_teacher_list_edit_teacher_list_edit_component__["a" /* TeacherListEditComponent */], __WEBPACK_IMPORTED_MODULE_25__research_oproject_oproject_component__["a" /* OprojectComponent */], __WEBPACK_IMPORTED_MODULE_26__research_cproject_cproject_component__["a" /* CprojectComponent */], __WEBPACK_IMPORTED_MODULE_27__research_oproject_list_oproject_list_component__["a" /* OprojectListComponent */], __WEBPACK_IMPORTED_MODULE_28__research_cproject_list_cproject_list_component__["a" /* CprojectListComponent */], __WEBPACK_IMPORTED_MODULE_29__research_oproject_list_edit_oproject_list_edit_component__["a" /* OprojectListEditComponent */], __WEBPACK_IMPORTED_MODULE_30__research_cproject_list_edit_cproject_list_edit_component__["a" /* CprojectListEditComponent */], __WEBPACK_IMPORTED_MODULE_40__home_links_list_links_list_component__["a" /* LinksListComponent */], __WEBPACK_IMPORTED_MODULE_41__home_links_list_edit_links_list_edit_component__["a" /* LinksListEditComponent */], __WEBPACK_IMPORTED_MODULE_42__home_links_links_component__["a" /* LinksComponent */], __WEBPACK_IMPORTED_MODULE_44__research_publications_publications_component__["a" /* PublicationsComponent */], __WEBPACK_IMPORTED_MODULE_45__research_publications_list_publications_list_component__["a" /* PublicationsListComponent */], __WEBPACK_IMPORTED_MODULE_46__research_publications_list_edit_publications_list_edit_component__["a" /* PublicationsListEditComponent */], __WEBPACK_IMPORTED_MODULE_48__students_student_student_component__["a" /* StudentComponent */], __WEBPACK_IMPORTED_MODULE_49__students_students_list_students_list_component__["a" /* StudentsListComponent */], __WEBPACK_IMPORTED_MODULE_50__students_students_list_edit_students_list_edit_component__["a" /* StudentsListEditComponent */]
+                __WEBPACK_IMPORTED_MODULE_5__people_people_component__["a" /* PeopleComponent */], __WEBPACK_IMPORTED_MODULE_6__home_home_component__["a" /* HomeComponent */], __WEBPACK_IMPORTED_MODULE_7__work_work_component__["a" /* WorkComponent */], __WEBPACK_IMPORTED_MODULE_8__contact_contact_component__["a" /* ContactComponent */], __WEBPACK_IMPORTED_MODULE_9__students_students_component__["a" /* StudentsComponent */], __WEBPACK_IMPORTED_MODULE_10__faculty_faculty_component__["a" /* FacultyComponent */], __WEBPACK_IMPORTED_MODULE_11__research_research_component__["a" /* ResearchComponent */], __WEBPACK_IMPORTED_MODULE_12__home_posts_posts_component__["a" /* PostsComponent */], __WEBPACK_IMPORTED_MODULE_13__home_posts_post_post_component__["a" /* PostComponent */], __WEBPACK_IMPORTED_MODULE_14__back_directive__["a" /* BackDirective */], __WEBPACK_IMPORTED_MODULE_15__home_posts_new_post_new_post_component__["a" /* NewPostComponent */], __WEBPACK_IMPORTED_MODULE_21__faculty_teacher_teacher_component__["a" /* TeacherComponent */], __WEBPACK_IMPORTED_MODULE_22__faculty_teacher_list_teacher_list_component__["a" /* TeacherListComponent */], __WEBPACK_IMPORTED_MODULE_23__faculty_teacher_list_edit_teacher_list_edit_component__["a" /* TeacherListEditComponent */], __WEBPACK_IMPORTED_MODULE_25__research_oproject_oproject_component__["a" /* OprojectComponent */], __WEBPACK_IMPORTED_MODULE_26__research_cproject_cproject_component__["a" /* CprojectComponent */], __WEBPACK_IMPORTED_MODULE_27__research_oproject_list_oproject_list_component__["a" /* OprojectListComponent */], __WEBPACK_IMPORTED_MODULE_28__research_cproject_list_cproject_list_component__["a" /* CprojectListComponent */], __WEBPACK_IMPORTED_MODULE_29__research_oproject_list_edit_oproject_list_edit_component__["a" /* OprojectListEditComponent */], __WEBPACK_IMPORTED_MODULE_30__research_cproject_list_edit_cproject_list_edit_component__["a" /* CprojectListEditComponent */], __WEBPACK_IMPORTED_MODULE_40__home_links_list_links_list_component__["a" /* LinksListComponent */], __WEBPACK_IMPORTED_MODULE_41__home_links_list_edit_links_list_edit_component__["a" /* LinksListEditComponent */], __WEBPACK_IMPORTED_MODULE_42__home_links_links_component__["a" /* LinksComponent */], __WEBPACK_IMPORTED_MODULE_44__research_publications_publications_component__["a" /* PublicationsComponent */], __WEBPACK_IMPORTED_MODULE_45__research_publications_list_publications_list_component__["a" /* PublicationsListComponent */], __WEBPACK_IMPORTED_MODULE_46__research_publications_list_edit_publications_list_edit_component__["a" /* PublicationsListEditComponent */], __WEBPACK_IMPORTED_MODULE_48__students_student_student_component__["a" /* StudentComponent */], __WEBPACK_IMPORTED_MODULE_49__students_students_list_students_list_component__["a" /* StudentsListComponent */], __WEBPACK_IMPORTED_MODULE_50__students_students_list_edit_students_list_edit_component__["a" /* StudentsListEditComponent */], __WEBPACK_IMPORTED_MODULE_52__academics_academics_component__["a" /* AcademicsComponent */], __WEBPACK_IMPORTED_MODULE_53__places_places_component__["a" /* PlacesComponent */], __WEBPACK_IMPORTED_MODULE_54__events_events_component__["a" /* EventsComponent */]
             ],
             imports: [
                 __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
@@ -438,6 +499,56 @@ var CoreModule = /** @class */ (function () {
         })
     ], CoreModule);
     return CoreModule;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/events/events.component.css":
+/***/ (function(module, exports) {
+
+module.exports = ""
+
+/***/ }),
+
+/***/ "./src/app/events/events.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<h1>\n  pages : places, academics and events are under development\n</h1>"
+
+/***/ }),
+
+/***/ "./src/app/events/events.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return EventsComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var EventsComponent = /** @class */ (function () {
+    function EventsComponent() {
+    }
+    EventsComponent.prototype.ngOnInit = function () {
+    };
+    EventsComponent = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+            selector: 'app-events',
+            template: __webpack_require__("./src/app/events/events.component.html"),
+            styles: [__webpack_require__("./src/app/events/events.component.css")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], EventsComponent);
+    return EventsComponent;
 }());
 
 
@@ -1733,7 +1844,9 @@ var NewsService = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_material_snack_bar__ = __webpack_require__("./node_modules/@angular/material/esm5/snack-bar.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_material_tabs__ = __webpack_require__("./node_modules/@angular/material/esm5/tabs.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_material_chips__ = __webpack_require__("./node_modules/@angular/material/esm5/chips.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__angular_material_button__ = __webpack_require__("./node_modules/@angular/material/esm5/button.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__angular_material_divider__ = __webpack_require__("./node_modules/@angular/material/esm5/divider.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__angular_material_button__ = __webpack_require__("./node_modules/@angular/material/esm5/button.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__angular_material_list__ = __webpack_require__("./node_modules/@angular/material/esm5/list.es5.js");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1746,13 +1859,15 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
+
+
 var MaterialModule = /** @class */ (function () {
     function MaterialModule() {
     }
     MaterialModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["K" /* NgModule */])({
-            imports: [__WEBPACK_IMPORTED_MODULE_5__angular_material_button__["a" /* MatButtonModule */], __WEBPACK_IMPORTED_MODULE_1__angular_material_form_field__["c" /* MatFormFieldModule */], __WEBPACK_IMPORTED_MODULE_2__angular_material_snack_bar__["b" /* MatSnackBarModule */], __WEBPACK_IMPORTED_MODULE_3__angular_material_tabs__["a" /* MatTabsModule */], __WEBPACK_IMPORTED_MODULE_4__angular_material_chips__["a" /* MatChipsModule */]],
-            exports: [__WEBPACK_IMPORTED_MODULE_5__angular_material_button__["a" /* MatButtonModule */], __WEBPACK_IMPORTED_MODULE_1__angular_material_form_field__["c" /* MatFormFieldModule */], __WEBPACK_IMPORTED_MODULE_2__angular_material_snack_bar__["b" /* MatSnackBarModule */], __WEBPACK_IMPORTED_MODULE_3__angular_material_tabs__["a" /* MatTabsModule */], __WEBPACK_IMPORTED_MODULE_4__angular_material_chips__["a" /* MatChipsModule */]],
+            imports: [__WEBPACK_IMPORTED_MODULE_7__angular_material_list__["a" /* MatListModule */], __WEBPACK_IMPORTED_MODULE_5__angular_material_divider__["a" /* MatDividerModule */], __WEBPACK_IMPORTED_MODULE_6__angular_material_button__["a" /* MatButtonModule */], __WEBPACK_IMPORTED_MODULE_1__angular_material_form_field__["c" /* MatFormFieldModule */], __WEBPACK_IMPORTED_MODULE_2__angular_material_snack_bar__["b" /* MatSnackBarModule */], __WEBPACK_IMPORTED_MODULE_3__angular_material_tabs__["a" /* MatTabsModule */], __WEBPACK_IMPORTED_MODULE_4__angular_material_chips__["a" /* MatChipsModule */]],
+            exports: [__WEBPACK_IMPORTED_MODULE_7__angular_material_list__["a" /* MatListModule */], __WEBPACK_IMPORTED_MODULE_5__angular_material_divider__["a" /* MatDividerModule */], __WEBPACK_IMPORTED_MODULE_6__angular_material_button__["a" /* MatButtonModule */], __WEBPACK_IMPORTED_MODULE_1__angular_material_form_field__["c" /* MatFormFieldModule */], __WEBPACK_IMPORTED_MODULE_2__angular_material_snack_bar__["b" /* MatSnackBarModule */], __WEBPACK_IMPORTED_MODULE_3__angular_material_tabs__["a" /* MatTabsModule */], __WEBPACK_IMPORTED_MODULE_4__angular_material_chips__["a" /* MatChipsModule */]],
             declarations: []
         })
     ], MaterialModule);
@@ -1807,6 +1922,56 @@ var PeopleComponent = /** @class */ (function () {
         __metadata("design:paramtypes", [])
     ], PeopleComponent);
     return PeopleComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/places/places.component.css":
+/***/ (function(module, exports) {
+
+module.exports = ""
+
+/***/ }),
+
+/***/ "./src/app/places/places.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<h1>\n  pages : places, academics and events are under development\n</h1>\n"
+
+/***/ }),
+
+/***/ "./src/app/places/places.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PlacesComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var PlacesComponent = /** @class */ (function () {
+    function PlacesComponent() {
+    }
+    PlacesComponent.prototype.ngOnInit = function () {
+    };
+    PlacesComponent = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+            selector: 'app-places',
+            template: __webpack_require__("./src/app/places/places.component.html"),
+            styles: [__webpack_require__("./src/app/places/places.component.css")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], PlacesComponent);
+    return PlacesComponent;
 }());
 
 
