@@ -67,6 +67,106 @@ var AcademicsComponent = /** @class */ (function () {
 
 /***/ }),
 
+/***/ "./src/app/academics/courses/courses.component.css":
+/***/ (function(module, exports) {
+
+module.exports = ""
+
+/***/ }),
+
+/***/ "./src/app/academics/courses/courses.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<h1>\n  Bachelors in design\n</h1>\n<br/>\n<h2>B.des 1st year </h2>\n<br/>\n"
+
+/***/ }),
+
+/***/ "./src/app/academics/courses/courses.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CoursesComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var CoursesComponent = /** @class */ (function () {
+    function CoursesComponent() {
+    }
+    CoursesComponent.prototype.ngOnInit = function () {
+    };
+    CoursesComponent = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+            selector: 'app-courses',
+            template: __webpack_require__("./src/app/academics/courses/courses.component.html"),
+            styles: [__webpack_require__("./src/app/academics/courses/courses.component.css")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], CoursesComponent);
+    return CoursesComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/academics/overview/overview.component.css":
+/***/ (function(module, exports) {
+
+module.exports = ""
+
+/***/ }),
+
+/***/ "./src/app/academics/overview/overview.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<p>\n  overview works!\n</p>\n"
+
+/***/ }),
+
+/***/ "./src/app/academics/overview/overview.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return OverviewComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var OverviewComponent = /** @class */ (function () {
+    function OverviewComponent() {
+    }
+    OverviewComponent.prototype.ngOnInit = function () {
+    };
+    OverviewComponent = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+            selector: 'app-overview',
+            template: __webpack_require__("./src/app/academics/overview/overview.component.html"),
+            styles: [__webpack_require__("./src/app/academics/overview/overview.component.css")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], OverviewComponent);
+    return OverviewComponent;
+}());
+
+
+
+/***/ }),
+
 /***/ "./src/app/app-routing.module.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -154,7 +254,7 @@ module.exports = "\r\n.bg-info{\r\n    background-image: url('dark_circles.b3a14
 /***/ "./src/app/app.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<link rel=\"stylesheet\" type=\"text/css\" href=\"../assets/css/set1.css\" />\r\n<link rel=\"stylesheet\" href=\"../assets/css/style.css\">\r\n<div class=\"whole\" appBack >\r\n\r\n  <div class=\"header\" style=\"background-color:dimgray; height:20vh; width:100%;\" >\r\n    <div class=\"row\"> <a  routerLink=\"home\"><img style=\"width:13vmin; height:13vmin; margin-left:2vw;\" src=\"../assets/images/iit-brand.png\" ></a><div class=\"col\"></div> <div class=\"col\"> <p style=\"font-size:4vw; \">Department Of Design</p> </div>\r\n  </div>\r\n<nav class=\"navbar navbar-expand-lg navbar-dark bg-dark\" >\r\n\r\n  <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarSupportedContent\" aria-controls=\"navbarSupportedContent\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\r\n    <span class=\"navbar-toggler-icon\"></span>\r\n  </button>\r\n\r\n  <div class=\"collapse navbar-collapse\" id=\"navbarSupportedContent\">\r\n    <ul class=\"navbar-nav mr-auto\">\r\n      <li class=\"nav-item\">\r\n        <a class=\"nav-link\" routerLink=\"home\">Home <span class=\"sr-only\">(current)</span></a>\r\n      </li>\r\n      <li class=\"nav-item\">\r\n        <a class=\"nav-link\" routerLink=\"research\">research</a>\r\n      </li>\r\n      <li class=\"nav-item dropdown\">\r\n        <a class=\"nav-link dropdown-toggle\"  id=\"navbarDropdown\" role=\"button\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">\r\n          people\r\n        </a>\r\n        <div class=\"dropdown-menu\" aria-labelledby=\"navbarDropdown\">\r\n          <a class=\"dropdown-item\" routerLink='students'>students</a>\r\n          <a class=\"dropdown-item\" routerLink='faculty'>faculty</a>\r\n       \r\n          <a class=\"dropdown-item\" href=\"#\">staff</a>\r\n        </div>\r\n      </li>\r\n      <li class=\"nav-item\">\r\n        <a class=\"nav-link\" routerLink=\"places\">Places</a>\r\n      </li>\r\n      <li class=\"nav-item\">\r\n        <a class=\"nav-link\" routerLink=\"events\">Events</a>\r\n      </li>\r\n      <li class=\"nav-item\">\r\n        <a class=\"nav-link\" routerLink=\"academics\">Academics</a>\r\n      </li>\r\n      <li class=\"nav-item\">\r\n        <a class=\"nav-link\" routerLink=\"contact\">contact</a>\r\n      </li>\r\n    </ul>\r\n    <mat-chip-list>\r\n      \r\n      <mat-chip color=\"primary\" selected='true' >signup</mat-chip>\r\n      <mat-chip color=\"accent\" >signin</mat-chip>\r\n    </mat-chip-list>\r\n  </div>\r\n</nav>\r\n\r\n<div style=\"position:relative; margin-top:68px;\">\r\n<router-outlet></router-outlet>\r\n</div>\r\n\r\n<div class=\"jumbotron jumbotron-fluid rounded-top bg-info\" style=\"margin-bottom:0px;\">\r\n  <div class=\"container\">\r\n    <h1 class=\"display-4\" style=\"color:white;\">Department of Design IIT-guwahati </h1>\r\n    <p class=\"lead\" style=\"color:white;\">Things look better,work better and feel better when properly designed</p>\r\n  </div>\r\n</div>\r\n</div>"
+module.exports = "<link rel=\"stylesheet\" type=\"text/css\" href=\"../assets/css/set1.css\" />\r\n<link rel=\"stylesheet\" href=\"../assets/css/style.css\">\r\n<div class=\"whole\" appBack >\r\n\r\n  <div class=\"header\" style=\"background-color:dimgray; height:20vh; width:100%;\" >\r\n    <div class=\"row\"> <a  routerLink=\"home\"><img style=\"width:13vmin; height:13vmin; margin-left:2vw;\" src=\"../assets/images/iit-brand.png\" ></a><div class=\"col\"></div> <div class=\"col\"> <p style=\"font-size:4vw; \">Department Of Design</p> </div>\r\n  </div>\r\n<nav class=\"navbar navbar-expand-lg navbar-dark bg-dark\" >\r\n\r\n  <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarSupportedContent\" aria-controls=\"navbarSupportedContent\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\r\n    <span class=\"navbar-toggler-icon\"></span>\r\n  </button>\r\n\r\n  <div class=\"collapse navbar-collapse\" id=\"navbarSupportedContent\">\r\n    <ul class=\"navbar-nav mr-auto\">\r\n      <li class=\"nav-item\">\r\n        <a class=\"nav-link\" routerLink=\"home\">Home <span class=\"sr-only\">(current)</span></a>\r\n      </li>\r\n      <li class=\"nav-item\">\r\n        <a class=\"nav-link\" routerLink=\"research\">research</a>\r\n      </li>\r\n      <li class=\"nav-item dropdown\">\r\n        <a class=\"nav-link dropdown-toggle\"  id=\"navbarDropdown\" role=\"button\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">\r\n          people\r\n        </a>\r\n        <div class=\"dropdown-menu\" aria-labelledby=\"navbarDropdown\">\r\n          <a class=\"dropdown-item\" routerLink='students'>students</a>\r\n          <a class=\"dropdown-item\" routerLink='faculty'>faculty</a>\r\n       \r\n          <a class=\"dropdown-item\" href=\"#\">staff</a>\r\n        </div>\r\n      </li>\r\n      <li class=\"nav-item\">\r\n        <a class=\"nav-link\" routerLink=\"places\">Places</a>\r\n      </li>\r\n      <li class=\"nav-item\">\r\n        <a class=\"nav-link\" routerLink=\"events\">Events</a>\r\n      </li>\r\n      <li class=\"nav-item\">\r\n        <a class=\"nav-link\" routerLink=\"academics\">Academics</a>\r\n      </li>\r\n      <li class=\"nav-item\">\r\n        <a class=\"nav-link\" routerLink=\"contact\">contact</a>\r\n      </li>\r\n    </ul>\r\n    <mat-chip-list>\r\n      \r\n      <mat-chip color=\"primary\" selected='true' >signup</mat-chip>\r\n      <mat-chip color=\"accent\" >signin</mat-chip>\r\n    </mat-chip-list>\r\n  </div>\r\n</nav>\r\n\r\n<div style=\"position:relative; margin-top:68px;\">\r\n<router-outlet></router-outlet>\r\n</div>\r\n\r\n<div class=\"jumbotron jumbotron-fluid rounded-top bg-info\" style=\"margin-bottom:0px;\">\r\n  <div class=\"container\">\r\n    <h1 class=\"display-4\" style=\"color:white;\">Department of Design IIT-guwahati </h1>\r\n    <p class=\"lead\" style=\"color:white;\">Things look better,work better and feel better when properly designed</p>\r\n  </div>\r\n</div>\r\n</div>\r\n</div>"
 
 /***/ }),
 
@@ -283,12 +383,16 @@ var AppComponent = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_52__academics_academics_component__ = __webpack_require__("./src/app/academics/academics.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_53__places_places_component__ = __webpack_require__("./src/app/places/places.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_54__events_events_component__ = __webpack_require__("./src/app/events/events.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_55__academics_courses_courses_component__ = __webpack_require__("./src/app/academics/courses/courses.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_56__academics_overview_overview_component__ = __webpack_require__("./src/app/academics/overview/overview.component.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
+
 
 
 
@@ -359,7 +463,7 @@ var AppModule = /** @class */ (function () {
         Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["K" /* NgModule */])({
             declarations: [
                 __WEBPACK_IMPORTED_MODULE_4__app_component__["a" /* AppComponent */], __WEBPACK_IMPORTED_MODULE_36__home_news_news_component__["a" /* NewsComponent */], __WEBPACK_IMPORTED_MODULE_37__home_news_list_edit_news_list_edit_component__["a" /* NewsListEditComponent */], __WEBPACK_IMPORTED_MODULE_38__home_news_list_news_list_component__["a" /* NewsListComponent */],
-                __WEBPACK_IMPORTED_MODULE_5__people_people_component__["a" /* PeopleComponent */], __WEBPACK_IMPORTED_MODULE_6__home_home_component__["a" /* HomeComponent */], __WEBPACK_IMPORTED_MODULE_7__work_work_component__["a" /* WorkComponent */], __WEBPACK_IMPORTED_MODULE_8__contact_contact_component__["a" /* ContactComponent */], __WEBPACK_IMPORTED_MODULE_9__students_students_component__["a" /* StudentsComponent */], __WEBPACK_IMPORTED_MODULE_10__faculty_faculty_component__["a" /* FacultyComponent */], __WEBPACK_IMPORTED_MODULE_11__research_research_component__["a" /* ResearchComponent */], __WEBPACK_IMPORTED_MODULE_12__home_posts_posts_component__["a" /* PostsComponent */], __WEBPACK_IMPORTED_MODULE_13__home_posts_post_post_component__["a" /* PostComponent */], __WEBPACK_IMPORTED_MODULE_14__back_directive__["a" /* BackDirective */], __WEBPACK_IMPORTED_MODULE_15__home_posts_new_post_new_post_component__["a" /* NewPostComponent */], __WEBPACK_IMPORTED_MODULE_21__faculty_teacher_teacher_component__["a" /* TeacherComponent */], __WEBPACK_IMPORTED_MODULE_22__faculty_teacher_list_teacher_list_component__["a" /* TeacherListComponent */], __WEBPACK_IMPORTED_MODULE_23__faculty_teacher_list_edit_teacher_list_edit_component__["a" /* TeacherListEditComponent */], __WEBPACK_IMPORTED_MODULE_25__research_oproject_oproject_component__["a" /* OprojectComponent */], __WEBPACK_IMPORTED_MODULE_26__research_cproject_cproject_component__["a" /* CprojectComponent */], __WEBPACK_IMPORTED_MODULE_27__research_oproject_list_oproject_list_component__["a" /* OprojectListComponent */], __WEBPACK_IMPORTED_MODULE_28__research_cproject_list_cproject_list_component__["a" /* CprojectListComponent */], __WEBPACK_IMPORTED_MODULE_29__research_oproject_list_edit_oproject_list_edit_component__["a" /* OprojectListEditComponent */], __WEBPACK_IMPORTED_MODULE_30__research_cproject_list_edit_cproject_list_edit_component__["a" /* CprojectListEditComponent */], __WEBPACK_IMPORTED_MODULE_40__home_links_list_links_list_component__["a" /* LinksListComponent */], __WEBPACK_IMPORTED_MODULE_41__home_links_list_edit_links_list_edit_component__["a" /* LinksListEditComponent */], __WEBPACK_IMPORTED_MODULE_42__home_links_links_component__["a" /* LinksComponent */], __WEBPACK_IMPORTED_MODULE_44__research_publications_publications_component__["a" /* PublicationsComponent */], __WEBPACK_IMPORTED_MODULE_45__research_publications_list_publications_list_component__["a" /* PublicationsListComponent */], __WEBPACK_IMPORTED_MODULE_46__research_publications_list_edit_publications_list_edit_component__["a" /* PublicationsListEditComponent */], __WEBPACK_IMPORTED_MODULE_48__students_student_student_component__["a" /* StudentComponent */], __WEBPACK_IMPORTED_MODULE_49__students_students_list_students_list_component__["a" /* StudentsListComponent */], __WEBPACK_IMPORTED_MODULE_50__students_students_list_edit_students_list_edit_component__["a" /* StudentsListEditComponent */], __WEBPACK_IMPORTED_MODULE_52__academics_academics_component__["a" /* AcademicsComponent */], __WEBPACK_IMPORTED_MODULE_53__places_places_component__["a" /* PlacesComponent */], __WEBPACK_IMPORTED_MODULE_54__events_events_component__["a" /* EventsComponent */]
+                __WEBPACK_IMPORTED_MODULE_5__people_people_component__["a" /* PeopleComponent */], __WEBPACK_IMPORTED_MODULE_6__home_home_component__["a" /* HomeComponent */], __WEBPACK_IMPORTED_MODULE_7__work_work_component__["a" /* WorkComponent */], __WEBPACK_IMPORTED_MODULE_8__contact_contact_component__["a" /* ContactComponent */], __WEBPACK_IMPORTED_MODULE_9__students_students_component__["a" /* StudentsComponent */], __WEBPACK_IMPORTED_MODULE_10__faculty_faculty_component__["a" /* FacultyComponent */], __WEBPACK_IMPORTED_MODULE_11__research_research_component__["a" /* ResearchComponent */], __WEBPACK_IMPORTED_MODULE_12__home_posts_posts_component__["a" /* PostsComponent */], __WEBPACK_IMPORTED_MODULE_13__home_posts_post_post_component__["a" /* PostComponent */], __WEBPACK_IMPORTED_MODULE_14__back_directive__["a" /* BackDirective */], __WEBPACK_IMPORTED_MODULE_15__home_posts_new_post_new_post_component__["a" /* NewPostComponent */], __WEBPACK_IMPORTED_MODULE_21__faculty_teacher_teacher_component__["a" /* TeacherComponent */], __WEBPACK_IMPORTED_MODULE_22__faculty_teacher_list_teacher_list_component__["a" /* TeacherListComponent */], __WEBPACK_IMPORTED_MODULE_23__faculty_teacher_list_edit_teacher_list_edit_component__["a" /* TeacherListEditComponent */], __WEBPACK_IMPORTED_MODULE_25__research_oproject_oproject_component__["a" /* OprojectComponent */], __WEBPACK_IMPORTED_MODULE_26__research_cproject_cproject_component__["a" /* CprojectComponent */], __WEBPACK_IMPORTED_MODULE_27__research_oproject_list_oproject_list_component__["a" /* OprojectListComponent */], __WEBPACK_IMPORTED_MODULE_28__research_cproject_list_cproject_list_component__["a" /* CprojectListComponent */], __WEBPACK_IMPORTED_MODULE_29__research_oproject_list_edit_oproject_list_edit_component__["a" /* OprojectListEditComponent */], __WEBPACK_IMPORTED_MODULE_30__research_cproject_list_edit_cproject_list_edit_component__["a" /* CprojectListEditComponent */], __WEBPACK_IMPORTED_MODULE_40__home_links_list_links_list_component__["a" /* LinksListComponent */], __WEBPACK_IMPORTED_MODULE_41__home_links_list_edit_links_list_edit_component__["a" /* LinksListEditComponent */], __WEBPACK_IMPORTED_MODULE_42__home_links_links_component__["a" /* LinksComponent */], __WEBPACK_IMPORTED_MODULE_44__research_publications_publications_component__["a" /* PublicationsComponent */], __WEBPACK_IMPORTED_MODULE_45__research_publications_list_publications_list_component__["a" /* PublicationsListComponent */], __WEBPACK_IMPORTED_MODULE_46__research_publications_list_edit_publications_list_edit_component__["a" /* PublicationsListEditComponent */], __WEBPACK_IMPORTED_MODULE_48__students_student_student_component__["a" /* StudentComponent */], __WEBPACK_IMPORTED_MODULE_49__students_students_list_students_list_component__["a" /* StudentsListComponent */], __WEBPACK_IMPORTED_MODULE_50__students_students_list_edit_students_list_edit_component__["a" /* StudentsListEditComponent */], __WEBPACK_IMPORTED_MODULE_52__academics_academics_component__["a" /* AcademicsComponent */], __WEBPACK_IMPORTED_MODULE_53__places_places_component__["a" /* PlacesComponent */], __WEBPACK_IMPORTED_MODULE_54__events_events_component__["a" /* EventsComponent */], __WEBPACK_IMPORTED_MODULE_55__academics_courses_courses_component__["a" /* CoursesComponent */], __WEBPACK_IMPORTED_MODULE_56__academics_overview_overview_component__["a" /* OverviewComponent */]
             ],
             imports: [
                 __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
@@ -399,7 +503,7 @@ var BackDirective = /** @class */ (function () {
         this.renderer = renderer;
     }
     BackDirective.prototype.ngOnInit = function () {
-        this.renderer.setStyle(this.elref.nativeElement, 'background-image', 'url(../assets/images/background-3.jpg)');
+        this.renderer.setStyle(this.elref.nativeElement, 'background-image', 'url(../assets/images/patternBack.jpg)');
     };
     BackDirective = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["t" /* Directive */])({
@@ -948,7 +1052,7 @@ module.exports = ".BigHeading{\r\n\r\n    font-size:2.75Vmax;\r\n    color:steel
 /***/ "./src/app/home/home.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<link rel=\"stylesheet\" type=\"text/css\" href=\"../assets/css/set1.css\" />\n\n  <div class=\"container-fluid rounded\" style=\"color:lightsteelblue;\">\n    \n   <div class=\"row\"> \n      <div class=\"col\"> <figure class=\"HomeImage\">\n          <img src=\"../assets/images/2.jpg\" alt=\"image not Loaded\"/>\n          <figcaption>\n            <div>\n              <h2 style=\"font-size:3vw; color:rgb(41, 212, 238); \" >WE <span style=\"font-size:3vw\">Rock!!!</span></h2>\n              <p style=\"font-size:2vw;\" class=\"text-info\">IIT-G : Where we design our dreams</p>\n            </div>\n            \n          </figcaption>\t\t\t\n        </figure>\n      </div> \n    \n    \n   \n    \n  <!--news -->\n\n  <div class=\"col-sm-4\" >\n\n\n    <mat-tab-group>\n      <mat-tab label=\"News\" style=\"color:lightgray;\"><button (click)=\"onClickEdit()\" class=\"btn btn-light\" style=\"border:1px solid black; color:lightgray;\"> go to edit section</button>\n\n\n        <div class=\"media border border-info rounded\" *ngFor=\"let news of newsList\">\n          <img class=\"mr-3\" src=\"../assets/images/radio.png\" alt=\"image not loaded yet\">\n          <div class=\"media-body\">\n            <h5 class=\"mt-0\">{{news.title}}</h5>\n            {{news.content}}\n          </div>\n        </div></mat-tab>\n      <mat-tab label=\"Links\" style=\"color:lightgray;\"><button (click)=\"onClickEdit2()\" class=\"btn btn-light\" style=\"border:1px solid black; color:lightgray;\"> go to edit section</button>\n\n\n        <div class=\"media border border-primary rounded\" *ngFor=\"let links of linksList\">\n          <img class=\"mr-3\" src=\"../assets/images/icons8-link-50.png\" alt=\"image not loaded yet\">\n          <div class=\"media-body\">\n            <h5 class=\"mt-0\">{{links.name}}</h5>\n            <a href=\"{{links.url}}\">{{links.name}}</a>\n          </div>\n        </div></mat-tab>\n    </mat-tab-group>\n    \n\n  </div>\n\n\n    </div> </div>"
+module.exports = "<link rel=\"stylesheet\" type=\"text/css\" href=\"../assets/css/set1.css\" />\n\n  <div class=\"container-fluid rounded\" >\n    \n   <div class=\"row\"> \n    <img src=\"../assets/images/2.jpg\"   style=\"width:80vmin; height:50vmin; \" alt=\"image not Loaded\"/>\n    \n   \n    \n  <!--news -->\n\n  <div class=\"col-sm-4\" >\n\n\n    <mat-tab-group>\n      <mat-tab label=\"News\" style=\"color:lightgray;\"><button (click)=\"onClickEdit()\" class=\"btn btn-light\" style=\"border:1px solid black; color:lightgray;\"> go to edit section</button>\n\n\n        <div class=\"media border border-info rounded\" *ngFor=\"let news of newsList\">\n          <img class=\"mr-3\" src=\"../assets/images/radio.png\" alt=\"image not loaded yet\">\n          <div class=\"media-body\">\n            <h5 class=\"mt-0\">{{news.title}}</h5>\n            {{news.content}}\n          </div>\n        </div></mat-tab>\n      <mat-tab label=\"Links\" style=\"color:lightgray;\"><button (click)=\"onClickEdit2()\" class=\"btn btn-light\" style=\"border:1px solid black; color:lightgray;\"> go to edit section</button>\n\n\n        <div class=\"media border border-primary rounded\" *ngFor=\"let links of linksList\">\n          <img class=\"mr-3\" src=\"../assets/images/icons8-link-50.png\" alt=\"image not loaded yet\">\n          <div class=\"media-body\">\n            <h5 class=\"mt-0\">{{links.name}}</h5>\n            <a href=\"{{links.url}}\">{{links.name}}</a>\n          </div>\n        </div></mat-tab>\n    </mat-tab-group>\n    \n\n  </div>\n\n\n    </div> </div>"
 
 /***/ }),
 
