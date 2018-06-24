@@ -600,6 +600,7 @@ var PlacementsComponent = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__academics_admissions_admissions_component__ = __webpack_require__("./src/app/academics/admissions/admissions.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__academics_courses_course_list_edit_course_list_edit_component__ = __webpack_require__("./src/app/academics/courses/course-list-edit/course-list-edit.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__academics_overview_overview_component__ = __webpack_require__("./src/app/academics/overview/overview.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__home_news_details_news_details_component__ = __webpack_require__("./src/app/home/news-details/news-details.component.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -631,7 +632,8 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var appRoutes = [{ path: '', component: __WEBPACK_IMPORTED_MODULE_2__home_home_component__["a" /* HomeComponent */] },
+
+var appRoutes = [{ path: '', component: __WEBPACK_IMPORTED_MODULE_2__home_home_component__["a" /* HomeComponent */] }, { path: 'news-details', component: __WEBPACK_IMPORTED_MODULE_25__home_news_details_news_details_component__["a" /* NewsDetailsComponent */] },
     { path: 'research', component: __WEBPACK_IMPORTED_MODULE_7__research_research_component__["a" /* ResearchComponent */] },
     { path: 'course-list-edit', component: __WEBPACK_IMPORTED_MODULE_23__academics_courses_course_list_edit_course_list_edit_component__["a" /* CourseListEditComponent */] },
     { path: 'oproject-list-edit', component: __WEBPACK_IMPORTED_MODULE_11__research_oproject_list_edit_oproject_list_edit_component__["a" /* OprojectListEditComponent */] },
@@ -833,12 +835,14 @@ var AppComponent = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_63_ngx_infinite_scroll__ = __webpack_require__("./node_modules/ngx-infinite-scroll/modules/ngx-infinite-scroll.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_64_angularfire2_auth__ = __webpack_require__("./node_modules/angularfire2/auth/index.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_65__auth_service__ = __webpack_require__("./src/app/auth.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_66__home_news_details_news_details_component__ = __webpack_require__("./src/app/home/news-details/news-details.component.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
 
 
 
@@ -920,7 +924,7 @@ var AppModule = /** @class */ (function () {
         Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["K" /* NgModule */])({
             declarations: [
                 __WEBPACK_IMPORTED_MODULE_4__app_component__["a" /* AppComponent */], __WEBPACK_IMPORTED_MODULE_36__home_news_news_component__["a" /* NewsComponent */], __WEBPACK_IMPORTED_MODULE_37__home_news_list_edit_news_list_edit_component__["a" /* NewsListEditComponent */], __WEBPACK_IMPORTED_MODULE_38__home_news_list_news_list_component__["a" /* NewsListComponent */],
-                __WEBPACK_IMPORTED_MODULE_5__people_people_component__["a" /* PeopleComponent */], __WEBPACK_IMPORTED_MODULE_6__home_home_component__["a" /* HomeComponent */], __WEBPACK_IMPORTED_MODULE_7__work_work_component__["a" /* WorkComponent */], __WEBPACK_IMPORTED_MODULE_8__contact_contact_component__["a" /* ContactComponent */], __WEBPACK_IMPORTED_MODULE_9__students_students_component__["a" /* StudentsComponent */], __WEBPACK_IMPORTED_MODULE_10__faculty_faculty_component__["a" /* FacultyComponent */], __WEBPACK_IMPORTED_MODULE_11__research_research_component__["a" /* ResearchComponent */], __WEBPACK_IMPORTED_MODULE_12__home_posts_posts_component__["a" /* PostsComponent */], __WEBPACK_IMPORTED_MODULE_13__home_posts_post_post_component__["a" /* PostComponent */], __WEBPACK_IMPORTED_MODULE_14__back_directive__["a" /* BackDirective */], __WEBPACK_IMPORTED_MODULE_15__home_posts_new_post_new_post_component__["a" /* NewPostComponent */], __WEBPACK_IMPORTED_MODULE_21__faculty_teacher_teacher_component__["a" /* TeacherComponent */], __WEBPACK_IMPORTED_MODULE_22__faculty_teacher_list_teacher_list_component__["a" /* TeacherListComponent */], __WEBPACK_IMPORTED_MODULE_23__faculty_teacher_list_edit_teacher_list_edit_component__["a" /* TeacherListEditComponent */], __WEBPACK_IMPORTED_MODULE_25__research_oproject_oproject_component__["a" /* OprojectComponent */], __WEBPACK_IMPORTED_MODULE_26__research_cproject_cproject_component__["a" /* CprojectComponent */], __WEBPACK_IMPORTED_MODULE_27__research_oproject_list_oproject_list_component__["a" /* OprojectListComponent */], __WEBPACK_IMPORTED_MODULE_28__research_cproject_list_cproject_list_component__["a" /* CprojectListComponent */], __WEBPACK_IMPORTED_MODULE_29__research_oproject_list_edit_oproject_list_edit_component__["a" /* OprojectListEditComponent */], __WEBPACK_IMPORTED_MODULE_30__research_cproject_list_edit_cproject_list_edit_component__["a" /* CprojectListEditComponent */], __WEBPACK_IMPORTED_MODULE_40__home_links_list_links_list_component__["a" /* LinksListComponent */], __WEBPACK_IMPORTED_MODULE_41__home_links_list_edit_links_list_edit_component__["a" /* LinksListEditComponent */], __WEBPACK_IMPORTED_MODULE_42__home_links_links_component__["a" /* LinksComponent */], __WEBPACK_IMPORTED_MODULE_44__research_publications_publications_component__["a" /* PublicationsComponent */], __WEBPACK_IMPORTED_MODULE_45__research_publications_list_publications_list_component__["a" /* PublicationsListComponent */], __WEBPACK_IMPORTED_MODULE_46__research_publications_list_edit_publications_list_edit_component__["a" /* PublicationsListEditComponent */], __WEBPACK_IMPORTED_MODULE_48__students_student_student_component__["a" /* StudentComponent */], __WEBPACK_IMPORTED_MODULE_49__students_students_list_students_list_component__["a" /* StudentsListComponent */], __WEBPACK_IMPORTED_MODULE_50__students_students_list_edit_students_list_edit_component__["a" /* StudentsListEditComponent */], __WEBPACK_IMPORTED_MODULE_52__academics_academics_component__["a" /* AcademicsComponent */], __WEBPACK_IMPORTED_MODULE_53__places_places_component__["a" /* PlacesComponent */], __WEBPACK_IMPORTED_MODULE_54__events_events_component__["a" /* EventsComponent */], __WEBPACK_IMPORTED_MODULE_55__academics_courses_courses_component__["a" /* CoursesComponent */], __WEBPACK_IMPORTED_MODULE_56__academics_overview_overview_component__["a" /* OverviewComponent */], __WEBPACK_IMPORTED_MODULE_57__academics_admissions_admissions_component__["a" /* AdmissionsComponent */], __WEBPACK_IMPORTED_MODULE_58__academics_placements_placements_component__["a" /* PlacementsComponent */], __WEBPACK_IMPORTED_MODULE_59__academics_courses_course_course_component__["a" /* CourseComponent */], __WEBPACK_IMPORTED_MODULE_60__academics_courses_course_list_course_list_component__["a" /* CourseListComponent */], __WEBPACK_IMPORTED_MODULE_61__academics_courses_course_list_edit_course_list_edit_component__["a" /* CourseListEditComponent */]
+                __WEBPACK_IMPORTED_MODULE_5__people_people_component__["a" /* PeopleComponent */], __WEBPACK_IMPORTED_MODULE_6__home_home_component__["a" /* HomeComponent */], __WEBPACK_IMPORTED_MODULE_7__work_work_component__["a" /* WorkComponent */], __WEBPACK_IMPORTED_MODULE_8__contact_contact_component__["a" /* ContactComponent */], __WEBPACK_IMPORTED_MODULE_9__students_students_component__["a" /* StudentsComponent */], __WEBPACK_IMPORTED_MODULE_10__faculty_faculty_component__["a" /* FacultyComponent */], __WEBPACK_IMPORTED_MODULE_11__research_research_component__["a" /* ResearchComponent */], __WEBPACK_IMPORTED_MODULE_12__home_posts_posts_component__["a" /* PostsComponent */], __WEBPACK_IMPORTED_MODULE_13__home_posts_post_post_component__["a" /* PostComponent */], __WEBPACK_IMPORTED_MODULE_14__back_directive__["a" /* BackDirective */], __WEBPACK_IMPORTED_MODULE_15__home_posts_new_post_new_post_component__["a" /* NewPostComponent */], __WEBPACK_IMPORTED_MODULE_21__faculty_teacher_teacher_component__["a" /* TeacherComponent */], __WEBPACK_IMPORTED_MODULE_22__faculty_teacher_list_teacher_list_component__["a" /* TeacherListComponent */], __WEBPACK_IMPORTED_MODULE_23__faculty_teacher_list_edit_teacher_list_edit_component__["a" /* TeacherListEditComponent */], __WEBPACK_IMPORTED_MODULE_25__research_oproject_oproject_component__["a" /* OprojectComponent */], __WEBPACK_IMPORTED_MODULE_26__research_cproject_cproject_component__["a" /* CprojectComponent */], __WEBPACK_IMPORTED_MODULE_27__research_oproject_list_oproject_list_component__["a" /* OprojectListComponent */], __WEBPACK_IMPORTED_MODULE_28__research_cproject_list_cproject_list_component__["a" /* CprojectListComponent */], __WEBPACK_IMPORTED_MODULE_29__research_oproject_list_edit_oproject_list_edit_component__["a" /* OprojectListEditComponent */], __WEBPACK_IMPORTED_MODULE_30__research_cproject_list_edit_cproject_list_edit_component__["a" /* CprojectListEditComponent */], __WEBPACK_IMPORTED_MODULE_40__home_links_list_links_list_component__["a" /* LinksListComponent */], __WEBPACK_IMPORTED_MODULE_41__home_links_list_edit_links_list_edit_component__["a" /* LinksListEditComponent */], __WEBPACK_IMPORTED_MODULE_42__home_links_links_component__["a" /* LinksComponent */], __WEBPACK_IMPORTED_MODULE_44__research_publications_publications_component__["a" /* PublicationsComponent */], __WEBPACK_IMPORTED_MODULE_45__research_publications_list_publications_list_component__["a" /* PublicationsListComponent */], __WEBPACK_IMPORTED_MODULE_46__research_publications_list_edit_publications_list_edit_component__["a" /* PublicationsListEditComponent */], __WEBPACK_IMPORTED_MODULE_48__students_student_student_component__["a" /* StudentComponent */], __WEBPACK_IMPORTED_MODULE_49__students_students_list_students_list_component__["a" /* StudentsListComponent */], __WEBPACK_IMPORTED_MODULE_50__students_students_list_edit_students_list_edit_component__["a" /* StudentsListEditComponent */], __WEBPACK_IMPORTED_MODULE_52__academics_academics_component__["a" /* AcademicsComponent */], __WEBPACK_IMPORTED_MODULE_53__places_places_component__["a" /* PlacesComponent */], __WEBPACK_IMPORTED_MODULE_54__events_events_component__["a" /* EventsComponent */], __WEBPACK_IMPORTED_MODULE_55__academics_courses_courses_component__["a" /* CoursesComponent */], __WEBPACK_IMPORTED_MODULE_56__academics_overview_overview_component__["a" /* OverviewComponent */], __WEBPACK_IMPORTED_MODULE_57__academics_admissions_admissions_component__["a" /* AdmissionsComponent */], __WEBPACK_IMPORTED_MODULE_58__academics_placements_placements_component__["a" /* PlacementsComponent */], __WEBPACK_IMPORTED_MODULE_59__academics_courses_course_course_component__["a" /* CourseComponent */], __WEBPACK_IMPORTED_MODULE_60__academics_courses_course_list_course_list_component__["a" /* CourseListComponent */], __WEBPACK_IMPORTED_MODULE_61__academics_courses_course_list_edit_course_list_edit_component__["a" /* CourseListEditComponent */], __WEBPACK_IMPORTED_MODULE_66__home_news_details_news_details_component__["a" /* NewsDetailsComponent */]
             ],
             imports: [__WEBPACK_IMPORTED_MODULE_63_ngx_infinite_scroll__["a" /* InfiniteScrollModule */], __WEBPACK_IMPORTED_MODULE_64_angularfire2_auth__["b" /* AngularFireAuthModule */],
                 __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
@@ -1564,14 +1568,14 @@ var TeacherComponent = /** @class */ (function () {
 /***/ "./src/app/home/home.component.css":
 /***/ (function(module, exports) {
 
-module.exports = ".BigHeading{\r\n\r\n    font-size:2.75Vmax;\r\n        \r\n}\r\n.media{\r\n        \r\n}\r\n.image-container{\r\n    position:relative;\r\n}\r\n.top-right{\r\n    position:absolute;\r\n    top: 10px;\r\n    right: 3px;\r\n    border-radius:10px;\r\n    border-width:3px;\r\n}\r\n.bottom-left{\r\n    position:absolute;\r\n    bottom:16px;\r\n    left:8px;\r\n}\r\n.mat-tab.tab{\r\n    color:turquoise;\r\n}"
+module.exports = ".BigHeading{\r\n\r\n    font-size:2.75Vmax;\r\n        \r\n}\r\n.media{\r\n        \r\n}\r\n.image-container{\r\n    position:relative;\r\n}\r\n.top-right{\r\n    position:absolute;\r\n    top: 10px;\r\n    right: 3px;\r\n    border-radius:10px;\r\n    border-width:3px;\r\n}\r\n.bottom-left{\r\n    position:absolute;\r\n    bottom:16px;\r\n    left:8px;\r\n}\r\n.mat-tab.tab{\r\n    color:turquoise;\r\n}\r\nli.list-group-item{\r\n    background-color: transparent;\r\n}\r\nul.list-group.hover li:hover{\r\n    cursor:pointer;\r\n    border:2px solid red; \r\n}\r\n.mat-fab{\r\n    background-color:transparent; border:2px solid chartreuse; color:chartreuse;\r\n}"
 
 /***/ }),
 
 /***/ "./src/app/home/home.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<link rel=\"stylesheet\" type=\"text/css\" href=\"../assets/css/set1.css\" />\n\n \n   \n<!--carosoul -->\n<div id=\"carouselExampleIndicators\" class=\"carousel slide\" data-ride=\"carousel\">\n  <ol class=\"carousel-indicators\">\n    <li data-target=\"#carouselExampleIndicators\" data-slide-to=\"0\" class=\"active\"></li>\n    <li data-target=\"#carouselExampleIndicators\" data-slide-to=\"1\"></li>\n    <li data-target=\"#carouselExampleIndicators\" data-slide-to=\"2\"></li>\n  </ol>\n  <div class=\"carousel-inner\">\n    <div class=\"carousel-item active\">\n      \n      <div class=\"image-container\">\n    \n  \n        <img src=\"../assets/images/iit-night.jpg\" class=\"d-block w-100\"  style=\"width:100%; height:auto; \" alt=\"image not Loaded\"/>\n     <div class=\"top-right border border-white\" style=\"font-size:4vw; color:white;\"> <strong>Department <br>  Of Design</strong> <br/> IIT-Guwahati\n    </div>\n    <div class=\"bottom-left\" style=\"font-size:4vw; color:white; margin-left:4px;\"><strong>where Would you<br> design<br> your dreams? </strong></div> \n    \n    </div>\n    </div>\n    <div class=\"carousel-item\">\n      <img class=\"d-block w-100\" src=\"../assets/images/exhibition1.jpg\" alt=\"Second slide\">\n    </div>\n    <div class=\"carousel-item\">\n      <img class=\"d-block w-100\" src=\"../assets/images/diwali.jpg\" alt=\"Third slide\">\n    </div>\n  </div>\n  <a class=\"carousel-control-prev\" href=\"#carouselExampleIndicators\" role=\"button\" data-slide=\"prev\">\n    <span class=\"carousel-control-prev-icon\" aria-hidden=\"true\"></span>\n    <span class=\"sr-only\">Previous</span>\n  </a>\n  <a class=\"carousel-control-next\" href=\"#carouselExampleIndicators\" role=\"button\" data-slide=\"next\">\n    <span class=\"carousel-control-next-icon\" aria-hidden=\"true\"></span>\n    <span class=\"sr-only\">Next</span>\n  </a>\n</div>\n\n\n\n<div class=\"jumbotron\" style=\"background-color:transparent;\">\n  <h1 class=\"display-4\" style=\"color:mediumturquoise;\" >About</h1>\n  <p class=\"lead\" style=\"color:turquoise;\">The Department of Design(DoD), one of the thirteen departments at IIT Guwahati, was set up with a vision to enkindle some of the brightest technical minds of the country-a passion for innovation in technology driven by a firm understanding, appreciation and celebration of design.</p>\n  <hr class=\"my-4\" style=\"color:turquoise;\">\n  <p style=\"color:turquoise;\"> The department offers an M.Des. degree, a B.Des. degree (the only undergraduate level degree of its kind in an Indian Institute of Technology) and a PhD degree in Design. The focus of the program is on the study, invention, and creative use of technologies to create effective, usable, enjoyable experiences with technology through interdisciplinary research in engineering, design, behavioral and social sciences, and to understand the impact of technology on individuals, groups, and organizations. The department envisions to produce successful graduates who will be capable of leading the changing scenarios of today and tomorrow through thought, innovation and values.\n\n    The institute is situated in North Guwahati, Assam, on the north bank of the river Brahmaputra amidst breathtaking natural beauty and serenity. The full fledged campus sprawls over 285 hectares of gently undulating terrain with several hillocks covered with lush green vegetation, a few lakes and a panoramic view of the mighty river on one side and a ring of blue hills on the other. The Institute is conveniently accessible from all the transport hubs in the Guwahati city.</p>\n  <h3 style=\"color:darkgrey;\">Apply for:</h3>\n  <button mat-fab color=\"accent\">M.des</button>\n  <button mat-fab color=\"accent\">B.des</button>\n  <button mat-fab color=\"accent\">Phd</button>\n\n</div>\n    \n  <!--news -->\n\n    <div class=\"card mb-3\" style=\"width:100%; background-color:transparent;\">\n      <div class=\"card-header\" style=\"color:turquoise;\">NEWS & LINKS</div>\n      <div class=\"card-body text-primary\">\n        <h5 class=\"card-title\"></h5>\n        <div class=\"card-text\" >\n          <div class=\"row\">\n            <div class=\"col\">\n          <button (click)=\"onClickEdit()\" class=\"btn btn-outline-info\" > go to edit section</button>\n    \n    \n            <div class=\"media border border-info rounded\" *ngFor=\"let news of newsList\">\n              <img class=\"mr-3\" src=\"../assets/images/radio.png\" alt=\"image not loaded yet\">\n              <div class=\"media-body\">\n                <h5 class=\"mt-0\">{{news.title}}</h5>\n                {{news.content}}\n              </div>\n            </div>\n          </div>\n          <div class=\"col\">\n          <button (click)=\"onClickEdit2()\" class=\"btn btn-outline-info\" > go to edit section</button>\n    \n    \n            <div class=\"media border border-primary rounded\" *ngFor=\"let links of linksList\">\n              <img class=\"mr-3\" src=\"../assets/images/icons8-link-50.png\" alt=\"image not loaded yet\">\n              <div class=\"media-body\">\n                <h5 class=\"mt-0\">{{links.name}}</h5>\n                <a href=\"{{links.url}}\">{{links.name}}</a>\n              </div>\n            </div>\n          </div>\n          </div>\n\n          </div>\n      </div>\n    </div>\n\n\n  \n\n \n\n\n  "
+module.exports = "<link rel=\"stylesheet\" type=\"text/css\" href=\"../assets/css/set1.css\" />\n\n \n   \n<!--carosoul -->\n<div id=\"carouselExampleIndicators\" class=\"carousel slide\" data-ride=\"carousel\">\n  <ol class=\"carousel-indicators\">\n    <li data-target=\"#carouselExampleIndicators\" data-slide-to=\"0\" class=\"active\"></li>\n    <li data-target=\"#carouselExampleIndicators\" data-slide-to=\"1\"></li>\n    <li data-target=\"#carouselExampleIndicators\" data-slide-to=\"2\"></li>\n  </ol>\n  <div class=\"carousel-inner\">\n    <div class=\"carousel-item active\">\n      \n      <div class=\"image-container\">\n    \n  \n        <img src=\"../assets/images/iit-night.jpg\" class=\"d-block w-100\"  style=\"width:100%; height:auto; \" alt=\"image not Loaded\"/>\n     <div class=\"top-right border border-white\" style=\"font-size:4vw; color:white;\"> <strong>Department <br>  Of Design</strong> <br/> IIT-Guwahati\n    </div>\n    <div class=\"bottom-left\" style=\"font-size:4vw; color:white; margin-left:4px;\"><strong>where Would you<br> design<br> your dreams? </strong></div> \n    \n    </div>\n    </div>\n    <div class=\"carousel-item\">\n      <img class=\"d-block w-100\" src=\"../assets/images/exhibition1.jpg\" alt=\"Second slide\">\n    </div>\n    <div class=\"carousel-item\">\n      <img class=\"d-block w-100\" src=\"../assets/images/diwali.jpg\" alt=\"Third slide\">\n    </div>\n  </div>\n  <a class=\"carousel-control-prev\" href=\"#carouselExampleIndicators\" role=\"button\" data-slide=\"prev\">\n    <span class=\"carousel-control-prev-icon\" aria-hidden=\"true\"></span>\n    <span class=\"sr-only\">Previous</span>\n  </a>\n  <a class=\"carousel-control-next\" href=\"#carouselExampleIndicators\" role=\"button\" data-slide=\"next\">\n    <span class=\"carousel-control-next-icon\" aria-hidden=\"true\"></span>\n    <span class=\"sr-only\">Next</span>\n  </a>\n</div>\n\n\n\n<div class=\"jumbotron\" style=\"background-color:transparent;\">\n  <h1 class=\"display-4\" style=\"color:mediumturquoise;\" >About</h1>\n  <p class=\"lead\" style=\"color:turquoise;\">The Department of Design(DoD), one of the thirteen departments at IIT Guwahati, was set up with a vision to enkindle some of the brightest technical minds of the country-a passion for innovation in technology driven by a firm understanding, appreciation and celebration of design.</p>\n  <hr class=\"my-4\" style=\"color:turquoise;\">\n  <p style=\"color:turquoise;\"> The department offers an M.Des. degree, a B.Des. degree (the only undergraduate level degree of its kind in an Indian Institute of Technology) and a PhD degree in Design. The focus of the program is on the study, invention, and creative use of technologies to create effective, usable, enjoyable experiences with technology through interdisciplinary research in engineering, design, behavioral and social sciences, and to understand the impact of technology on individuals, groups, and organizations. The department envisions to produce successful graduates who will be capable of leading the changing scenarios of today and tomorrow through thought, innovation and values.\n\n    The institute is situated in North Guwahati, Assam, on the north bank of the river Brahmaputra amidst breathtaking natural beauty and serenity. The full fledged campus sprawls over 285 hectares of gently undulating terrain with several hillocks covered with lush green vegetation, a few lakes and a panoramic view of the mighty river on one side and a ring of blue hills on the other. The Institute is conveniently accessible from all the transport hubs in the Guwahati city.</p>\n  <h3 style=\"color:darkgrey;\">Apply for:</h3>\n  <button mat-fab color=\"accent\">M.des</button>\n  <button mat-fab color=\"accent\">B.des</button>\n  <button mat-fab color=\"accent\">Phd</button>\n\n</div>\n    \n  <!--news -->\n\n    <div class=\"card mb-3\" style=\"width:100%; background-color:transparent;\">\n      <div class=\"card-header\" style=\"color:turquoise;\">NEWS & LINKS</div>\n      <div class=\"card-body text-primary\">\n        <h5 class=\"card-title\"></h5>\n        <div class=\"card-text\" >\n          <div class=\"row\">\n            <div class=\"col\">\n          <button (click)=\"onClickEdit()\" class=\"btn btn-outline-info\" > go to edit section</button>\n    \n    <ul class=\"list-group hover\">\n            <li class=\"media border border-info rounded list-group-item\" *ngFor=\"let news of newsList\" (click)=\"onClickNewsItem(news)\">\n              <img class=\"mr-3\" src=\"../assets/images/radio.png\" alt=\"image not loaded yet\">\n              <div class=\"media-body\">\n                <h5 class=\"mt-0\">{{news.title}}</h5>\n                {{news.content}}\n              </div>\n            </li> </ul>\n          </div>\n          <div class=\"col\">\n          <button (click)=\"onClickEdit2()\" class=\"btn btn-outline-info\" > go to edit section</button>\n    \n    \n            <div class=\"media border border-primary rounded\" *ngFor=\"let links of linksList\">\n              <img class=\"mr-3\" src=\"../assets/images/icons8-link-50.png\" alt=\"image not loaded yet\">\n              <div class=\"media-body\">\n                <h5 class=\"mt-0\">{{links.name}}</h5>\n                <a href=\"{{links.url}}\">{{links.name}}</a>\n              </div>\n            </div>\n          </div>\n          </div>\n\n          </div>\n      </div>\n    </div>\n\n\n  \n\n \n\n\n  "
 
 /***/ }),
 
@@ -1629,6 +1633,10 @@ var HomeComponent = /** @class */ (function () {
     };
     HomeComponent.prototype.onClickEdit2 = function () {
         this.router.navigate(['/links-list-edit']);
+    };
+    HomeComponent.prototype.onClickNewsItem = function (news) {
+        this.newsService.selectedNews = Object.assign({}, news);
+        this.router.navigate(['/news-details']);
     };
     HomeComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
@@ -1853,6 +1861,59 @@ var LinksComponent = /** @class */ (function () {
 
 /***/ }),
 
+/***/ "./src/app/home/news-details/news-details.component.css":
+/***/ (function(module, exports) {
+
+module.exports = ""
+
+/***/ }),
+
+/***/ "./src/app/home/news-details/news-details.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"jumbotron justify-content-center\" style=\"color:chartreuse; background-color:transparent;\">\n  <h1 class=\"display-4\">{{newsService.selectedNews.title}}</h1>\n  <img  src=\"{{newsService.selectedNews.image}}|async\" style=\"height:35vw; width:70vw;\"> \n  <p class=\"lead\">{{newsService.selectedNews.content}}\n  </p>\n  <hr class=\"my-4\">\n  <p>{{newsService.selectedNews.date}}</p>\n  <button mat-fab style=\"font-size:0.9vw; background-color:transparent; border:2px solid chartreuse; color:chartreuse;\" >links</button>\n</div>"
+
+/***/ }),
+
+/***/ "./src/app/home/news-details/news-details.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return NewsDetailsComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__shared_news_service__ = __webpack_require__("./src/app/home/shared/news.service.ts");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var NewsDetailsComponent = /** @class */ (function () {
+    function NewsDetailsComponent(newsService) {
+        this.newsService = newsService;
+    }
+    NewsDetailsComponent.prototype.ngOnInit = function () {
+    };
+    NewsDetailsComponent = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+            selector: 'app-news-details',
+            template: __webpack_require__("./src/app/home/news-details/news-details.component.html"),
+            styles: [__webpack_require__("./src/app/home/news-details/news-details.component.css")]
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__shared_news_service__["a" /* NewsService */]])
+    ], NewsDetailsComponent);
+    return NewsDetailsComponent;
+}());
+
+
+
+/***/ }),
+
 /***/ "./src/app/home/news-list-edit/news-list-edit.component.css":
 /***/ (function(module, exports) {
 
@@ -1863,7 +1924,7 @@ module.exports = ""
 /***/ "./src/app/home/news-list-edit/news-list-edit.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "\n<button (click)=\"onClickBack()\" class=\"btn btn-light\" style=\"border:1px solid black;\">go back to home </button>\n<div  style=\"text-align:center\">\n<h2 class=\"jumbotron\">News list eddit section</h2>\n</div>\n<div class=\"row\">\n  <div class=\"col-md-7\">\n    <app-news></app-news>\n  </div>\n  <div class=\"col-md-5\">\n    <app-news-list></app-news-list>\n  </div>\n</div> "
+module.exports = "\n<button (click)=\"onClickBack()\" class=\"btn btn-light\" style=\"border:1px solid black;\">go back to home </button>\n<div  style=\"text-align:center\">\n<h2 class=\"jumbotron\">News list edit section</h2>\n</div>\n<div class=\"row\">\n  <div class=\"col-md-7\">\n    <app-news></app-news>\n  </div>\n  <div class=\"col-md-5\">\n    <app-news-list></app-news-list>\n  </div>\n</div> "
 
 /***/ }),
 
@@ -1922,7 +1983,7 @@ module.exports = "button,ul.list-group.hover li:hover{\r\n    cursor:pointer;\r\
 /***/ "./src/app/home/news-list/news-list.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "\n<h3>click on the list item to edit/delete</h3>\n<ul class=\"list-group hover\">\n  <li class=\"list-group-item\"  *ngFor=\"let news of newsList\" (click)=\"onItemClick(news)\">{{news.title}}</li>\n</ul>"
+module.exports = "\n<h3>click on the list item to edit/delete</h3>\n<ul class=\"list-group hover\">\n  <li class=\"list-group-item\"  *ngFor=\"let news of newsList\" (click)=\"onItemClick(news)\">{{news.title}}\n     <img src=\"{{news.image}} | async\" height=\"100px;\" width=\"100px;\">\n  </li>\n</ul>\n"
 
 /***/ }),
 
@@ -1962,7 +2023,6 @@ var NewsListComponent = /** @class */ (function () {
     };
     NewsListComponent.prototype.onItemClick = function (news) {
         this.newsService.selectedNews = Object.assign({}, news);
-        // code is fine but better option is used for performance: this.teacherService.selectedTeacher=teacher;
     };
     NewsListComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
@@ -1989,7 +2049,7 @@ module.exports = ""
 /***/ "./src/app/home/news/news.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "\r\n<p *ngIf=\"inserted\" style=\"color:greenyellow;\">item inserted</p>\r\n<p *ngIf=\"updated\" style=\"color:greenyellow;\">item updated</p>\r\n<p *ngIf=\"deleted\" style=\"color:red;\">item deleted</p>\r\n<form (ngSubmit)=\"onSubmit(newsForm)\" #newsForm=\"ngForm\">\r\n<input type=\"hidden\" name=\"$key\" #$key=\"ngModel\" [(ngModel)]=\"newsService.selectedNews.$key\">\r\n  <div class=\"form-group\">\r\n  <label>Title</label>\r\n  <input type=\"text\" class=\"form-control\" name=\"title\" #name=\"ngModel\" required [(ngModel)]=\"newsService.selectedNews.title\" placeholder=\"Title\">\r\n</div>\r\n<div class=\"form-group\">\r\n  \r\n<label>content</label>\r\n  <input type=\"text\" class=\"form-control\" name=\"content\" #name=\"ngModel\" required [(ngModel)]=\"newsService.selectedNews.content\" placeholder=\"content\">\r\n</div>\r\n\r\n<div class=\"form-group\">\r\n  <label>image</label>\r\n  <div class=\"input-group\">\r\n    <div class=\"input-group-prepend\">\r\n        <span class=\"input-group-text\" id=\"basic-addon1\"><i class=\"fas fa-female\"></i></span>\r\n      \r\n    </div>\r\n    <input type=\"text\" class=\"form-control\" name=\"image\" #name=\"ngModel\" required [(ngModel)]=\"newsService.selectedNews.image\" placeholder=\"co-investigator\">\r\n  </div>\r\n  \r\n</div>\r\n\r\n<div class=\"form-group\">\r\n  <label>published on</label>\r\n  <input type=\"text\" class=\"form-control\" name=\"date\" #name=\"ngModel\" required [(ngModel)]=\"newsService.selectedNews.date\" placeholder=\"date published on\">\r\n</div>\r\n\r\n<div class=\"form-group\">\r\n<button type=\"submit\" class=\"btn btn-light\" style=\"border:1px solid black;\" [disabled]=\"!newsForm.valid\"> <i class=\"fa fa-save\"></i>submit</button>\r\n<button type=\"button\" class=\"btn btn-light\" style=\"border:1px solid black;\" (click)=\"onDelete(newsForm)\" *ngIf=\"newsService.selectedNews.$key!=null\"><i class=\"fa fa-trash\"></i>delete</button>\r\n<button type=\"button\" class=\"btn btn-light\" style=\"border:1px solid black;\" (click)=\"resetForm()\"><i class=\"fa fa-redo\" ></i>reset</button>\r\n\r\n</div>\r\n</form>"
+module.exports = "\r\n<p *ngIf=\"inserted\" style=\"color:greenyellow;\">item inserted</p>\r\n<p *ngIf=\"updated\" style=\"color:greenyellow;\">item updated</p>\r\n<p *ngIf=\"deleted\" style=\"color:red;\">item deleted</p>\r\n<form (ngSubmit)=\"onSubmit(newsForm)\" #newsForm=\"ngForm\">\r\n<input type=\"hidden\" name=\"$key\" #$key=\"ngModel\" [(ngModel)]=\"newsService.selectedNews.$key\">\r\n  <div class=\"form-group\">\r\n  <label>Title</label>\r\n  <input type=\"text\" class=\"form-control\" name=\"title\" #name=\"ngModel\" required [(ngModel)]=\"newsService.selectedNews.title\" placeholder=\"Title\">\r\n</div>\r\n<div class=\"form-group\">\r\n  \r\n<label>content</label>\r\n  <input type=\"text\" class=\"form-control\" name=\"content\" #name=\"ngModel\" required [(ngModel)]=\"newsService.selectedNews.content\" placeholder=\"content\">\r\n</div>\r\n\r\n<div class=\"form-group\">\r\n  \r\n  <div class=\"input-group\">\r\n    <input type=\"hidden\" class=\"form-control\" name=\"image\" #name=\"ngModel\" required [(ngModel)]=\"newsService.selectedNews.image\" placeholder=\"co-investigator\">\r\n  </div>\r\n  \r\n</div>\r\n\r\n<div class=\"form-group\">\r\n  \r\n  <input type=\"hidden\" class=\"form-control\" name=\"image\" #name=\"ngModel\"  [(ngModel)]=\"newsService.selectedNews.image\" placeholder=\"give the name of the news here without space\">\r\n</div>\r\n\r\n<div class=\"form-group\">\r\n  <label>published on</label>\r\n  <input type=\"text\" class=\"form-control\" name=\"date\" #name=\"ngModel\" required [(ngModel)]=\"newsService.selectedNews.date\" placeholder=\"date published on\">\r\n</div>\r\n\r\n<div class=\"form-group\">\r\n  <label>upload Image</label>\r\n  \r\n  <input type=\"file\"  class=\"form-control\" name=\"imageUpload\" (change)=\"uploadFile($event)\" #name=\"ngModel\"  [(ngModel)]=\"newsService.selectedNews.imageUpload\" >\r\n  <div>upload percentage: {{ uploadPercent | async }}</div>\r\n  <progress max=\"100\" [value]=\"(uploadPercent | async)\"></progress>\r\n  <div class=\"result\" *ngIf=\"downloadURL | async; let uploadSrc\">\r\n    <a [href]=\"uploadSrc\">You just uploaded this file!</a>\r\n    </div>\r\n  <p>uploaded image:</p>  <img [src]=\"uploadedImage | async\" />\r\n  </div>\r\n \r\n\r\n<div class=\"form-group\">\r\n<button type=\"submit\" class=\"btn btn-light\" style=\"border:1px solid black;\" [disabled]=\"!newsForm.valid\"> <i class=\"fa fa-save\"></i>submit</button>\r\n<button type=\"button\" class=\"btn btn-light\" style=\"border:1px solid black;\" (click)=\"onDelete(newsForm)\" *ngIf=\"newsService.selectedNews.$key!=null\"><i class=\"fa fa-trash\"></i>delete</button>\r\n<button type=\"button\" class=\"btn btn-light\" style=\"border:1px solid black;\" (click)=\"resetForm()\"><i class=\"fa fa-redo\" ></i>reset</button>\r\n\r\n</div>\r\n</form>"
 
 /***/ }),
 
@@ -2000,6 +2060,8 @@ module.exports = "\r\n<p *ngIf=\"inserted\" style=\"color:greenyellow;\">item in
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return NewsComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__shared_news_service__ = __webpack_require__("./src/app/home/shared/news.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_angularfire2_storage__ = __webpack_require__("./node_modules/angularfire2/storage/index.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_material__ = __webpack_require__("./node_modules/@angular/material/esm5/material.es5.js");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -2011,12 +2073,17 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 
 
+
+
 var NewsComponent = /** @class */ (function () {
-    function NewsComponent(newsService) {
+    function NewsComponent(newsService, storage, snackBar) {
         this.newsService = newsService;
+        this.storage = storage;
+        this.snackBar = snackBar;
         this.inserted = false;
         this.updated = false;
         this.deleted = false;
+        this.temp = this.storage;
     }
     NewsComponent.prototype.ngOnInit = function () {
     };
@@ -2025,10 +2092,12 @@ var NewsComponent = /** @class */ (function () {
             this.newsService.insertNews(form.value);
             this.resetForm();
             this.inserted = true;
+            this.openSnackBar("record inserted", "");
         }
         else {
             this.newsService.updateNews(form.value);
             this.updated = true;
+            this.openSnackBar("record updated", "");
         }
     };
     NewsComponent.prototype.resetForm = function (form) {
@@ -2038,8 +2107,9 @@ var NewsComponent = /** @class */ (function () {
             $key: null,
             title: '',
             content: '',
-            image: '',
-            date: ''
+            image: null,
+            date: '',
+            imageUpload: null
         };
     };
     NewsComponent.prototype.onDelete = function (form) {
@@ -2048,13 +2118,30 @@ var NewsComponent = /** @class */ (function () {
             this.resetForm(form);
         }
     };
+    NewsComponent.prototype.uploadFile = function (event) {
+        var _this = this;
+        var file = event.target.files[0];
+        var filePath = 'facultyImages/' + this.newsService.selectedNews.title;
+        this.task = this.storage.upload(filePath, file);
+        this.openSnackBar("image started uploading!", "");
+        this.downloadURL = this.task.downloadURL();
+        this.uploadedImage = this.downloadURL;
+        this.uploadPercent = this.task.percentageChanges();
+        this.task.downloadURL().subscribe(function (url) { _this.newsService.selectedNews.image = url; });
+        //this.teacherService.selectedTeacher.image
+    };
+    NewsComponent.prototype.openSnackBar = function (message, action) {
+        this.snackBar.open(message, action, {
+            duration: 2000,
+        });
+    };
     NewsComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
             selector: 'app-news',
             template: __webpack_require__("./src/app/home/news/news.component.html"),
             styles: [__webpack_require__("./src/app/home/news/news.component.css")]
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__shared_news_service__["a" /* NewsService */]])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__shared_news_service__["a" /* NewsService */], __WEBPACK_IMPORTED_MODULE_2_angularfire2_storage__["a" /* AngularFireStorage */], __WEBPACK_IMPORTED_MODULE_3__angular_material__["a" /* MatSnackBar */]])
     ], NewsComponent);
     return NewsComponent;
 }());
@@ -2435,14 +2522,14 @@ var NewsService = /** @class */ (function () {
             title: news.title,
             content: news.content,
             image: news.image,
-            date: news.date
+            date: news.date,
         });
     };
     NewsService.prototype.updateNews = function (news) {
         this.newsList.update(news.$key, { title: news.title,
             content: news.content,
             image: news.image,
-            date: news.date
+            date: news.date,
         });
     };
     NewsService.prototype.deleteNews = function (key) { this.newsList.remove(key); };
