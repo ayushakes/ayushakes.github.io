@@ -1871,7 +1871,7 @@ module.exports = ""
 /***/ "./src/app/home/news-details/news-details.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"jumbotron justify-content-center\" style=\"color:chartreuse; background-color:transparent;\">\n  <h1 class=\"display-4\">{{newsService.selectedNews.title}}</h1>\n  <img  src=\"{{newsService.selectedNews.image}}|async\" style=\"height:35vw; width:70vw;\"> \n  <p class=\"lead\">{{newsService.selectedNews.content}}\n  </p>\n  <hr class=\"my-4\">\n  <p>{{newsService.selectedNews.date}}</p>\n  <button mat-fab style=\"font-size:0.9vw; background-color:transparent; border:2px solid chartreuse; color:chartreuse;\" >links</button>\n</div>"
+module.exports = "<div class=\"jumbotron justify-content-center\" style=\"color:chartreuse; background-color:transparent;\">\n  <h1 class=\"display-4\">{{newsService.selectedNews.title}}</h1>\n  <img  src=\"{{newsService.selectedNews.image}}|async\" style=\"height:35vw; width:70vw;\"> \n  <p class=\"lead\">{{newsService.selectedNews.content}}\n  </p>\n  <hr class=\"my-4\">\n  <p>{{newsService.selectedNews.date}}</p>\n  <button mat-fab style=\" background-color:transparent; border:2px solid chartreuse; color:chartreuse;\" >links</button>\n</div>"
 
 /***/ }),
 
